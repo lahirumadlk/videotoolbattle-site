@@ -890,6 +890,11 @@ h3 { font-size: 1.25rem; }
   padding: 56px 0 32px;
 }
 
+/* Extra padding on battle pages so footer clears the sticky verdict bar */
+.battle-page ~ .site-footer {
+  padding-bottom: 80px;
+}
+
 .footer-grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
@@ -996,6 +1001,12 @@ h3 { font-size: 1.25rem; }
 
 .back-to-top:hover {
   transform: translateY(-4px) scale(1.05);
+}
+
+/* Lift above sticky verdict bar on battle pages */
+.battle-page ~ .back-to-top {
+  bottom: 90px;
+  z-index: 90;
 }
 
 /* === MOBILE MENU OVERLAY === */

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="64" fill="#6C5CE7"/>
+  <!-- Left sword (top-right to bottom-left) -->
+  <g transform="translate(256,256) rotate(-45)">
+    <rect x="-12" y="-180" width="24" height="280" rx="4" fill="#fff" opacity="0.95"/>
+    <polygon points="-12,-180 12,-180 0,-220" fill="#fff" opacity="0.95"/>
+    <rect x="-32" y="90" width="64" height="14" rx="4" fill="#ddd"/>
+    <rect x="-8" y="100" width="16" height="50" rx="6" fill="#ccc"/>
+  </g>
+  <!-- Right sword (top-left to bottom-right) -->
+  <g transform="translate(256,256) rotate(45)">
+    <rect x="-12" y="-180" width="24" height="280" rx="4" fill="#fff" opacity="0.85"/>
+    <polygon points="-12,-180 12,-180 0,-220" fill="#fff" opacity="0.85"/>
+    <rect x="-32" y="90" width="64" height="14" rx="4" fill="#ddd" opacity="0.9"/>
+    <rect x="-8" y="100" width="16" height="50" rx="6" fill="#ccc" opacity="0.9"/>
+  </g>
+</svg>
