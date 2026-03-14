@@ -389,8 +389,40 @@ h3 { font-size: 1.25rem; }
   top: 50%;
   transform: translateY(-50%);
   font-size: 1.15rem;
-  opacity: 0.5;
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 1;
   pointer-events: none;
+}
+
+.hero-search input {
+  padding-right: 56px;
+}
+
+.hero-search .search-btn {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: var(--radius-md);
+  background: rgba(108, 92, 231, 0.35);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.15rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+  backdrop-filter: blur(4px);
+}
+
+.hero-search .search-btn:hover {
+  background: var(--accent);
+  color: #fff;
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: 0 4px 12px var(--accent-glow);
 }
 
 /* Trust metrics */
