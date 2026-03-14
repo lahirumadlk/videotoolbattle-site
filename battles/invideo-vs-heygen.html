@@ -20,6 +20,7 @@
                 th, td { padding: 12px; }
                 .btn { display: block; text-align: center; margin-right: 0; }
             }
+            .btn[aria-disabled="true"], .cta-button[aria-disabled="true"] { opacity: 0.55; pointer-events: none; }
         </style>
 </head>
 <body>
@@ -94,7 +95,9 @@
     </table>
     <h2>Final Verdict</h2>
     <p>If you need fast social media content, pick <strong>InVideo</strong>. If you need realistic human avatars, <strong>HeyGen</strong> is the king.</p>
-    <a href="https://invideo.io/?via=yourname" class="cta-button">Try InVideo AI Free</a>
-    <a href="https://heygen.com/?via=yourname" class="cta-button">Try HeyGen Free</a>
+    <a href="#" class="cta-button" data-affiliate="invideo">Try InVideo AI Free</a>
+    <a href="#" class="cta-button" data-affiliate="heygen">Try HeyGen Free</a>
+    <script src="../assets/affiliate-links.js"></script>
+    <script src="../assets/affiliate-links.js"></script>
 </body>
 </html>

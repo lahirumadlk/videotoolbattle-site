@@ -3,81 +3,525 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Tool Battle | The Ultimate AI Video Comparisons</title>
+    <title>Video Tool Battle | AI Video Comparisons</title>
+    <meta name="description" content="Data-driven AI video tool comparisons to help you choose the best workflow in minutes.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --bg: #f6f2ed;
+            --ink: #111018;
+            --muted: #5c5968;
+            --surface: #ffffff;
+            --surface-2: #f2eee9;
+            --accent: #ff6a3d;
+            --accent-2: #0f766e;
+            --accent-3: #f0b429;
+            --shadow: 0 20px 40px rgba(17, 16, 24, 0.08);
+            --radius: 18px;
+        }
+
         * { box-sizing: border-box; }
-        body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; background: #fdfdfd; color: #333; }
-        h1 { color: #2d3436; text-align: center; font-size: 2.5rem; margin-bottom: 5px; }
-        p.subtitle { text-align: center; color: #636e72; font-size: 1.1rem; margin-bottom: 40px; }
-        .battle-list { display: flex; flex-direction: column; gap: 15px; }
-        .battle-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border: 1px solid #eee; transition: transform 0.2s; }
-        .battle-card:hover { transform: translateY(-3px); box-shadow: 0 6px 12px rgba(0,0,0,0.1); }
-        .battle-card a { text-decoration: none; color: #0984e3; font-size: 1.3rem; font-weight: bold; display: block; }
-        .battle-card p { margin: 8px 0 0 0; color: #555; font-size: 0.95rem; }
+
+        body {
+            margin: 0;
+            font-family: "Space Grotesk", system-ui, -apple-system, sans-serif;
+            color: var(--ink);
+            background: radial-gradient(circle at top right, rgba(255, 106, 61, 0.12), transparent 40%),
+                        radial-gradient(circle at 20% 20%, rgba(15, 118, 110, 0.16), transparent 45%),
+                        var(--bg);
+        }
+
+        .page {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 28px 24px 72px;
+        }
+
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 36px;
+        }
+
+        .logo {
+            font-family: "Fraunces", serif;
+            font-size: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: var(--ink);
+        }
+
+        .pill {
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: var(--surface);
+            border: 1px solid rgba(17, 16, 24, 0.08);
+            box-shadow: 0 8px 18px rgba(17, 16, 24, 0.08);
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 32px;
+            align-items: center;
+            margin-bottom: 56px;
+        }
+
+        .eyebrow {
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-size: 0.75rem;
+            color: var(--accent-2);
+            font-weight: 700;
+        }
+
+        h1 {
+            font-family: "Fraunces", serif;
+            font-size: clamp(2.6rem, 4vw, 3.6rem);
+            margin: 12px 0 16px;
+        }
+
+        .lead {
+            font-size: 1.1rem;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 24px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 18px;
+            border-radius: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            border: 1px solid transparent;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn.primary {
+            background: var(--accent);
+            color: #fff;
+            box-shadow: 0 14px 28px rgba(255, 106, 61, 0.3);
+        }
+
+        .btn.ghost {
+            background: var(--surface);
+            color: var(--ink);
+            border-color: rgba(17, 16, 24, 0.12);
+        }
+
+        .btn[aria-disabled="true"] {
+            opacity: 0.55;
+            pointer-events: none;
+        }
+
+        .btn:hover { transform: translateY(-2px); }
+
+        .hero-card {
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 28px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(17, 16, 24, 0.08);
+        }
+
+        .hero-card h3 {
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+
+        .hero-card p {
+            color: var(--muted);
+        }
+
+        .hero-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 12px;
+            margin-top: 24px;
+        }
+
+        .metric {
+            background: var(--surface-2);
+            padding: 12px 16px;
+            border-radius: 12px;
+        }
+
+        .metric strong {
+            display: block;
+            font-size: 1.1rem;
+        }
+
+        .battle-section {
+            margin-top: 48px;
+        }
+
+        .section-head {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-family: "Fraunces", serif;
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .section-head p {
+            color: var(--muted);
+            max-width: 640px;
+        }
+
+        .battle-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .battle-card {
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 22px;
+            border: 1px solid rgba(17, 16, 24, 0.08);
+            box-shadow: 0 10px 24px rgba(17, 16, 24, 0.08);
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .pair {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .pair span {
+            font-weight: 500;
+            color: var(--muted);
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .tag {
+            font-size: 0.75rem;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: rgba(15, 118, 110, 0.12);
+            color: var(--accent-2);
+            font-weight: 600;
+        }
+
+        .verdict {
+            color: var(--muted);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .card-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: auto;
+        }
+
+        .btn.small {
+            padding: 9px 14px;
+            font-size: 0.85rem;
+        }
+
+        .about {
+            margin-top: 64px;
+            background: var(--surface);
+            padding: 28px;
+            border-radius: var(--radius);
+            border: 1px solid rgba(17, 16, 24, 0.08);
+            box-shadow: var(--shadow);
+        }
+
+        .about ul {
+            padding-left: 18px;
+            color: var(--muted);
+        }
+
+        .affiliate {
+            margin-top: 32px;
+            padding: 20px 22px;
+            background: rgba(255, 106, 61, 0.1);
+            border-radius: 14px;
+        }
+
+        footer {
+            margin-top: 40px;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
         @media (max-width: 640px) {
-            body { margin: 24px auto; padding: 16px; }
-            h1 { font-size: 2rem; }
-            .battle-card { padding: 16px; }
-            .battle-card a { font-size: 1.1rem; }
+            .site-header { flex-direction: column; align-items: flex-start; }
+            .nav { flex-wrap: wrap; }
+            .hero-card { order: -1; }
+            .page { padding: 24px 16px 60px; }
         }
     </style>
 </head>
 <body>
-    <h1>Video Tool Battle ⚔️</h1>
-    <p class="subtitle">The internet's best data-driven AI video comparisons for 2026.</p>
-    
-    <div class="battle-list">
+    <div class="page">
+        <header class="site-header">
+            <div class="logo">Video Tool Battle</div>
+            <nav class="nav">
+                <a href="#battles">Battles</a>
+                <a href="#about">How we compare</a>
+                <a href="#affiliate" class="pill">Affiliate disclosure</a>
+            </nav>
+        </header>
 
-        <div class="battle-card">
-            <a href="battles/invideo-ai-vs-heygen.html">InVideo AI vs HeyGen Showdown</a>
-            <p><strong>Verdict:</strong> Pick InVideo AI if you want to crank out faceless YouTube and promo videos from a prompt with stock footage doing most of the visual work. Pick HeyGen if your content needs a realistic on-screen presenter and you care more about avatar delivery than montage-style edits.</p>
-        </div>
-    
-        <div class="battle-card">
-            <a href="battles/runway-vs-luma-dream-machine.html">Runway vs Luma Dream Machine Showdown</a>
-            <p><strong>Verdict:</strong> Choose Runway if you want a more complete creative suite around generation, especially when you plan to iterate shots and edit heavily. Choose Luma if you primarily want high-quality generations and a straightforward credit-based path to strong visuals.</p>
-        </div>
-    
-        <div class="battle-card">
-            <a href="battles/pika-vs-luma-dream-machine.html">Pika vs Luma Dream Machine Showdown</a>
-            <p><strong>Verdict:</strong> Pick Pika if your content is short, punchy, and effects-first and you value fast iteration over perfect realism. Pick Luma if you care more about cinematic realism and shot quality than playful effects.</p>
-        </div>
-    
-        <div class="battle-card">
-            <a href="battles/runway-vs-pika.html">Runway vs Pika Showdown</a>
-            <p><strong>Verdict:</strong> Choose Runway if you need cinematic results and expect to iterate like a post-production workflow. Choose Pika if you want quick, viral-friendly clips and effects with a lower cost of entry.</p>
-        </div>
-    
-        <div class="battle-card">
-            <a href="battles/heygen-vs-synthesia.html">HeyGen vs Synthesia Showdown</a>
-            <p><strong>Verdict:</strong> Pick HeyGen if your priority is realistic, modern-looking avatar content for marketing and social. Pick Synthesia if you want a dependable, enterprise-friendly workflow for training and repeatable explainer formats.</p>
-        </div>
-    
-        <div class="battle-card">
-            <a href="battles/synthesia-vs-colossyan.html">Synthesia vs Colossyan Showdown</a>
-            <p><strong>Verdict:</strong> Choose Synthesia if you want a premium, consistent avatar catalog and a polished enterprise feel for training at scale. Choose Colossyan if you want a slightly cheaper starting point and a workflow that feels built for rapid training content updates.</p>
-        </div>
-    
-        <div class="battle-card">
-            <a href="battles/invideo-ai-vs-fliki.html">InVideo AI vs Fliki Showdown</a>
-            <p><strong>Verdict:</strong> Pick InVideo AI if you want stronger end-to-end video assembly and editing around stock footage for YouTube and ads. Pick Fliki if your workflow starts from scripts or blog posts and you care most about fast narration, languages, and turning text into publishable videos quickly.</p>
-        </div>
-    
-        <div class="battle-card">
-            <a href="battles/capcut-vs-veed.html">CapCut vs VEED Showdown</a>
-            <p><strong>Verdict:</strong> Choose CapCut if your priority is fast, creator-style editing for short-form content and you want a strong app workflow. Choose VEED if you prefer a web-first studio for captions, collaboration, and quick AI-assisted production without relying on a desktop app.</p>
-        </div>
-    
-        <div class="battle-card">
-            <a href="battles/kaiber-vs-luma-dream-machine.html">Kaiber vs Luma Dream Machine Showdown</a>
-            <p><strong>Verdict:</strong> Pick Luma if your goal is cinematic realism at a much lower starting price. Pick Kaiber if you want stylized, music-visual-first creation where art direction and iteration matter more than photorealism.</p>
-        </div>
-    
-        <div class="battle-card">
-            <a href="battles/descript-vs-veed.html">Descript vs VEED Showdown</a>
-            <p><strong>Verdict:</strong> Choose Descript if you edit lots of spoken-word content and want transcript-first speed for YouTube and podcasts. Choose VEED if you want a browser-based studio that leans into captions, templates, and quick all-in-one social production.</p>
-        </div>
-    
+        <section class="hero">
+            <div>
+                <p class="eyebrow">2026 AI Video Benchmarks</p>
+                <h1>Pick the right AI video tool without wasting a week testing.</h1>
+                <p class="lead">Straight-to-the-point comparisons for creators, marketers, and teams. Each battle ends with a clear verdict you can act on.</p>
+                <div class="hero-actions">
+                    <a class="btn primary" href="#battles">Browse comparisons</a>
+                    <a class="btn ghost" href="#affiliate">How we make money</a>
+                </div>
+                <div class="hero-metrics">
+                    <div class="metric">
+                        <strong>10 battles</strong>
+                        <span>Most-requested matchups</span>
+                    </div>
+                    <div class="metric">
+                        <strong>Fast verdicts</strong>
+                        <span>Use-case specific guidance</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-card">
+                <h3>Featured this week</h3>
+                <p>Runway vs Luma Dream Machine — which one wins for cinematic-quality shots?</p>
+                <div class="hero-actions">
+                    <a class="btn primary" href="battles/runway-vs-luma-dream-machine.html">Read battle</a>
+                    <a class="btn ghost" href="#" data-affiliate="runway">Try Runway</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="battles" class="battle-section">
+            <div class="section-head">
+                <h2>Head-to-head battles</h2>
+                <p>Each matchup summarizes price, speed, realism, and best-fit workflows. Skim the verdict, then dive deeper if you need the details.</p>
+            </div>
+
+            <div class="battle-grid">
+                <article class="battle-card">
+                    <div>
+                        <div class="pair">InVideo AI <span>vs</span> HeyGen</div>
+                        <div class="tags">
+                            <span class="tag">Faceless video</span>
+                            <span class="tag">Avatars</span>
+                        </div>
+                    </div>
+                    <p class="verdict">Pick InVideo AI for faceless YouTube and promo videos with stock footage. Pick HeyGen if you need a realistic on-screen presenter.</p>
+                    <div class="card-actions">
+                        <a class="btn primary small" href="battles/invideo-ai-vs-heygen.html">Read battle</a>
+                        <a class="btn ghost small" href="#" data-affiliate="invideo-ai">Try InVideo AI</a>
+                        <a class="btn ghost small" href="#" data-affiliate="heygen">Try HeyGen</a>
+                    </div>
+                </article>
+
+                <article class="battle-card">
+                    <div>
+                        <div class="pair">Runway <span>vs</span> Luma Dream Machine</div>
+                        <div class="tags">
+                            <span class="tag">Cinematic</span>
+                            <span class="tag">Creative suite</span>
+                        </div>
+                    </div>
+                    <p class="verdict">Choose Runway for a full creative suite and heavy iteration. Choose Luma for high-quality generations on a simpler credit path.</p>
+                    <div class="card-actions">
+                        <a class="btn primary small" href="battles/runway-vs-luma-dream-machine.html">Read battle</a>
+                        <a class="btn ghost small" href="#" data-affiliate="runway">Try Runway</a>
+                        <a class="btn ghost small" href="#" data-affiliate="luma">Try Luma</a>
+                    </div>
+                </article>
+
+                <article class="battle-card">
+                    <div>
+                        <div class="pair">Pika <span>vs</span> Luma Dream Machine</div>
+                        <div class="tags">
+                            <span class="tag">Effects-first</span>
+                            <span class="tag">Realism</span>
+                        </div>
+                    </div>
+                    <p class="verdict">Pick Pika for fast, playful effects. Pick Luma for cinematic realism and higher-end shots.</p>
+                    <div class="card-actions">
+                        <a class="btn primary small" href="battles/pika-vs-luma-dream-machine.html">Read battle</a>
+                        <a class="btn ghost small" href="#" data-affiliate="pika">Try Pika</a>
+                        <a class="btn ghost small" href="#" data-affiliate="luma">Try Luma</a>
+                    </div>
+                </article>
+
+                <article class="battle-card">
+                    <div>
+                        <div class="pair">Runway <span>vs</span> Pika</div>
+                        <div class="tags">
+                            <span class="tag">Short-form</span>
+                            <span class="tag">Cinematic</span>
+                        </div>
+                    </div>
+                    <p class="verdict">Choose Runway for cinematic results and iterative workflows. Choose Pika for quick, viral-ready effects.</p>
+                    <div class="card-actions">
+                        <a class="btn primary small" href="battles/runway-vs-pika.html">Read battle</a>
+                        <a class="btn ghost small" href="#" data-affiliate="runway">Try Runway</a>
+                        <a class="btn ghost small" href="#" data-affiliate="pika">Try Pika</a>
+                    </div>
+                </article>
+
+                <article class="battle-card">
+                    <div>
+                        <div class="pair">HeyGen <span>vs</span> Synthesia</div>
+                        <div class="tags">
+                            <span class="tag">Avatars</span>
+                            <span class="tag">Enterprise</span>
+                        </div>
+                    </div>
+                    <p class="verdict">Pick HeyGen for modern avatar content. Pick Synthesia for enterprise-friendly training workflows.</p>
+                    <div class="card-actions">
+                        <a class="btn primary small" href="battles/heygen-vs-synthesia.html">Read battle</a>
+                        <a class="btn ghost small" href="#" data-affiliate="heygen">Try HeyGen</a>
+                        <a class="btn ghost small" href="#" data-affiliate="synthesia">Try Synthesia</a>
+                    </div>
+                </article>
+
+                <article class="battle-card">
+                    <div>
+                        <div class="pair">Synthesia <span>vs</span> Colossyan</div>
+                        <div class="tags">
+                            <span class="tag">Training</span>
+                            <span class="tag">Enterprise</span>
+                        </div>
+                    </div>
+                    <p class="verdict">Choose Synthesia for a premium avatar catalog. Choose Colossyan for a lower-cost, fast-update workflow.</p>
+                    <div class="card-actions">
+                        <a class="btn primary small" href="battles/synthesia-vs-colossyan.html">Read battle</a>
+                        <a class="btn ghost small" href="#" data-affiliate="synthesia">Try Synthesia</a>
+                        <a class="btn ghost small" href="#" data-affiliate="colossyan">Try Colossyan</a>
+                    </div>
+                </article>
+
+                <article class="battle-card">
+                    <div>
+                        <div class="pair">InVideo AI <span>vs</span> Fliki</div>
+                        <div class="tags">
+                            <span class="tag">Text-to-video</span>
+                            <span class="tag">Narration</span>
+                        </div>
+                    </div>
+                    <p class="verdict">Pick InVideo AI for stronger end-to-end assembly. Pick Fliki for fast script-to-video with narration.</p>
+                    <div class="card-actions">
+                        <a class="btn primary small" href="battles/invideo-ai-vs-fliki.html">Read battle</a>
+                        <a class="btn ghost small" href="#" data-affiliate="invideo-ai">Try InVideo AI</a>
+                        <a class="btn ghost small" href="#" data-affiliate="fliki">Try Fliki</a>
+                    </div>
+                </article>
+
+                <article class="battle-card">
+                    <div>
+                        <div class="pair">CapCut <span>vs</span> VEED</div>
+                        <div class="tags">
+                            <span class="tag">Editing</span>
+                            <span class="tag">Creator tools</span>
+                        </div>
+                    </div>
+                    <p class="verdict">Choose CapCut for fast creator-style edits. Choose VEED for a web-first studio with captions and collaboration.</p>
+                    <div class="card-actions">
+                        <a class="btn primary small" href="battles/capcut-vs-veed.html">Read battle</a>
+                        <a class="btn ghost small" href="#" data-affiliate="capcut">Try CapCut</a>
+                        <a class="btn ghost small" href="#" data-affiliate="veed">Try VEED</a>
+                    </div>
+                </article>
+
+                <article class="battle-card">
+                    <div>
+                        <div class="pair">Kaiber <span>vs</span> Luma Dream Machine</div>
+                        <div class="tags">
+                            <span class="tag">Stylized</span>
+                            <span class="tag">Music videos</span>
+                        </div>
+                    </div>
+                    <p class="verdict">Pick Luma for cinematic realism at a lower price. Pick Kaiber for stylized, art-direction-heavy creation.</p>
+                    <div class="card-actions">
+                        <a class="btn primary small" href="battles/kaiber-vs-luma-dream-machine.html">Read battle</a>
+                        <a class="btn ghost small" href="#" data-affiliate="kaiber">Try Kaiber</a>
+                        <a class="btn ghost small" href="#" data-affiliate="luma">Try Luma</a>
+                    </div>
+                </article>
+
+                <article class="battle-card">
+                    <div>
+                        <div class="pair">Descript <span>vs</span> VEED</div>
+                        <div class="tags">
+                            <span class="tag">Transcript edit</span>
+                            <span class="tag">Captions</span>
+                        </div>
+                    </div>
+                    <p class="verdict">Choose Descript for transcript-first editing. Choose VEED for browser-based social production.</p>
+                    <div class="card-actions">
+                        <a class="btn primary small" href="battles/descript-vs-veed.html">Read battle</a>
+                        <a class="btn ghost small" href="#" data-affiliate="descript">Try Descript</a>
+                        <a class="btn ghost small" href="#" data-affiliate="veed">Try VEED</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>How we compare</h2>
+            <ul>
+                <li>Price, output quality, and workflow fit are weighted heavier than feature checklists.</li>
+                <li>Verdicts favor real-world creator workflows: speed, iteration, and clarity.</li>
+                <li>We keep it short so you can decide quickly and move on.</li>
+            </ul>
+        </section>
+
+        <section id="affiliate" class="affiliate">
+            <h2>Affiliate disclosure</h2>
+            <p>Some links on this site may be affiliate links. If you buy through them, we may earn a commission at no extra cost to you. That helps keep this site running and does not affect our verdicts.</p>
+        </section>
+
+        <footer>
+            Built for creators who want answers, not fluff.
+        </footer>
     </div>
+    <script src="assets/affiliate-links.js"></script>
 </body>
 </html>

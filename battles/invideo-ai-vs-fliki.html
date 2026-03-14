@@ -21,6 +21,7 @@
                 th, td { padding: 12px; }
                 .btn { display: block; text-align: center; margin-right: 0; }
             }
+            .btn[aria-disabled="true"], .cta-button[aria-disabled="true"] { opacity: 0.55; pointer-events: none; }
         </style>
     </head>
     <body>
@@ -42,8 +43,9 @@
         </table>
 
         <h3>Ready to choose?</h3>
-        <a href="#" class="btn">Try InVideo AI</a>
-        <a href="#" class="btn">Try Fliki</a>
-    </body>
+        <a href="#" class="btn" data-affiliate="invideo-ai">Try InVideo AI</a>
+        <a href="#" class="btn" data-affiliate="fliki">Try Fliki</a>
+    <script src="../assets/affiliate-links.js"></script>
+</body>
     </html>
     
