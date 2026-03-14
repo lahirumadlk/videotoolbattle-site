@@ -3,21 +3,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InVideo vs HeyGen: The 2026 Battle</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 20px; background: #f9f9f9; }
-        table { width: 100%; border-collapse: collapse; margin: 20px 0; background: white; }
+        * { box-sizing: border-box; }
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 20px; background: #fdfdfd; color: #333; }
+        .comparison-table { width: 100%; border-collapse: collapse; margin: 20px 0; background: white; }
         th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
         th { background-color: #2d3436; color: white; }
         .winner { font-weight: bold; color: #2ecc71; }
         .cta-button { display: inline-block; padding: 15px 25px; background: #0984e3; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
-    </style>
+            @media (max-width: 640px) {
+                body { margin: 24px auto; padding: 16px; }
+                h1 { font-size: 1.7rem; }
+                .comparison-table { display: block; overflow-x: auto; }
+                th, td { padding: 12px; }
+                .btn { display: block; text-align: center; margin-right: 0; }
+            }
+        </style>
 </head>
 <body>
+    <a href="../index.html" style="color: #0984e3; text-decoration: none;">&larr; Back to Home</a>
     <h1>InVideo vs HeyGen: Which AI Wins?</h1>
     <p>Comparing the two giants of AI video generation in 2026.</p>
     
-    <table>
+    <table class="comparison-table">
         <tr>
             <th>Category</th>
             <th>InVideo</th>
