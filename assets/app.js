@@ -69,6 +69,11 @@
     const searchInput = document.getElementById('hero-search');
     if (searchInput) {
       searchInput.addEventListener('input', () => applyFilters());
+      
+      const searchBtn = document.querySelector('.search-btn');
+      if (searchBtn) {
+        searchBtn.addEventListener('click', () => applyFilters());
+      }
     }
 
     function applyFilters() {
