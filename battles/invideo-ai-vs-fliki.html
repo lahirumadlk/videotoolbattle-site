@@ -4,28 +4,139 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
         <title>InVideo AI vs Fliki | Video Tool Battle 2026</title>
         <style>
-            * { box-sizing: border-box; }
-            body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; background: #fdfdfd; color: #333; }
-            .comparison-table { width: 100%; border-collapse: collapse; margin: 30px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); background: white; }
-            th, td { border: 1px solid #eee; padding: 15px; text-align: left; }
-            th { background: #2d3436; color: white; }
-            .verdict-box { background: #e3f2fd; border-left: 5px solid #2196f3; padding: 20px; margin: 20px 0; border-radius: 4px; }
-            .btn { display: inline-block; background: #00b894; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-right: 10px; margin-bottom: 10px; }
-            .winner { font-weight: bold; color: #27ae60; }
-            @media (max-width: 640px) {
-                body { margin: 24px auto; padding: 16px; }
-                h1 { font-size: 1.7rem; }
-                .comparison-table { display: block; overflow-x: auto; }
-                th, td { padding: 12px; }
-                .btn { display: block; text-align: center; margin-right: 0; }
-            }
-            .btn[aria-disabled="true"], .cta-button[aria-disabled="true"] { opacity: 0.55; pointer-events: none; }
-        </style>
+        :root {
+            --bg: #f6f2ed;
+            --ink: #111018;
+            --muted: #5c5968;
+            --surface: #ffffff;
+            --surface-2: #f2eee9;
+            --accent: #ff6a3d;
+            --accent-2: #0f766e;
+            --shadow: 0 20px 40px rgba(17, 16, 24, 0.08);
+            --radius: 18px;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: "Space Grotesk", system-ui, -apple-system, sans-serif;
+            color: var(--ink);
+            background: radial-gradient(circle at top right, rgba(255, 106, 61, 0.12), transparent 40%),
+                        radial-gradient(circle at 20% 20%, rgba(15, 118, 110, 0.16), transparent 45%),
+                        var(--bg);
+        }
+
+        .page {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 28px 24px 64px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: var(--accent-2);
+            font-weight: 600;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            font-family: "Fraunces", serif;
+            font-size: clamp(2.2rem, 4vw, 3rem);
+            margin: 4px 0 16px;
+        }
+
+        h3 {
+            margin-top: 28px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        .verdict-box {
+            background: var(--surface);
+            border-radius: 16px;
+            border: 1px solid rgba(17, 16, 24, 0.08);
+            border-left: 6px solid var(--accent);
+            padding: 20px 22px;
+            box-shadow: var(--shadow);
+            margin: 22px 0;
+        }
+
+        .comparison-table,
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0 32px;
+            background: var(--surface);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        th, td {
+            padding: 14px 16px;
+            text-align: left;
+            border-bottom: 1px solid rgba(17, 16, 24, 0.08);
+        }
+
+        th {
+            background: #14131c;
+            color: #fff;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+
+        tr:last-child td { border-bottom: 0; }
+
+        .winner {
+            font-weight: 700;
+            color: var(--accent-2);
+        }
+
+        .btn,
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 18px;
+            border-radius: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            border: 1px solid transparent;
+            background: var(--accent);
+            color: #fff;
+            box-shadow: 0 14px 28px rgba(255, 106, 61, 0.25);
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .btn[aria-disabled="true"], .cta-button[aria-disabled="true"] { opacity: 0.55; pointer-events: none; }
+
+        @media (max-width: 640px) {
+            .page { padding: 24px 16px 56px; }
+            h1 { font-size: 2rem; }
+            .comparison-table, table { display: block; overflow-x: auto; }
+            .btn, .cta-button { width: 100%; margin-right: 0; }
+        }
+    </style>
+
     </head>
     <body>
-        <a href="../index.html" style="color: #0984e3; text-decoration: none;">&larr; Back to Home</a>
+    <div class="page">
+<a href="../index.html" class="back-link">&larr; Back to Home</a>
         <h1>InVideo AI vs Fliki Showdown</h1>
         
         <div class="verdict-box">
@@ -45,6 +156,7 @@
         <h3>Ready to choose?</h3>
         <a href="#" class="btn" data-affiliate="invideo-ai">Try InVideo AI</a>
         <a href="#" class="btn" data-affiliate="fliki">Try Fliki</a>
+    </div>
     <script src="../assets/affiliate-links.js"></script>
 </body>
     </html>
