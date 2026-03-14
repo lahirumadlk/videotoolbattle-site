@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Tool Battle | The Ultimate AI Video Comparisons</title>
     <style>
+        * { box-sizing: border-box; }
         body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; background: #fdfdfd; color: #333; }
         h1 { color: #2d3436; text-align: center; font-size: 2.5rem; margin-bottom: 5px; }
         p.subtitle { text-align: center; color: #636e72; font-size: 1.1rem; margin-bottom: 40px; }
@@ -13,6 +14,12 @@
         .battle-card:hover { transform: translateY(-3px); box-shadow: 0 6px 12px rgba(0,0,0,0.1); }
         .battle-card a { text-decoration: none; color: #0984e3; font-size: 1.3rem; font-weight: bold; display: block; }
         .battle-card p { margin: 8px 0 0 0; color: #555; font-size: 0.95rem; }
+        @media (max-width: 640px) {
+            body { margin: 24px auto; padding: 16px; }
+            h1 { font-size: 2rem; }
+            .battle-card { padding: 16px; }
+            .battle-card a { font-size: 1.1rem; }
+        }
     </style>
 </head>
 <body>
