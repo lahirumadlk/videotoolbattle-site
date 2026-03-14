@@ -5,17 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Tool Battle | The Ultimate AI Video Comparisons</title>
     <style>
-        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background: #f4f4f9; color: #333; }
-        .container { text-align: center; padding: 20px; }
-        h1 { color: #2d3436; }
-        p { font-size: 1.2rem; color: #636e72; }
+        body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; background: #fdfdfd; color: #333; }
+        h1 { color: #2d3436; text-align: center; font-size: 2.5rem; margin-bottom: 5px; }
+        p.subtitle { text-align: center; color: #636e72; font-size: 1.1rem; margin-bottom: 40px; }
+        .battle-list { display: flex; flex-direction: column; gap: 15px; }
+        .battle-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border: 1px solid #eee; transition: transform 0.2s; }
+        .battle-card:hover { transform: translateY(-3px); box-shadow: 0 6px 12px rgba(0,0,0,0.1); }
+        .battle-card a { text-decoration: none; color: #0984e3; font-size: 1.3rem; font-weight: bold; display: block; }
+        .battle-card p { margin: 8px 0 0 0; color: #555; font-size: 0.95rem; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Video Tool Battle ⚔️</h1>
-        <p>We are currently benchmarking the top AI video editors for 2026.</p>
-        <p><i>Deep dives on InVideo, HeyGen, and Runway coming this week.</i></p>
+    <h1>Video Tool Battle ⚔️</h1>
+    <p class="subtitle">The internet's best data-driven AI video comparisons for 2026.</p>
+    
+    <div class="battle-list">
+
+        <div class="battle-card">
+            <a href="battles/invideo-ai-vs-heygen.html">InVideo AI vs HeyGen Showdown</a>
+            <p><strong>Verdict:</strong> Pick InVideo AI if you want to crank out faceless YouTube and promo videos from a prompt with stock footage doing most of the visual work. Pick HeyGen if your content needs a realistic on-screen presenter and you care more about avatar delivery than montage-style edits.</p>
+        </div>
+    
+        <div class="battle-card">
+            <a href="battles/runway-vs-luma-dream-machine.html">Runway vs Luma Dream Machine Showdown</a>
+            <p><strong>Verdict:</strong> Choose Runway if you want a more complete creative suite around generation, especially when you plan to iterate shots and edit heavily. Choose Luma if you primarily want high-quality generations and a straightforward credit-based path to strong visuals.</p>
+        </div>
+    
+        <div class="battle-card">
+            <a href="battles/pika-vs-luma-dream-machine.html">Pika vs Luma Dream Machine Showdown</a>
+            <p><strong>Verdict:</strong> Pick Pika if your content is short, punchy, and effects-first and you value fast iteration over perfect realism. Pick Luma if you care more about cinematic realism and shot quality than playful effects.</p>
+        </div>
+    
+        <div class="battle-card">
+            <a href="battles/runway-vs-pika.html">Runway vs Pika Showdown</a>
+            <p><strong>Verdict:</strong> Choose Runway if you need cinematic results and expect to iterate like a post-production workflow. Choose Pika if you want quick, viral-friendly clips and effects with a lower cost of entry.</p>
+        </div>
+    
+        <div class="battle-card">
+            <a href="battles/heygen-vs-synthesia.html">HeyGen vs Synthesia Showdown</a>
+            <p><strong>Verdict:</strong> Pick HeyGen if your priority is realistic, modern-looking avatar content for marketing and social. Pick Synthesia if you want a dependable, enterprise-friendly workflow for training and repeatable explainer formats.</p>
+        </div>
+    
+        <div class="battle-card">
+            <a href="battles/synthesia-vs-colossyan.html">Synthesia vs Colossyan Showdown</a>
+            <p><strong>Verdict:</strong> Choose Synthesia if you want a premium, consistent avatar catalog and a polished enterprise feel for training at scale. Choose Colossyan if you want a slightly cheaper starting point and a workflow that feels built for rapid training content updates.</p>
+        </div>
+    
+        <div class="battle-card">
+            <a href="battles/invideo-ai-vs-fliki.html">InVideo AI vs Fliki Showdown</a>
+            <p><strong>Verdict:</strong> Pick InVideo AI if you want stronger end-to-end video assembly and editing around stock footage for YouTube and ads. Pick Fliki if your workflow starts from scripts or blog posts and you care most about fast narration, languages, and turning text into publishable videos quickly.</p>
+        </div>
+    
+        <div class="battle-card">
+            <a href="battles/capcut-vs-veed.html">CapCut vs VEED Showdown</a>
+            <p><strong>Verdict:</strong> Choose CapCut if your priority is fast, creator-style editing for short-form content and you want a strong app workflow. Choose VEED if you prefer a web-first studio for captions, collaboration, and quick AI-assisted production without relying on a desktop app.</p>
+        </div>
+    
+        <div class="battle-card">
+            <a href="battles/kaiber-vs-luma-dream-machine.html">Kaiber vs Luma Dream Machine Showdown</a>
+            <p><strong>Verdict:</strong> Pick Luma if your goal is cinematic realism at a much lower starting price. Pick Kaiber if you want stylized, music-visual-first creation where art direction and iteration matter more than photorealism.</p>
+        </div>
+    
+        <div class="battle-card">
+            <a href="battles/descript-vs-veed.html">Descript vs VEED Showdown</a>
+            <p><strong>Verdict:</strong> Choose Descript if you edit lots of spoken-word content and want transcript-first speed for YouTube and podcasts. Choose VEED if you want a browser-based studio that leans into captions, templates, and quick all-in-one social production.</p>
+        </div>
+    
     </div>
 </body>
 </html>
