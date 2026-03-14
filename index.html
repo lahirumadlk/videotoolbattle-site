@@ -3,508 +3,666 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Tool Battle | AI Video Comparisons</title>
-    <meta name="description" content="Data-driven AI video tool comparisons to help you choose the best workflow in minutes.">
+    <title>Video Tool Battle | Best AI Video Tool Comparisons 2026</title>
+    <meta name="description" content="Find the perfect AI video tool with data-driven, side-by-side comparisons. We compare price, speed, quality, and real-world workflows so you don't have to.">
+    <meta name="keywords" content="AI video tools, video tool comparison, Runway vs Pika, HeyGen vs Synthesia, best AI video generator 2026">
+    <meta property="og:title" content="Video Tool Battle — Best AI Video Tool Comparisons 2026">
+    <meta property="og:description" content="Data-driven AI video tool comparisons. Find your perfect tool in minutes.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://videotoolbattle.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://videotoolbattle.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg: #f6f2ed;
-            --ink: #111018;
-            --muted: #5c5968;
-            --surface: #ffffff;
-            --surface-2: #f2eee9;
-            --accent: #ff6a3d;
-            --accent-2: #0f766e;
-            --accent-3: #f0b429;
-            --shadow: 0 20px 40px rgba(17, 16, 24, 0.08);
-            --radius: 18px;
-        }
-
-        * { box-sizing: border-box; }
-
-        body {
-            margin: 0;
-            font-family: "Space Grotesk", system-ui, -apple-system, sans-serif;
-            color: var(--ink);
-            background: radial-gradient(circle at top right, rgba(255, 106, 61, 0.12), transparent 40%),
-                        radial-gradient(circle at 20% 20%, rgba(15, 118, 110, 0.16), transparent 45%),
-                        var(--bg);
-        }
-
-        .page {
-            max-width: 1120px;
-            margin: 0 auto;
-            padding: 28px 24px 72px;
-        }
-
-        .site-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 16px;
-            margin-bottom: 36px;
-        }
-
-        .logo {
-            font-family: "Fraunces", serif;
-            font-size: 1.5rem;
-            letter-spacing: -0.02em;
-        }
-
-        .nav {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            font-weight: 600;
-            font-size: 0.95rem;
-        }
-
-        .nav a {
-            text-decoration: none;
-            color: var(--ink);
-        }
-
-
-        .hero {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 32px;
-            align-items: center;
-            margin-bottom: 56px;
-        }
-
-        .eyebrow {
-            text-transform: uppercase;
-            letter-spacing: 0.2em;
-            font-size: 0.75rem;
-            color: var(--accent-2);
-            font-weight: 700;
-        }
-
-        h1 {
-            font-family: "Fraunces", serif;
-            font-size: clamp(2.6rem, 4vw, 3.6rem);
-            margin: 12px 0 16px;
-        }
-
-        .lead {
-            font-size: 1.1rem;
-            color: var(--muted);
-            line-height: 1.7;
-        }
-
-        .hero-actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 24px;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            padding: 12px 18px;
-            border-radius: 12px;
-            font-weight: 600;
-            text-decoration: none;
-            border: 1px solid transparent;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .btn.primary {
-            background: var(--accent);
-            color: #fff;
-            box-shadow: 0 14px 28px rgba(255, 106, 61, 0.3);
-        }
-
-        .btn.ghost {
-            background: var(--surface);
-            color: var(--ink);
-            border-color: rgba(17, 16, 24, 0.12);
-        }
-
-        .btn[aria-disabled="true"] {
-            opacity: 0.55;
-            pointer-events: none;
-        }
-
-        .btn:hover { transform: translateY(-2px); }
-
-        .hero-card {
-            background: var(--surface);
-            border-radius: var(--radius);
-            padding: 28px;
-            box-shadow: var(--shadow);
-            border: 1px solid rgba(17, 16, 24, 0.08);
-        }
-
-        .hero-card h3 {
-            margin-top: 0;
-            font-size: 1.2rem;
-        }
-
-        .hero-card p {
-            color: var(--muted);
-        }
-
-        .hero-metrics {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-            gap: 12px;
-            margin-top: 24px;
-        }
-
-        .metric {
-            background: var(--surface-2);
-            padding: 12px 16px;
-            border-radius: 12px;
-        }
-
-        .metric strong {
-            display: block;
-            font-size: 1.1rem;
-        }
-
-        .battle-section {
-            margin-top: 48px;
-        }
-
-        .section-head {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            margin-bottom: 24px;
-        }
-
-        h2 {
-            font-family: "Fraunces", serif;
-            font-size: 2rem;
-            margin: 0;
-        }
-
-        .section-head p {
-            color: var(--muted);
-            max-width: 640px;
-        }
-
-        .battle-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 20px;
-        }
-
-        .battle-card {
-            background: var(--surface);
-            border-radius: var(--radius);
-            padding: 22px;
-            border: 1px solid rgba(17, 16, 24, 0.08);
-            box-shadow: 0 10px 24px rgba(17, 16, 24, 0.08);
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-
-        .pair {
-            font-weight: 700;
-            font-size: 1.1rem;
-        }
-
-        .pair span {
-            font-weight: 500;
-            color: var(--muted);
-        }
-
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 8px;
-        }
-
-        .tag {
-            font-size: 0.75rem;
-            padding: 6px 10px;
-            border-radius: 999px;
-            background: rgba(15, 118, 110, 0.12);
-            color: var(--accent-2);
-            font-weight: 600;
-        }
-
-        .verdict {
-            color: var(--muted);
-            line-height: 1.6;
-            margin: 0;
-        }
-
-        .card-actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: auto;
-        }
-
-        .btn.small {
-            padding: 9px 14px;
-            font-size: 0.85rem;
-        }
-
-        .about {
-            margin-top: 64px;
-            background: var(--surface);
-            padding: 28px;
-            border-radius: var(--radius);
-            border: 1px solid rgba(17, 16, 24, 0.08);
-            box-shadow: var(--shadow);
-        }
-
-        .about ul {
-            padding-left: 18px;
-            color: var(--muted);
-        }
-
-        footer {
-            margin-top: 40px;
-            color: var(--muted);
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 640px) {
-            .site-header { flex-direction: column; align-items: flex-start; }
-            .nav { flex-wrap: wrap; }
-            .hero-card { order: -1; }
-            .page { padding: 24px 16px 60px; }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Video Tool Battle",
+      "url": "https://videotoolbattle.com",
+      "description": "Data-driven AI video tool comparisons for creators, marketers, and teams.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://videotoolbattle.com/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
 </head>
 <body>
-    <div class="page">
-        <p style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;">
-            Impact-Site-Verification: 1e4718f9-38a7-4895-9497-0e9ef8f0e8b7
-        </p>
-        <header class="site-header">
-            <div class="logo">Video Tool Battle</div>
-            <nav class="nav">
-                <a href="#battles">Battles</a>
-                <a href="#about">How we compare</a>
+    <p class="sr-only">Impact-Site-Verification: 1e4718f9-38a7-4895-9497-0e9ef8f0e8b7</p>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="/" class="logo" aria-label="Video Tool Battle Home">
+                <span class="logo-icon">⚔️</span>
+                Video Tool Battle
+            </a>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="#battles" class="active">Battles</a>
+                <a href="#trust">How We Compare</a>
+                <a href="#newsletter">Stay Updated</a>
             </nav>
-        </header>
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+                <button class="hamburger" id="hamburger" aria-label="Open menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
 
-        <section class="hero">
-            <div>
-                <p class="eyebrow">2026 AI Video Benchmarks</p>
-                <h1>Pick the right AI video tool without wasting a week testing.</h1>
-                <p class="lead">Straight-to-the-point comparisons for creators, marketers, and teams. Each battle ends with a clear verdict focused on workflow fit, output quality, and speed.</p>
-                <div class="hero-actions">
-                    <a class="btn primary" href="#battles">Browse comparisons</a>
-                    <a class="btn ghost" href="#about">How we compare</a>
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+        <a href="#battles">Battles</a>
+        <a href="#trust">How We Compare</a>
+        <a href="#newsletter">Stay Updated</a>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">🔥 Updated March 2026</div>
+            <h1>Find Your Perfect <span class="gradient-text">AI Video Tool</span> in Minutes</h1>
+            <p class="hero-subtitle">Side-by-side comparisons built for creators, marketers, and teams. Real data, clear verdicts, zero fluff.</p>
+
+            <div class="hero-search">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="hero-search" placeholder="Search tools... (e.g. Runway, HeyGen, Pika)" autocomplete="off" aria-label="Search comparisons">
+            </div>
+
+            <div class="trust-strip">
+                <div class="trust-item">
+                    <span class="num">10+</span>
+                    <span class="label">Tools Compared</span>
                 </div>
-                <div class="hero-metrics">
-                    <div class="metric">
-                        <strong>10 battles</strong>
-                        <span>Most-requested matchups</span>
-                    </div>
-                    <div class="metric">
-                        <strong>Fast verdicts</strong>
-                        <span>Use-case specific guidance</span>
-                    </div>
+                <div class="trust-item">
+                    <span class="num">10</span>
+                    <span class="label">Head-to-Head Battles</span>
+                </div>
+                <div class="trust-item">
+                    <span class="num">4</span>
+                    <span class="label">Key Metrics Scored</span>
                 </div>
             </div>
-            <div class="hero-card">
-                <h3>Featured this week</h3>
-                <p>Runway vs Luma Dream Machine — which one wins for cinematic-quality shots?</p>
-                <div class="hero-actions">
-                    <a class="btn primary" href="battles/runway-vs-luma-dream-machine.html">Read battle</a>
-                    <a class="btn ghost" href="#" data-affiliate="runway">Try Runway</a>
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="battles" class="battle-section">
-            <div class="section-head">
-                <h2>Head-to-head battles</h2>
-                <p>Each matchup summarizes price, speed, realism, and best-fit workflows. Skim the verdict, then dive deeper if you need the details.</p>
+    <!-- ===== CATEGORY FILTERS ===== -->
+    <div class="filter-section">
+        <div class="filter-inner" role="tablist" aria-label="Filter by category">
+            <button class="filter-pill active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="filter-pill" data-filter="ai-generation" role="tab">AI Generation</button>
+            <button class="filter-pill" data-filter="editing" role="tab">Editing & Post</button>
+            <button class="filter-pill" data-filter="avatars" role="tab">AI Avatars</button>
+            <button class="filter-pill" data-filter="text-to-video" role="tab">Text-to-Video</button>
+            <button class="filter-pill" data-filter="creator-tools" role="tab">Creator Tools</button>
+        </div>
+    </div>
+
+    <!-- ===== BATTLES ===== -->
+    <section id="battles" class="battles-section">
+        <div class="page-wrap">
+            <div class="section-header">
+                <h2>Head-to-Head Battles</h2>
+                <span class="count" id="battle-count">10 comparisons</span>
             </div>
 
             <div class="battle-grid">
-                <article class="battle-card">
+
+                <!-- CARD 1: InVideo AI vs HeyGen -->
+                <article class="battle-card featured reveal" data-categories="text-to-video avatars" data-search="invideo ai heygen faceless youtube avatar presenter promo">
+                    <span class="featured-badge">⭐ Featured</span>
+                    <div class="card-matchup">
+                        <div class="tool-icon">INV</div>
+                        <span class="vs-badge">VS</span>
+                        <div class="tool-icon">HG</div>
+                    </div>
                     <div>
-                        <div class="pair">InVideo AI <span>vs</span> HeyGen</div>
-                        <div class="tags">
-                            <span class="tag">Faceless video</span>
-                            <span class="tag">Avatars</span>
+                        <h3 style="margin-bottom: 8px;">InVideo AI vs HeyGen</h3>
+                        <div class="card-tags">
+                            <span class="tag avatar">Avatars</span>
+                            <span class="tag">Text-to-Video</span>
                         </div>
                     </div>
-                    <p class="verdict">Pick InVideo AI for faceless YouTube and promo videos with stock footage. Pick HeyGen if you need a realistic on-screen presenter.</p>
+                    <div class="card-scores">
+                        <div class="score-row">
+                            <span class="score-label">Price</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="80%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="75%"></div></div>
+                            </div>
+                        </div>
+                        <div class="score-row">
+                            <span class="score-label">Speed</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="85%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="70%"></div></div>
+                            </div>
+                        </div>
+                        <div class="score-row">
+                            <span class="score-label">Quality</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="70%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="85%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-verdict">Pick InVideo AI for faceless YouTube &amp; promo videos. Pick HeyGen for realistic on-screen presenters.</p>
                     <div class="card-actions">
-                        <a class="btn primary small" href="battles/invideo-ai-vs-heygen.html">Read battle</a>
-                        <a class="btn ghost small" href="#" data-affiliate="invideo-ai">Try InVideo AI</a>
-                        <a class="btn ghost small" href="#" data-affiliate="heygen">Try HeyGen</a>
+                        <a class="btn btn-primary btn-sm" href="battles/invideo-ai-vs-heygen.html">Read Battle →</a>
+                        <a class="btn btn-ghost btn-sm" href="#" data-affiliate="invideo-ai">Try InVideo AI</a>
+                        <a class="btn btn-ghost btn-sm" href="#" data-affiliate="heygen">Try HeyGen</a>
                     </div>
                 </article>
 
-                <article class="battle-card">
+                <!-- CARD 2: Runway vs Luma -->
+                <article class="battle-card reveal" data-categories="ai-generation" data-search="runway luma dream machine cinematic creative suite generation">
+                    <div class="card-matchup">
+                        <div class="tool-icon">RW</div>
+                        <span class="vs-badge">VS</span>
+                        <div class="tool-icon">LM</div>
+                    </div>
                     <div>
-                        <div class="pair">Runway <span>vs</span> Luma Dream Machine</div>
-                        <div class="tags">
+                        <h3 style="margin-bottom: 8px;">Runway vs Luma Dream Machine</h3>
+                        <div class="card-tags">
+                            <span class="tag gen">AI Generation</span>
                             <span class="tag">Cinematic</span>
-                            <span class="tag">Creative suite</span>
                         </div>
                     </div>
-                    <p class="verdict">Choose Runway for a full creative suite and heavy iteration. Choose Luma for high-quality generations on a simpler credit path.</p>
+                    <div class="card-scores">
+                        <div class="score-row">
+                            <span class="score-label">Price</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="65%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="85%"></div></div>
+                            </div>
+                        </div>
+                        <div class="score-row">
+                            <span class="score-label">Speed</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="75%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="80%"></div></div>
+                            </div>
+                        </div>
+                        <div class="score-row">
+                            <span class="score-label">Quality</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="90%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="85%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-verdict">Choose Runway for a full creative suite and heavy iteration. Choose Luma for high-quality generations on a simpler credit path.</p>
                     <div class="card-actions">
-                        <a class="btn primary small" href="battles/runway-vs-luma-dream-machine.html">Read battle</a>
-                        <a class="btn ghost small" href="#" data-affiliate="runway">Try Runway</a>
-                        <a class="btn ghost small" href="#" data-affiliate="luma">Try Luma</a>
+                        <a class="btn btn-primary btn-sm" href="battles/runway-vs-luma-dream-machine.html">Read Battle →</a>
+                        <a class="btn btn-ghost btn-sm" href="#" data-affiliate="runway">Try Runway</a>
+                        <a class="btn btn-ghost btn-sm" href="#" data-affiliate="luma">Try Luma</a>
                     </div>
                 </article>
 
-                <article class="battle-card">
+                <!-- CARD 3: Pika vs Luma -->
+                <article class="battle-card reveal" data-categories="ai-generation" data-search="pika luma dream machine effects stylized cinematic realism">
+                    <div class="card-matchup">
+                        <div class="tool-icon">PK</div>
+                        <span class="vs-badge">VS</span>
+                        <div class="tool-icon">LM</div>
+                    </div>
                     <div>
-                        <div class="pair">Pika <span>vs</span> Luma Dream Machine</div>
-                        <div class="tags">
-                            <span class="tag">Effects-first</span>
-                            <span class="tag">Realism</span>
+                        <h3 style="margin-bottom: 8px;">Pika vs Luma Dream Machine</h3>
+                        <div class="card-tags">
+                            <span class="tag gen">AI Generation</span>
+                            <span class="tag">Effects</span>
                         </div>
                     </div>
-                    <p class="verdict">Pick Pika for fast, playful effects. Pick Luma for cinematic realism and higher-end shots.</p>
+                    <div class="card-scores">
+                        <div class="score-row">
+                            <span class="score-label">Price</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="85%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="80%"></div></div>
+                            </div>
+                        </div>
+                        <div class="score-row">
+                            <span class="score-label">Speed</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="90%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="75%"></div></div>
+                            </div>
+                        </div>
+                        <div class="score-row">
+                            <span class="score-label">Quality</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="70%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="88%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-verdict">Pick Pika for fast, playful effects. Pick Luma for cinematic realism and higher-end shots.</p>
                     <div class="card-actions">
-                        <a class="btn primary small" href="battles/pika-vs-luma-dream-machine.html">Read battle</a>
-                        <a class="btn ghost small" href="#" data-affiliate="pika">Try Pika</a>
-                        <a class="btn ghost small" href="#" data-affiliate="luma">Try Luma</a>
+                        <a class="btn btn-primary btn-sm" href="battles/pika-vs-luma-dream-machine.html">Read Battle →</a>
+                        <a class="btn btn-ghost btn-sm" href="#" data-affiliate="pika">Try Pika</a>
+                        <a class="btn btn-ghost btn-sm" href="#" data-affiliate="luma">Try Luma</a>
                     </div>
                 </article>
 
-                <article class="battle-card">
+                <!-- CARD 4: Runway vs Pika -->
+                <article class="battle-card reveal" data-categories="ai-generation" data-search="runway pika short-form cinematic viral effects">
+                    <div class="card-matchup">
+                        <div class="tool-icon">RW</div>
+                        <span class="vs-badge">VS</span>
+                        <div class="tool-icon">PK</div>
+                    </div>
                     <div>
-                        <div class="pair">Runway <span>vs</span> Pika</div>
-                        <div class="tags">
+                        <h3 style="margin-bottom: 8px;">Runway vs Pika</h3>
+                        <div class="card-tags">
+                            <span class="tag gen">AI Generation</span>
                             <span class="tag">Short-form</span>
-                            <span class="tag">Cinematic</span>
                         </div>
                     </div>
-                    <p class="verdict">Choose Runway for cinematic results and iterative workflows. Choose Pika for quick, viral-ready effects.</p>
+                    <div class="card-scores">
+                        <div class="score-row">
+                            <span class="score-label">Price</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="65%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="85%"></div></div>
+                            </div>
+                        </div>
+                        <div class="score-row">
+                            <span class="score-label">Speed</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="72%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="90%"></div></div>
+                            </div>
+                        </div>
+                        <div class="score-row">
+                            <span class="score-label">Quality</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="90%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="72%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-verdict">Choose Runway for cinematic results and iterative workflows. Choose Pika for quick, viral-ready effects.</p>
                     <div class="card-actions">
-                        <a class="btn primary small" href="battles/runway-vs-pika.html">Read battle</a>
-                        <a class="btn ghost small" href="#" data-affiliate="runway">Try Runway</a>
-                        <a class="btn ghost small" href="#" data-affiliate="pika">Try Pika</a>
+                        <a class="btn btn-primary btn-sm" href="battles/runway-vs-pika.html">Read Battle →</a>
+                        <a class="btn btn-ghost btn-sm" href="#" data-affiliate="runway">Try Runway</a>
+                        <a class="btn btn-ghost btn-sm" href="#" data-affiliate="pika">Try Pika</a>
                     </div>
                 </article>
 
-                <article class="battle-card">
+                <!-- CARD 5: HeyGen vs Synthesia -->
+                <article class="battle-card reveal" data-categories="avatars" data-search="heygen synthesia avatars enterprise training marketing">
+                    <div class="card-matchup">
+                        <div class="tool-icon">HG</div>
+                        <span class="vs-badge">VS</span>
+                        <div class="tool-icon">SY</div>
+                    </div>
                     <div>
-                        <div class="pair">HeyGen <span>vs</span> Synthesia</div>
-                        <div class="tags">
-                            <span class="tag">Avatars</span>
-                            <span class="tag">Enterprise</span>
+                        <h3 style="margin-bottom: 8px;">HeyGen vs Synthesia</h3>
+                        <div class="card-tags">
+                            <span class="tag avatar">AI Avatars</span>
+                            <span class="tag enterprise">Enterprise</span>
                         </div>
                     </div>
-                    <p class="verdict">Pick HeyGen for modern avatar content. Pick Synthesia for enterprise-friendly training workflows.</p>
+                    <div class="card-scores">
+                        <div class="score-row">
+                            <span class="score-label">Price</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="75%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="75%"></div></div>
+                            </div>
+                        </div>
+                        <div class="score-row">
+                            <span class="score-label">Speed</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="85%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="78%"></div></div>
+                            </div>
+                        </div>
+                        <div class="score-row">
+                            <span class="score-label">Quality</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="88%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="82%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-verdict">Pick HeyGen for modern avatar content for marketing. Pick Synthesia for enterprise-friendly training workflows.</p>
                     <div class="card-actions">
-                        <a class="btn primary small" href="battles/heygen-vs-synthesia.html">Read battle</a>
-                        <a class="btn ghost small" href="#" data-affiliate="heygen">Try HeyGen</a>
-                        <a class="btn ghost small" href="#" data-affiliate="synthesia">Try Synthesia</a>
+                        <a class="btn btn-primary btn-sm" href="battles/heygen-vs-synthesia.html">Read Battle →</a>
+                        <a class="btn btn-ghost btn-sm" href="#" data-affiliate="heygen">Try HeyGen</a>
+                        <a class="btn btn-ghost btn-sm" href="#" data-affiliate="synthesia">Try Synthesia</a>
                     </div>
                 </article>
 
-                <article class="battle-card">
+                <!-- CARD 6: Synthesia vs Colossyan -->
+                <article class="battle-card reveal" data-categories="avatars" data-search="synthesia colossyan training enterprise avatar presenter">
+                    <div class="card-matchup">
+                        <div class="tool-icon">SY</div>
+                        <span class="vs-badge">VS</span>
+                        <div class="tool-icon">CL</div>
+                    </div>
                     <div>
-                        <div class="pair">Synthesia <span>vs</span> Colossyan</div>
-                        <div class="tags">
-                            <span class="tag">Training</span>
-                            <span class="tag">Enterprise</span>
+                        <h3 style="margin-bottom: 8px;">Synthesia vs Colossyan</h3>
+                        <div class="card-tags">
+                            <span class="tag avatar">AI Avatars</span>
+                            <span class="tag enterprise">Enterprise</span>
                         </div>
                     </div>
-                    <p class="verdict">Choose Synthesia for a premium avatar catalog. Choose Colossyan for a lower-cost, fast-update workflow.</p>
+                    <div class="card-scores">
+                        <div class="score-row">
+                            <span class="score-label">Price</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="72%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="78%"></div></div>
+                            </div>
+                        </div>
+                        <div class="score-row">
+                            <span class="score-label">Speed</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="80%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="85%"></div></div>
+                            </div>
+                        </div>
+                        <div class="score-row">
+                            <span class="score-label">Quality</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="88%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="75%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-verdict">Choose Synthesia for a premium avatar catalog. Choose Colossyan for a lower-cost, fast-update training workflow.</p>
                     <div class="card-actions">
-                        <a class="btn primary small" href="battles/synthesia-vs-colossyan.html">Read battle</a>
-                        <a class="btn ghost small" href="#" data-affiliate="synthesia">Try Synthesia</a>
-                        <a class="btn ghost small" href="#" data-affiliate="colossyan">Try Colossyan</a>
+                        <a class="btn btn-primary btn-sm" href="battles/synthesia-vs-colossyan.html">Read Battle →</a>
+                        <a class="btn btn-ghost btn-sm" href="#" data-affiliate="synthesia">Try Synthesia</a>
+                        <a class="btn btn-ghost btn-sm" href="#" data-affiliate="colossyan">Try Colossyan</a>
                     </div>
                 </article>
 
-                <article class="battle-card">
+                <!-- CARD 7: InVideo AI vs Fliki -->
+                <article class="battle-card reveal" data-categories="text-to-video" data-search="invideo ai fliki text-to-video narration script blog">
+                    <div class="card-matchup">
+                        <div class="tool-icon">INV</div>
+                        <span class="vs-badge">VS</span>
+                        <div class="tool-icon">FL</div>
+                    </div>
                     <div>
-                        <div class="pair">InVideo AI <span>vs</span> Fliki</div>
-                        <div class="tags">
-                            <span class="tag">Text-to-video</span>
-                            <span class="tag">Narration</span>
+                        <h3 style="margin-bottom: 8px;">InVideo AI vs Fliki</h3>
+                        <div class="card-tags">
+                            <span class="tag">Text-to-Video</span>
+                            <span class="tag edit">Narration</span>
                         </div>
                     </div>
-                    <p class="verdict">Pick InVideo AI for stronger end-to-end assembly. Pick Fliki for fast script-to-video with narration.</p>
+                    <div class="card-scores">
+                        <div class="score-row">
+                            <span class="score-label">Price</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="75%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="75%"></div></div>
+                            </div>
+                        </div>
+                        <div class="score-row">
+                            <span class="score-label">Speed</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="78%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="88%"></div></div>
+                            </div>
+                        </div>
+                        <div class="score-row">
+                            <span class="score-label">Quality</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="82%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="75%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-verdict">Pick InVideo AI for stronger end-to-end assembly. Pick Fliki for fast script-to-video with narration.</p>
                     <div class="card-actions">
-                        <a class="btn primary small" href="battles/invideo-ai-vs-fliki.html">Read battle</a>
-                        <a class="btn ghost small" href="#" data-affiliate="invideo-ai">Try InVideo AI</a>
-                        <a class="btn ghost small" href="#" data-affiliate="fliki">Try Fliki</a>
+                        <a class="btn btn-primary btn-sm" href="battles/invideo-ai-vs-fliki.html">Read Battle →</a>
+                        <a class="btn btn-ghost btn-sm" href="#" data-affiliate="invideo-ai">Try InVideo AI</a>
+                        <a class="btn btn-ghost btn-sm" href="#" data-affiliate="fliki">Try Fliki</a>
                     </div>
                 </article>
 
-                <article class="battle-card">
+                <!-- CARD 8: CapCut vs VEED -->
+                <article class="battle-card reveal" data-categories="editing creator-tools" data-search="capcut veed editing captions creator tiktok reels shorts">
+                    <div class="card-matchup">
+                        <div class="tool-icon">CC</div>
+                        <span class="vs-badge">VS</span>
+                        <div class="tool-icon">VD</div>
+                    </div>
                     <div>
-                        <div class="pair">CapCut <span>vs</span> VEED</div>
-                        <div class="tags">
-                            <span class="tag">Editing</span>
-                            <span class="tag">Creator tools</span>
+                        <h3 style="margin-bottom: 8px;">CapCut vs VEED</h3>
+                        <div class="card-tags">
+                            <span class="tag edit">Editing</span>
+                            <span class="tag">Creator Tools</span>
                         </div>
                     </div>
-                    <p class="verdict">Choose CapCut for fast creator-style edits. Choose VEED for a web-first studio with captions and collaboration.</p>
+                    <div class="card-scores">
+                        <div class="score-row">
+                            <span class="score-label">Price</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="82%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="70%"></div></div>
+                            </div>
+                        </div>
+                        <div class="score-row">
+                            <span class="score-label">Speed</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="90%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="82%"></div></div>
+                            </div>
+                        </div>
+                        <div class="score-row">
+                            <span class="score-label">Quality</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="80%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="78%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-verdict">Choose CapCut for fast creator-style edits. Choose VEED for a web-first studio with captions and collaboration.</p>
                     <div class="card-actions">
-                        <a class="btn primary small" href="battles/capcut-vs-veed.html">Read battle</a>
-                        <a class="btn ghost small" href="#" data-affiliate="capcut">Try CapCut</a>
-                        <a class="btn ghost small" href="#" data-affiliate="veed">Try VEED</a>
+                        <a class="btn btn-primary btn-sm" href="battles/capcut-vs-veed.html">Read Battle →</a>
+                        <a class="btn btn-ghost btn-sm" href="#" data-affiliate="capcut">Try CapCut</a>
+                        <a class="btn btn-ghost btn-sm" href="#" data-affiliate="veed">Try VEED</a>
                     </div>
                 </article>
 
-                <article class="battle-card">
+                <!-- CARD 9: Kaiber vs Luma -->
+                <article class="battle-card reveal" data-categories="ai-generation creator-tools" data-search="kaiber luma dream machine stylized music videos art direction cinematic">
+                    <div class="card-matchup">
+                        <div class="tool-icon">KB</div>
+                        <span class="vs-badge">VS</span>
+                        <div class="tool-icon">LM</div>
+                    </div>
                     <div>
-                        <div class="pair">Kaiber <span>vs</span> Luma Dream Machine</div>
-                        <div class="tags">
-                            <span class="tag">Stylized</span>
-                            <span class="tag">Music videos</span>
+                        <h3 style="margin-bottom: 8px;">Kaiber vs Luma Dream Machine</h3>
+                        <div class="card-tags">
+                            <span class="tag gen">AI Generation</span>
+                            <span class="tag">Music Videos</span>
                         </div>
                     </div>
-                    <p class="verdict">Pick Luma for cinematic realism at a lower price. Pick Kaiber for stylized, art-direction-heavy creation.</p>
+                    <div class="card-scores">
+                        <div class="score-row">
+                            <span class="score-label">Price</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="65%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="85%"></div></div>
+                            </div>
+                        </div>
+                        <div class="score-row">
+                            <span class="score-label">Speed</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="78%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="80%"></div></div>
+                            </div>
+                        </div>
+                        <div class="score-row">
+                            <span class="score-label">Quality</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="80%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="88%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-verdict">Pick Luma for cinematic realism at a lower price. Pick Kaiber for stylized, art-direction-heavy creation.</p>
                     <div class="card-actions">
-                        <a class="btn primary small" href="battles/kaiber-vs-luma-dream-machine.html">Read battle</a>
-                        <a class="btn ghost small" href="#" data-affiliate="kaiber">Try Kaiber</a>
-                        <a class="btn ghost small" href="#" data-affiliate="luma">Try Luma</a>
+                        <a class="btn btn-primary btn-sm" href="battles/kaiber-vs-luma-dream-machine.html">Read Battle →</a>
+                        <a class="btn btn-ghost btn-sm" href="#" data-affiliate="kaiber">Try Kaiber</a>
+                        <a class="btn btn-ghost btn-sm" href="#" data-affiliate="luma">Try Luma</a>
                     </div>
                 </article>
 
-                <article class="battle-card">
+                <!-- CARD 10: Descript vs VEED -->
+                <article class="battle-card reveal" data-categories="editing creator-tools" data-search="descript veed transcript editing captions social podcasters youtube">
+                    <div class="card-matchup">
+                        <div class="tool-icon">DS</div>
+                        <span class="vs-badge">VS</span>
+                        <div class="tool-icon">VD</div>
+                    </div>
                     <div>
-                        <div class="pair">Descript <span>vs</span> VEED</div>
-                        <div class="tags">
-                            <span class="tag">Transcript edit</span>
+                        <h3 style="margin-bottom: 8px;">Descript vs VEED</h3>
+                        <div class="card-tags">
+                            <span class="tag edit">Editing</span>
                             <span class="tag">Captions</span>
                         </div>
                     </div>
-                    <p class="verdict">Choose Descript for transcript-first editing. Choose VEED for browser-based social production.</p>
+                    <div class="card-scores">
+                        <div class="score-row">
+                            <span class="score-label">Price</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="75%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="75%"></div></div>
+                            </div>
+                        </div>
+                        <div class="score-row">
+                            <span class="score-label">Speed</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="82%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="85%"></div></div>
+                            </div>
+                        </div>
+                        <div class="score-row">
+                            <span class="score-label">Quality</span>
+                            <div class="score-bars">
+                                <div class="score-bar"><div class="score-bar-fill a" data-width="85%"></div></div>
+                                <div class="score-bar"><div class="score-bar-fill b" data-width="78%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-verdict">Choose Descript for transcript-first editing. Choose VEED for browser-based social production.</p>
                     <div class="card-actions">
-                        <a class="btn primary small" href="battles/descript-vs-veed.html">Read battle</a>
-                        <a class="btn ghost small" href="#" data-affiliate="descript">Try Descript</a>
-                        <a class="btn ghost small" href="#" data-affiliate="veed">Try VEED</a>
+                        <a class="btn btn-primary btn-sm" href="battles/descript-vs-veed.html">Read Battle →</a>
+                        <a class="btn btn-ghost btn-sm" href="#" data-affiliate="descript">Try Descript</a>
+                        <a class="btn btn-ghost btn-sm" href="#" data-affiliate="veed">Try VEED</a>
                     </div>
                 </article>
+
             </div>
-        </section>
 
-        <section id="about" class="about">
-            <h2>How we compare</h2>
-            <ul>
-                <li>Price, output quality, and workflow fit are weighted heavier than feature checklists.</li>
-                <li>Verdicts favor real-world creator workflows: speed, iteration, and clarity.</li>
-                <li>We keep it short so you can decide quickly and move on.</li>
-            </ul>
-        </section>
+            <!-- No results state -->
+            <div id="no-results" class="no-results">
+                <div class="emoji">🔍</div>
+                <h3>No battles found</h3>
+                <p>Try a different search term or category.</p>
+            </div>
 
-        <footer>
-            Built for creators who want answers, not fluff.
-        </footer>
-    </div>
+        </div>
+    </section>
+
+    <!-- ===== TRUST / HOW WE COMPARE ===== -->
+    <section id="trust" class="trust-section">
+        <div class="page-wrap">
+            <div class="section-header" style="margin-bottom: 40px;">
+                <h2>Why Creators Trust Us</h2>
+            </div>
+            <div class="trust-grid">
+                <div class="trust-card reveal">
+                    <div class="trust-card-icon">📊</div>
+                    <h3>Data-Driven Verdicts</h3>
+                    <p>Price, speed, output quality, and workflow fit are weighted heavier than feature checklists. No fluff, just facts.</p>
+                </div>
+                <div class="trust-card reveal">
+                    <div class="trust-card-icon">🎯</div>
+                    <h3>Use-Case Focused</h3>
+                    <p>We don't just list features — we test for real creator workflows: speed, iteration, clarity, and final output quality.</p>
+                </div>
+                <div class="trust-card reveal">
+                    <div class="trust-card-icon">⚡</div>
+                    <h3>Quick Verdicts</h3>
+                    <p>Each comparison ends with a clear winner per use case. Skim the verdict and move on — we respect your time.</p>
+                </div>
+                <div class="trust-card reveal">
+                    <div class="trust-card-icon">🔄</div>
+                    <h3>Always Fresh</h3>
+                    <p>AI video tools evolve fast. We re-evaluate battles regularly to keep our recommendations current and reliable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section id="newsletter" class="newsletter-section">
+        <div class="page-wrap">
+            <div class="newsletter-box reveal">
+                <h2>Stay Ahead of the AI Video Curve</h2>
+                <p>Get new battles, tool updates, and creator tips delivered straight to your inbox. No spam, ever.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='✓ Subscribed!'; this.querySelector('input').value='';">
+                    <input type="email" placeholder="your@email.com" required aria-label="Email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="page-wrap">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">⚔️</span>
+                        Video Tool Battle
+                    </div>
+                    <p>The internet's most straight-to-the-point AI video comparisons. Built for creators who want answers, not fluff.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <a href="#battles">AI Generation</a>
+                    <a href="#battles">AI Avatars</a>
+                    <a href="#battles">Editing</a>
+                    <a href="#battles">Text-to-Video</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Popular Battles</h4>
+                    <a href="battles/runway-vs-luma-dream-machine.html">Runway vs Luma</a>
+                    <a href="battles/heygen-vs-synthesia.html">HeyGen vs Synthesia</a>
+                    <a href="battles/invideo-ai-vs-heygen.html">InVideo vs HeyGen</a>
+                    <a href="battles/capcut-vs-veed.html">CapCut vs VEED</a>
+                </div>
+                <div class="footer-col">
+                    <h4>About</h4>
+                    <a href="#trust">How We Compare</a>
+                    <a href="#newsletter">Newsletter</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Video Tool Battle. All rights reserved.</span>
+                <span>Built for creators who want answers, not fluff.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+    <script src="assets/app.js"></script>
     <script src="assets/affiliate-links.js"></script>
 </body>
 </html>
