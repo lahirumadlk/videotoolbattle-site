@@ -89,12 +89,20 @@
     }
 
     function scrollToResults() {
-      const battlesSection = document.getElementById('battles');
-      if (battlesSection) {
-        const offset = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-height')) || 72;
-        const y = battlesSection.getBoundingClientRect().top + window.scrollY - offset - 20;
-        window.scrollTo({ top: y, behavior: 'smooth' });
-      }
+      // Wait for DOM to update after filtering before calculating scroll position
+      requestAnimationFrame(() => {
+        setTimeout(() => {
+          const target = document.querySelector('.battle-grid') || document.getElementById('battles');
+          if (target) {
+            const headerHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-height')) || 72;
+            const filterSection = document.querySelector('.filter-section');
+            const filterHeight = filterSection ? filterSection.offsetHeight : 0;
+            const totalOffset = headerHeight + filterHeight + 20;
+            const y = target.getBoundingClientRect().top + window.scrollY - totalOffset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+          }
+        }, 50);
+      });
     }
 
     function applyFilters() {
@@ -158,24 +166,43 @@
       }, { passive: true });
     }
 
+    /* ---- Color-code tool icons and names ---- */
+    document.querySelectorAll('.battle-card').forEach(card => {
+      // Color the tool icons
+      const icons = card.querySelectorAll('.tool-icon');
+      if (icons.length >= 2) {
+        icons[0].classList.add('tool-a');
+        icons[1].classList.add('tool-b');
+      }
+
+      // Color the tool names in the h3
+      const h3 = card.querySelector('h3');
+      if (h3) {
+        const text = h3.textContent;
+        const vsMatch = text.match(/^(.+?)\s+vs\s+(.+)$/i);
+        if (vsMatch) {
+          h3.innerHTML = `<span class="tool-name-a">${vsMatch[1].trim()}</span><span class="vs-text"> vs </span><span class="tool-name-b">${vsMatch[2].trim()}</span>`;
+        }
+      }
+    });
+
     /* ---- Inject percentage labels + Animate score bars ---- */
     const scoreBars = document.querySelectorAll('.score-bar-fill');
     scoreBars.forEach(fill => {
       const pctValue = fill.getAttribute('data-width') || '0%';
       const scoreBar = fill.parentElement;
-      const scoreBarsContainer = scoreBar.parentElement;
 
       // Only wrap if not already wrapped
-      if (!scoreBar.parentElement.classList.contains('score-bar-row')) {
-        const row = document.createElement('div');
-        row.className = 'score-bar-row';
-        scoreBarsContainer.insertBefore(row, scoreBar);
-        row.appendChild(scoreBar);
+      if (!scoreBar.parentElement.classList.contains('score-bar-wrap')) {
+        const wrap = document.createElement('div');
+        wrap.className = 'score-bar-wrap';
+        scoreBar.parentElement.insertBefore(wrap, scoreBar);
+        wrap.appendChild(scoreBar);
 
         const pctLabel = document.createElement('span');
         pctLabel.className = 'score-pct ' + (fill.classList.contains('a') ? 'a' : 'b');
         pctLabel.textContent = pctValue.replace('%', '');
-        row.appendChild(pctLabel);
+        wrap.appendChild(pctLabel);
       }
     });
 
