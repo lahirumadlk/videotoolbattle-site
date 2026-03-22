@@ -1,7 +1,7 @@
 const AFFILIATE_LINKS = {
   "invideo-ai": "https://invideo.sjv.io/ZV6MKg",
   "invideo": "https://invideo.sjv.io/ZV6MKg",
-  "heygen": "",
+  "heygen": "https://www.heygen.com/?sid=rewardful&utm_content=creator&utm_medium=affiliate&via=token1",
   "runway": "",
   "luma": "",
   "pika": "",
