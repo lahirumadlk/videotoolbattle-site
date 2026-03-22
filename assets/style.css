@@ -937,6 +937,45 @@ h3 { font-size: 1.25rem; }
   background: var(--bg-tertiary);
 }
 
+.pricing-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 12px;
+  border-top: 1px solid var(--border);
+  background: var(--bg-primary);
+}
+
+.pricing-pagination .btn:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.pricing-page-btn {
+  min-width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text-secondary);
+  font-weight: 700;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.pricing-page-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.pricing-page-btn.active {
+  border-color: var(--accent);
+  background: rgba(108, 92, 231, 0.16);
+  color: var(--text-primary);
+}
+
 .pricing-rank {
   width: 52px;
   color: var(--text-muted);
@@ -997,6 +1036,10 @@ h3 { font-size: 1.25rem; }
   .pricing-table td {
     padding: 11px 10px;
     font-size: 0.84rem;
+  }
+
+  .pricing-pagination {
+    flex-wrap: wrap;
   }
 }
 

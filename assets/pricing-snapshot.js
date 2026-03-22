@@ -4,6 +4,7 @@
   'use strict';
 
   const MAX_TOOLS = 10;
+  const PAGE_SIZE = 5;
   const CANDIDATE_PATHS = [
     'data/tool-intel.json',
     'data/latest-tool-pricing.json'
@@ -147,7 +148,7 @@
     return BATTLE_LINKS[normalized] || '';
   }
 
-  function renderComparisonTable(rows) {
+  function renderComparisonTable(rows, startIndex) {
     const table = document.createElement('table');
     table.className = 'pricing-table';
 
@@ -161,7 +162,7 @@
 
       const rank = document.createElement('td');
       rank.className = 'pricing-rank';
-      rank.textContent = String(index + 1);
+      rank.textContent = String(startIndex + index + 1);
       tr.appendChild(rank);
 
       const name = document.createElement('td');
@@ -198,6 +199,39 @@
 
     table.appendChild(tbody);
     return table;
+  }
+
+  function renderPagination(totalPages, currentPage, onPageChange) {
+    const nav = document.createElement('div');
+    nav.className = 'pricing-pagination';
+
+    const prev = document.createElement('button');
+    prev.type = 'button';
+    prev.className = 'btn btn-ghost btn-sm';
+    prev.textContent = 'Previous';
+    prev.disabled = currentPage <= 1;
+    prev.addEventListener('click', () => onPageChange(currentPage - 1));
+    nav.appendChild(prev);
+
+    for (let page = 1; page <= totalPages; page += 1) {
+      const pageBtn = document.createElement('button');
+      pageBtn.type = 'button';
+      pageBtn.className = 'pricing-page-btn';
+      if (page === currentPage) pageBtn.classList.add('active');
+      pageBtn.textContent = String(page);
+      pageBtn.addEventListener('click', () => onPageChange(page));
+      nav.appendChild(pageBtn);
+    }
+
+    const next = document.createElement('button');
+    next.type = 'button';
+    next.className = 'btn btn-ghost btn-sm';
+    next.textContent = 'Next';
+    next.disabled = currentPage >= totalPages;
+    next.addEventListener('click', () => onPageChange(currentPage + 1));
+    nav.appendChild(next);
+
+    return nav;
   }
 
   async function loadSnapshot() {
@@ -258,7 +292,22 @@
       return;
     }
 
-    $tableWrap.appendChild(renderComparisonTable(topRows));
+    const totalPages = Math.ceil(topRows.length / PAGE_SIZE);
+
+    const renderPage = (pageNumber) => {
+      const safePage = Math.min(Math.max(pageNumber, 1), totalPages);
+      const start = (safePage - 1) * PAGE_SIZE;
+      const rows = topRows.slice(start, start + PAGE_SIZE);
+
+      $tableWrap.innerHTML = '';
+      $tableWrap.appendChild(renderComparisonTable(rows, start));
+
+      if (totalPages > 1) {
+        $tableWrap.appendChild(renderPagination(totalPages, safePage, renderPage));
+      }
+    };
+
+    renderPage(1);
 
     // Keep source path internal and only show status for real errors.
     void path;
