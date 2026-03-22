@@ -31,7 +31,7 @@ const OFFICIAL_LINKS = {
 };
 
 const DISCLOSURE_TEXT =
-  "Disclosure: Some outbound links are affiliate links. If you buy through them, we may earn a commission at no extra cost to you.";
+  "Affiliate disclosure: Some links may earn us a commission at no extra cost to you.";
 
 const ensureAffiliateDisclosure = () => {
   if (document.getElementById("affiliate-disclosure")) return;
@@ -39,8 +39,16 @@ const ensureAffiliateDisclosure = () => {
   const disclosure = document.createElement("p");
   disclosure.id = "affiliate-disclosure";
   disclosure.className = "affiliate-disclosure";
-  disclosure.textContent = DISCLOSURE_TEXT;
   disclosure.setAttribute("role", "note");
+
+  const textNode = document.createTextNode(`${DISCLOSURE_TEXT} `);
+  const link = document.createElement("a");
+  link.textContent = "Learn more";
+  const path = window.location.pathname || "";
+  link.href = path.includes("/battles/") ? "../privacy.html" : "privacy.html";
+  link.rel = "nofollow noopener";
+  disclosure.appendChild(textNode);
+  disclosure.appendChild(link);
 
   const footerWrap = document.querySelector(".site-footer .page-wrap");
   const footer = document.querySelector(".site-footer");
