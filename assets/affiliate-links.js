@@ -66,6 +66,20 @@ const ensureAffiliateDisclosure = () => {
   }
 };
 
+const trackAffiliateClick = (link, key) => {
+  if (typeof window.gtag !== "function") return;
+
+  const destination = (link.getAttribute("href") || "").trim();
+  if (!destination || destination === "#") return;
+
+  window.gtag("event", "affiliate_click", {
+    affiliate_tool: key || "unknown",
+    affiliate_destination: destination,
+    link_text: (link.textContent || "").trim().slice(0, 80),
+    page_path: window.location.pathname || "/"
+  });
+};
+
 const applyAffiliateLinks = () => {
   const links = document.querySelectorAll("a[data-affiliate]");
   links.forEach((link) => {
@@ -97,11 +111,25 @@ const applyAffiliateLinks = () => {
   ensureAffiliateDisclosure();
 };
 
+const handleAffiliateClick = (event) => {
+  const target = event.target;
+  if (!target || !target.closest) return;
+
+  const link = target.closest("a[data-affiliate]");
+  if (!link) return;
+  if (link.getAttribute("aria-disabled") === "true") return;
+
+  const key = (link.getAttribute("data-affiliate") || "").trim();
+  trackAffiliateClick(link, key);
+};
+
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", applyAffiliateLinks);
 } else {
   applyAffiliateLinks();
 }
+
+document.addEventListener("click", handleAffiliateClick);
 
 // Allow other scripts (e.g., dynamic pricing snapshot) to re-run mapping after injecting links.
 window.vtbApplyAffiliateLinks = applyAffiliateLinks;
