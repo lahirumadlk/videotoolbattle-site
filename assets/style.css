@@ -1569,6 +1569,24 @@ h3 { font-size: 1.25rem; }
   font-size: 1rem;
 }
 
+/* Quick Answer — AI search optimized */
+.quick-answer {
+  background: rgba(0, 206, 201, 0.06);
+  border: 1px solid rgba(0, 206, 201, 0.15);
+  border-left: 5px solid var(--accent-2);
+  border-radius: var(--radius-md);
+  padding: 18px 22px;
+  margin-bottom: 32px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.quick-answer strong {
+  color: var(--accent-2);
+  margin-right: 4px;
+}
+
 /* Comparison table — battle page */
 .comparison-table {
   width: 100%;
