@@ -619,6 +619,34 @@ h3 { font-size: 1.25rem; }
   font-family: var(--font-display);
 }
 
+.tool-icon.tool-a {
+  color: var(--accent);
+  border-color: rgba(108, 92, 231, 0.3);
+  background: rgba(108, 92, 231, 0.08);
+}
+
+.tool-icon.tool-b {
+  color: var(--accent-2);
+  border-color: rgba(0, 206, 201, 0.3);
+  background: rgba(0, 206, 201, 0.08);
+}
+
+.tool-name-a {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.tool-name-b {
+  color: var(--accent-2);
+  font-weight: 700;
+}
+
+.vs-text {
+  color: var(--text-muted);
+  font-weight: 400;
+  margin: 0 2px;
+}
+
 .vs-badge {
   font-size: 0.7rem;
   font-weight: 800;
@@ -674,14 +702,15 @@ h3 { font-size: 1.25rem; }
 .score-bars {
   flex: 1;
   display: flex;
-  flex-direction: column;
-  gap: 5px;
+  gap: 6px;
+  align-items: center;
 }
 
-.score-bar-row {
+.score-bar-wrap {
+  flex: 1;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 
 .score-bar {
@@ -703,9 +732,9 @@ h3 { font-size: 1.25rem; }
 .score-bar-fill.b { background: var(--accent-2); }
 
 .score-pct {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 700;
-  min-width: 28px;
+  min-width: 22px;
   text-align: right;
   flex-shrink: 0;
   line-height: 1;
