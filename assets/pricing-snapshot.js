@@ -3,18 +3,35 @@
 (function () {
   'use strict';
 
+  const MAX_TOOLS = 10;
   const CANDIDATE_PATHS = [
     'data/tool-intel.json',
     'data/latest-tool-pricing.json'
   ];
+  const BATTLE_LINKS = {
+    'invideo-ai': 'battles/invideo-ai-vs-heygen.html',
+    'invideo': 'battles/invideo-vs-heygen.html',
+    'heygen': 'battles/heygen-vs-synthesia.html',
+    'runway': 'battles/runway-vs-pika.html',
+    'luma': 'battles/runway-vs-luma-dream-machine.html',
+    'luma-dream-machine': 'battles/runway-vs-luma-dream-machine.html',
+    'pika': 'battles/runway-vs-pika.html',
+    'capcut': 'battles/capcut-vs-veed.html',
+    'veed': 'battles/capcut-vs-veed.html',
+    'synthesia': 'battles/heygen-vs-synthesia.html',
+    'colossyan': 'battles/synthesia-vs-colossyan.html',
+    'kaiber': 'battles/kaiber-vs-luma-dream-machine.html',
+    'descript': 'battles/descript-vs-veed.html',
+    'fliki': 'battles/invideo-ai-vs-fliki.html'
+  };
 
   const $updated = document.getElementById('pricing-updated');
   const $status = document.getElementById('pricing-snapshot-status');
-  const $grid = document.getElementById('pricing-snapshot-grid');
+  const $tableWrap = document.getElementById('pricing-snapshot-table-wrap');
   const $toolsTotal = document.getElementById('pricing-tools-total');
   const $toolsMonthly = document.getElementById('pricing-tools-monthly');
 
-  if (!$updated || !$status || !$grid) return;
+  if (!$updated || !$status || !$tableWrap) return;
 
   document.addEventListener('DOMContentLoaded', () => {
     loadSnapshot().catch((err) => {
@@ -94,93 +111,76 @@
       .filter((amount) => typeof amount === 'number');
   }
 
-  function getMonthlyLabel(points) {
+  function getMonthlyData(points) {
     const monthlyValues = extractMonthlyValues(points);
-    if (monthlyValues.length === 0) return '';
+    if (monthlyValues.length === 0) {
+      return { label: '', value: null };
+    }
 
     const lowest = Math.min(...monthlyValues);
-    if (lowest === 0) return 'Free ($0/mo)';
+    if (lowest === 0) return { label: 'Free ($0/mo)', value: 0 };
     const formatted = Number.isInteger(lowest) ? String(lowest) : lowest.toFixed(2);
-    return `From $${formatted}/mo`;
+    return { label: `From $${formatted}/mo`, value: lowest };
   }
 
-  function renderToolCard(tool) {
-    const key = (tool && tool.key) ? String(tool.key) : '';
-    const name = (tool && tool.name) ? String(tool.name) : key || 'Unknown tool';
-
-    const points = normalizePricePoints(tool && tool.price_points);
-    const sources = Array.isArray(tool && tool.source_urls) ? tool.source_urls : [];
-    const monthlyLabel = getMonthlyLabel(points);
-
-    const card = document.createElement('article');
-    card.className = 'pricing-card reveal';
-
-    const title = document.createElement('h3');
-    title.className = 'pricing-title';
-    title.textContent = name;
-    card.appendChild(title);
-
-    const price = document.createElement('p');
-    price.className = 'pricing-price';
-    price.textContent = monthlyLabel || 'Monthly not detected';
-    if (!monthlyLabel) {
-      price.classList.add('is-missing');
-    }
-    card.appendChild(price);
-
-    const meta = document.createElement('p');
-    meta.className = 'pricing-meta';
-    meta.textContent = monthlyLabel
-      ? 'Estimated entry monthly pricing from latest crawl.'
-      : 'Could not parse monthly text from current pricing page content.';
-    card.appendChild(meta);
-
-    const actions = document.createElement('div');
-    actions.className = 'pricing-actions';
-
-    const primary = document.createElement('a');
-    primary.className = 'btn btn-primary btn-sm';
-    primary.textContent = 'Check pricing →';
-
-    // Prefer affiliate/official routing if available.
-    if (key) {
-      primary.setAttribute('href', '#');
-      primary.setAttribute('data-affiliate', key);
-    } else if (sources[0]) {
-      primary.setAttribute('href', sources[0]);
-      primary.setAttribute('target', '_blank');
-      primary.setAttribute('rel', 'nofollow noopener');
-    } else {
-      primary.setAttribute('href', '#');
-      primary.setAttribute('aria-disabled', 'true');
-    }
-    actions.appendChild(primary);
-
-    const sourceLink = pickBestSourceUrl(sources);
-    if (sourceLink) {
-      const source = document.createElement('a');
-      source.className = 'btn btn-ghost btn-sm';
-      source.textContent = 'Sources';
-      source.href = sourceLink;
-      source.target = '_blank';
-      source.rel = 'nofollow noopener';
-      actions.appendChild(source);
-    }
-
-    card.appendChild(actions);
-
-    return card;
+  function getBattleLink(key) {
+    const normalized = String(key || '').trim().toLowerCase();
+    if (!normalized) return '';
+    return BATTLE_LINKS[normalized] || '';
   }
 
-  function pickBestSourceUrl(urls) {
-    if (!Array.isArray(urls) || urls.length === 0) return '';
-    const prefer = urls.find(u => /pricing|plans/i.test(String(u)));
-    return prefer || String(urls[0] || '');
+  function renderComparisonTable(rows) {
+    const table = document.createElement('table');
+    table.className = 'pricing-table';
+
+    const thead = document.createElement('thead');
+    thead.innerHTML = '<tr><th>#</th><th>Tool</th><th>Monthly</th><th>Battle</th></tr>';
+    table.appendChild(thead);
+
+    const tbody = document.createElement('tbody');
+    rows.forEach((row, index) => {
+      const tr = document.createElement('tr');
+
+      const rank = document.createElement('td');
+      rank.className = 'pricing-rank';
+      rank.textContent = String(index + 1);
+      tr.appendChild(rank);
+
+      const name = document.createElement('td');
+      name.className = 'pricing-tool-name';
+      name.textContent = row.name;
+      tr.appendChild(name);
+
+      const monthly = document.createElement('td');
+      const badge = document.createElement('span');
+      badge.className = 'pricing-price';
+      if (!row.monthlyLabel) badge.classList.add('is-missing');
+      badge.textContent = row.monthlyLabel || 'N/A';
+      monthly.appendChild(badge);
+      tr.appendChild(monthly);
+
+      const battle = document.createElement('td');
+      if (row.battleHref) {
+        const link = document.createElement('a');
+        link.className = 'btn btn-ghost btn-sm';
+        link.href = row.battleHref;
+        link.textContent = 'Read battle →';
+        battle.appendChild(link);
+      } else {
+        battle.textContent = 'N/A';
+      }
+      tr.appendChild(battle);
+
+      tbody.appendChild(tr);
+    });
+
+    table.appendChild(tbody);
+    return table;
   }
 
   async function loadSnapshot() {
     setStatus('', '');
-    $grid.innerHTML = '';
+    $tableWrap.innerHTML = '';
 
     const { data, path } = await fetchFirstJson(CANDIDATE_PATHS);
     if (!data) {
@@ -195,33 +195,48 @@
     $updated.textContent = formatUtc(String(generatedAt || ''));
 
     const tools = Array.isArray(data.tools) ? data.tools : [];
-    if ($toolsTotal) $toolsTotal.textContent = String(tools.length);
     if (tools.length === 0) {
+      if ($toolsTotal) $toolsTotal.textContent = '0';
       if ($toolsMonthly) $toolsMonthly.textContent = '0';
       setStatus('Snapshot loaded, but no tools were found in the dataset.', 'error');
       return;
     }
 
-    const monthlyCount = tools.filter((tool) => {
-      const points = normalizePricePoints(tool && tool.price_points);
-      return getMonthlyLabel(points).length > 0;
-    }).length;
+    const prepared = tools
+      .map((tool) => {
+        const key = String((tool && tool.key) || '').trim();
+        const name = String((tool && tool.name) || key || 'Unknown');
+        const points = normalizePricePoints(tool && tool.price_points);
+        const monthlyData = getMonthlyData(points);
+        const battleHref = getBattleLink(key);
+        return {
+          key,
+          name,
+          monthlyLabel: monthlyData.label,
+          monthlyValue: monthlyData.value,
+          battleHref
+        };
+      })
+      .filter((item) => item.battleHref)
+      .sort((a, b) => {
+        const aMissing = a.monthlyValue === null ? 1 : 0;
+        const bMissing = b.monthlyValue === null ? 1 : 0;
+        if (aMissing !== bMissing) return aMissing - bMissing;
+        if (a.monthlyValue !== null && b.monthlyValue !== null) return a.monthlyValue - b.monthlyValue;
+        return a.name.localeCompare(b.name);
+      });
+
+    const topRows = prepared.slice(0, MAX_TOOLS);
+    const monthlyCount = topRows.filter((item) => item.monthlyLabel).length;
+    if ($toolsTotal) $toolsTotal.textContent = String(topRows.length);
     if ($toolsMonthly) $toolsMonthly.textContent = String(monthlyCount);
 
-    tools
-      .slice()
-      .sort((a, b) => String(a.name || a.key || '').localeCompare(String(b.name || b.key || '')))
-      .forEach(t => $grid.appendChild(renderToolCard(t)));
-
-    // If affiliate-links.js is present, update hrefs for dynamically inserted links.
-    if (typeof window.vtbApplyAffiliateLinks === 'function') {
-      window.vtbApplyAffiliateLinks();
+    if (topRows.length === 0) {
+      setStatus('No battle-linked tools found in the latest snapshot.', 'error');
+      return;
     }
 
-    // Trigger reveal animation for newly added cards.
-    requestAnimationFrame(() => {
-      document.querySelectorAll('.pricing-card.reveal').forEach(el => el.classList.add('visible'));
-    });
+    $tableWrap.appendChild(renderComparisonTable(topRows));
 
     // Keep source path internal and only show status for real errors.
     void path;
