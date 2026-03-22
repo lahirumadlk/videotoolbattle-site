@@ -94,3 +94,6 @@ if (document.readyState === "loading") {
 } else {
   applyAffiliateLinks();
 }
+
+// Allow other scripts (e.g., dynamic pricing snapshot) to re-run mapping after injecting links.
+window.vtbApplyAffiliateLinks = applyAffiliateLinks;
