@@ -674,13 +674,19 @@ h3 { font-size: 1.25rem; }
 .score-bars {
   flex: 1;
   display: flex;
-  gap: 6px;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.score-bar-row {
+  display: flex;
   align-items: center;
+  gap: 8px;
 }
 
 .score-bar {
   flex: 1;
-  height: 6px;
+  height: 7px;
   background: var(--bg-tertiary);
   border-radius: 4px;
   overflow: hidden;
@@ -695,6 +701,18 @@ h3 { font-size: 1.25rem; }
 
 .score-bar-fill.a { background: var(--accent); }
 .score-bar-fill.b { background: var(--accent-2); }
+
+.score-pct {
+  font-size: 0.7rem;
+  font-weight: 700;
+  min-width: 28px;
+  text-align: right;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.score-pct.a { color: var(--accent); }
+.score-pct.b { color: var(--accent-2); }
 
 .score-val {
   font-size: 0.72rem;

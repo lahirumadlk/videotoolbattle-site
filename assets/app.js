@@ -69,10 +69,31 @@
     const searchInput = document.getElementById('hero-search');
     if (searchInput) {
       searchInput.addEventListener('input', () => applyFilters());
+
+      // Scroll to results on Enter key
+      searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          applyFilters();
+          scrollToResults();
+        }
+      });
       
       const searchBtn = document.querySelector('.search-btn');
       if (searchBtn) {
-        searchBtn.addEventListener('click', () => applyFilters());
+        searchBtn.addEventListener('click', () => {
+          applyFilters();
+          scrollToResults();
+        });
+      }
+    }
+
+    function scrollToResults() {
+      const battlesSection = document.getElementById('battles');
+      if (battlesSection) {
+        const offset = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-height')) || 72;
+        const y = battlesSection.getBoundingClientRect().top + window.scrollY - offset - 20;
+        window.scrollTo({ top: y, behavior: 'smooth' });
       }
     }
 
@@ -137,8 +158,27 @@
       }, { passive: true });
     }
 
-    /* ---- Animate score bars ---- */
+    /* ---- Inject percentage labels + Animate score bars ---- */
     const scoreBars = document.querySelectorAll('.score-bar-fill');
+    scoreBars.forEach(fill => {
+      const pctValue = fill.getAttribute('data-width') || '0%';
+      const scoreBar = fill.parentElement;
+      const scoreBarsContainer = scoreBar.parentElement;
+
+      // Only wrap if not already wrapped
+      if (!scoreBar.parentElement.classList.contains('score-bar-row')) {
+        const row = document.createElement('div');
+        row.className = 'score-bar-row';
+        scoreBarsContainer.insertBefore(row, scoreBar);
+        row.appendChild(scoreBar);
+
+        const pctLabel = document.createElement('span');
+        pctLabel.className = 'score-pct ' + (fill.classList.contains('a') ? 'a' : 'b');
+        pctLabel.textContent = pctValue.replace('%', '');
+        row.appendChild(pctLabel);
+      }
+    });
+
     if (scoreBars.length > 0 && 'IntersectionObserver' in window) {
       const barObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
