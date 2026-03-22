@@ -1,0 +1,663 @@
+{
+  "generated_at_utc": "2026-03-22T19:10:55+00:00",
+  "tool_count": 13,
+  "tools_with_pricing_signal": 13,
+  "tools": [
+    {
+      "key": "invideo-ai",
+      "name": "InVideo AI",
+      "base_url": "https://invideo.io/",
+      "price_points": [
+        "$7",
+        "$5",
+        "$27",
+        "$28",
+        "$29"
+      ],
+      "plan_names": [
+        "Free",
+        "Standard",
+        "Pro",
+        "Premium",
+        "Enterprise",
+        "Team",
+        "Creator",
+        "Max"
+      ],
+      "commercial_flags": {
+        "free_plan": false,
+        "free_trial": false,
+        "enterprise_or_contact_sales": true
+      },
+      "capabilities": {
+        "avatars": true,
+        "text_to_video": true,
+        "image_to_video": true,
+        "voice_cloning": true,
+        "subtitle_generation": true,
+        "video_editing": true,
+        "api_or_sdk": true
+      },
+      "languages_supported_numbers": [],
+      "pricing_snippets": [
+        "Pricing",
+        "Best Work From Cafe Spots",
+        "\" From my first video to a monetized channel, it took less than two months. \"",
+        "Access to invideo v4 agent that can create up to 30 mins of video from a single prompt.",
+        "invideo AI Pricing"
+      ],
+      "source_urls": [
+        "https://invideo.io/",
+        "https://invideo.io/pricing/",
+        "https://invideo.io/plans"
+      ],
+      "confidence": "high"
+    },
+    {
+      "key": "invideo",
+      "name": "InVideo",
+      "base_url": "https://invideo.io/",
+      "price_points": [
+        "$7",
+        "$5",
+        "$27",
+        "$28",
+        "$29"
+      ],
+      "plan_names": [
+        "Free",
+        "Standard",
+        "Pro",
+        "Premium",
+        "Enterprise",
+        "Team",
+        "Creator",
+        "Max"
+      ],
+      "commercial_flags": {
+        "free_plan": false,
+        "free_trial": false,
+        "enterprise_or_contact_sales": true
+      },
+      "capabilities": {
+        "avatars": true,
+        "text_to_video": true,
+        "image_to_video": true,
+        "voice_cloning": true,
+        "subtitle_generation": true,
+        "video_editing": true,
+        "api_or_sdk": true
+      },
+      "languages_supported_numbers": [],
+      "pricing_snippets": [
+        "Pricing",
+        "Best Work From Cafe Spots",
+        "\" From my first video to a monetized channel, it took less than two months. \"",
+        "Access to invideo v4 agent that can create up to 30 mins of video from a single prompt.",
+        "invideo AI Pricing"
+      ],
+      "source_urls": [
+        "https://invideo.io/",
+        "https://invideo.io/pricing/",
+        "https://invideo.io/plans"
+      ],
+      "confidence": "high"
+    },
+    {
+      "key": "heygen",
+      "name": "HeyGen",
+      "base_url": "https://www.heygen.com/",
+      "price_points": [
+        "$7",
+        "$14",
+        "$30",
+        "$36",
+        "$10",
+        "$38",
+        "$39"
+      ],
+      "plan_names": [
+        "Free",
+        "Standard",
+        "Pro",
+        "Premium",
+        "Business",
+        "Enterprise",
+        "Team",
+        "Creator"
+      ],
+      "commercial_flags": {
+        "free_plan": true,
+        "free_trial": false,
+        "enterprise_or_contact_sales": true
+      },
+      "capabilities": {
+        "avatars": true,
+        "text_to_video": true,
+        "image_to_video": true,
+        "voice_cloning": true,
+        "subtitle_generation": true,
+        "video_editing": true,
+        "api_or_sdk": true
+      },
+      "languages_supported_numbers": [
+        "70",
+        "175",
+        "30"
+      ],
+      "pricing_snippets": [
+        "Free AI Video Generator: Create Stunning Videos with AI",
+        "Platform Enterprise Use cases Learning Pricing Company",
+        "Get Started for Free",
+        "Create training, marketing, sales, and internal content from a single workspace with enterprise-grade security and admin controls."
+      ],
+      "source_urls": [
+        "https://www.heygen.com/",
+        "https://www.heygen.com/pricing"
+      ],
+      "confidence": "high"
+    },
+    {
+      "key": "runway",
+      "name": "Runway",
+      "base_url": "https://runwayml.com/",
+      "price_points": [
+        "$13",
+        "$7",
+        "$12/month",
+        "$0",
+        "$12",
+        "$144",
+        "$28",
+        "$336",
+        "$76",
+        "$912"
+      ],
+      "plan_names": [
+        "Free",
+        "Starter",
+        "Standard",
+        "Pro",
+        "Enterprise",
+        "Team",
+        "Plus",
+        "Max"
+      ],
+      "commercial_flags": {
+        "free_plan": true,
+        "free_trial": false,
+        "enterprise_or_contact_sales": true
+      },
+      "capabilities": {
+        "avatars": true,
+        "text_to_video": true,
+        "image_to_video": true,
+        "voice_cloning": false,
+        "subtitle_generation": false,
+        "video_editing": true,
+        "api_or_sdk": true
+      },
+      "languages_supported_numbers": [],
+      "pricing_snippets": [
+        "Built on our recently launched world model, GWM-1, Characters lets you generate expressive digital personas from a single image, with zero fine-tuning required.",
+        "Pricing",
+        "AI Image and Video Pricing from $12/month | Runway AI",
+        "Choose the best plan for you",
+        "Monthly",
+        "Yearly -20% off"
+      ],
+      "source_urls": [
+        "https://runwayml.com/",
+        "https://runwayml.com/pricing"
+      ],
+      "confidence": "high"
+    },
+    {
+      "key": "luma",
+      "name": "Luma Dream Machine",
+      "base_url": "https://lumalabs.ai/dream-machine",
+      "price_points": [
+        "$17",
+        "$20",
+        "$30 /month",
+        "$300 billed yearly",
+        "$90 /month",
+        "$900 billed yearly",
+        "$300 /month",
+        "$3,000 billed yearly",
+        "$30"
+      ],
+      "plan_names": [
+        "Free",
+        "Basic",
+        "Standard",
+        "Pro",
+        "Business",
+        "Enterprise",
+        "Team",
+        "Creator"
+      ],
+      "commercial_flags": {
+        "free_plan": true,
+        "free_trial": true,
+        "enterprise_or_contact_sales": true
+      },
+      "capabilities": {
+        "avatars": false,
+        "text_to_video": false,
+        "image_to_video": false,
+        "voice_cloning": false,
+        "subtitle_generation": true,
+        "video_editing": false,
+        "api_or_sdk": true
+      },
+      "languages_supported_numbers": [],
+      "pricing_snippets": [
+        "Product Pricing Enterprise News Join us",
+        "From idea to final, uninterrupted",
+        "From ideation to final image or video, work inside a single platform, without handoffs, context loss, or tool switching.",
+        "Try now Explore pricing",
+        "Dream Machine allows users to generate images and videos directly from text prompts or images, enabling seamless creative ideation and storytelling.",
+        "Can I create videos from images using Dream Machine?"
+      ],
+      "source_urls": [
+        "https://lumalabs.ai/dream-machine",
+        "https://lumalabs.ai/pricing"
+      ],
+      "confidence": "high"
+    },
+    {
+      "key": "pika",
+      "name": "Pika",
+      "base_url": "https://pika.art/",
+      "price_points": [
+        "$10",
+        "$5",
+        "$22",
+        "$0",
+        "$8",
+        "$28"
+      ],
+      "plan_names": [
+        "Free",
+        "Basic",
+        "Standard",
+        "Pro",
+        "Max"
+      ],
+      "commercial_flags": {
+        "free_plan": false,
+        "free_trial": false,
+        "enterprise_or_contact_sales": false
+      },
+      "capabilities": {
+        "avatars": false,
+        "text_to_video": false,
+        "image_to_video": false,
+        "voice_cloning": false,
+        "subtitle_generation": true,
+        "video_editing": true,
+        "api_or_sdk": true
+      },
+      "languages_supported_numbers": [],
+      "pricing_snippets": [
+        "Careers Contact Us Pricing Blog API",
+        "Subscription Pricing",
+        "Yearly -20% off Monthly",
+        "Free",
+        "billed yearly",
+        "80 monthly video credits self.__wrap_n!=1&&self.__wrap_b(\"_R_hebclucnp3b_\",1)"
+      ],
+      "source_urls": [
+        "https://pika.art/login",
+        "https://pika.art/pricing"
+      ],
+      "confidence": "high"
+    },
+    {
+      "key": "capcut",
+      "name": "CapCut",
+      "base_url": "https://www.capcut.com/",
+      "price_points": [],
+      "plan_names": [
+        "Free",
+        "Basic",
+        "Pro",
+        "Business",
+        "Creator",
+        "Max"
+      ],
+      "commercial_flags": {
+        "free_plan": false,
+        "free_trial": false,
+        "enterprise_or_contact_sales": false
+      },
+      "capabilities": {
+        "avatars": true,
+        "text_to_video": false,
+        "image_to_video": false,
+        "voice_cloning": false,
+        "subtitle_generation": true,
+        "video_editing": true,
+        "api_or_sdk": false
+      },
+      "languages_supported_numbers": [
+        "20"
+      ],
+      "pricing_snippets": [
+        "FREE 7-day Pro for new desktop users—download and enjoy yours today! Download",
+        "Download for free Try online",
+        "A quick chat with CapCut's AI video editor and it'll build a video from scratch, style, avatar, everything.",
+        "The reliable and essential AI editing features from CapCut for text, audio, and video.",
+        "Find the perfect caption style from 100+ templates for music, gaming, and more in our video editor."
+      ],
+      "source_urls": [
+        "https://www.capcut.com/"
+      ],
+      "confidence": "low"
+    },
+    {
+      "key": "veed",
+      "name": "VEED",
+      "base_url": "https://www.veed.io/",
+      "price_points": [],
+      "plan_names": [
+        "Free",
+        "Basic",
+        "Standard",
+        "Pro",
+        "Premium",
+        "Business",
+        "Enterprise",
+        "Team"
+      ],
+      "commercial_flags": {
+        "free_plan": true,
+        "free_trial": false,
+        "enterprise_or_contact_sales": true
+      },
+      "capabilities": {
+        "avatars": true,
+        "text_to_video": true,
+        "image_to_video": true,
+        "voice_cloning": true,
+        "subtitle_generation": true,
+        "video_editing": true,
+        "api_or_sdk": true
+      },
+      "languages_supported_numbers": [
+        "50",
+        "25",
+        "150"
+      ],
+      "pricing_snippets": [
+        "Remove Background Noise from Audio",
+        "Pricing",
+        "Start for free",
+        "Select from 2M+ video and audio assets from our royalty-free stock library.",
+        "Make your content more engaging. Keep eye contact, 'speak' another language and create videos from text prompts—all powered by AI technology."
+      ],
+      "source_urls": [
+        "https://www.veed.io/",
+        "https://www.veed.io/pricing",
+        "https://www.veed.io/plans"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "key": "synthesia",
+      "name": "Synthesia",
+      "base_url": "https://www.synthesia.io/",
+      "price_points": [
+        "$56",
+        "$18 /month",
+        "$29 /mo",
+        "$89 /mo",
+        "$29 /month",
+        "$0 /mo",
+        "$1000/year"
+      ],
+      "plan_names": [
+        "Free",
+        "Starter",
+        "Basic",
+        "Standard",
+        "Business",
+        "Enterprise",
+        "Team",
+        "Creator"
+      ],
+      "commercial_flags": {
+        "free_plan": true,
+        "free_trial": true,
+        "enterprise_or_contact_sales": true
+      },
+      "capabilities": {
+        "avatars": true,
+        "text_to_video": true,
+        "image_to_video": false,
+        "voice_cloning": true,
+        "subtitle_generation": false,
+        "video_editing": true,
+        "api_or_sdk": true
+      },
+      "languages_supported_numbers": [
+        "140",
+        "160",
+        "5",
+        "80",
+        "130"
+      ],
+      "pricing_snippets": [
+        "GetStarterBtn.href = '#free-ai-video';",
+        "GetStarterBtn.href = '/pricing';",
+        "/* Snippet makes all link elements listed below to inherit color from their parent */",
+        "\"free ai video generator\",",
+        "\"Access royalty-free multimedia assets\",",
+        "\"price\": \"0\","
+      ],
+      "source_urls": [
+        "https://www.synthesia.io/",
+        "https://www.synthesia.io/pricing"
+      ],
+      "confidence": "high"
+    },
+    {
+      "key": "colossyan",
+      "name": "Colossyan",
+      "base_url": "https://www.colossyan.com/",
+      "price_points": [
+        "$336 billed yearly",
+        "$1152 billed yearly",
+        "$19/month",
+        "$1000/year"
+      ],
+      "plan_names": [
+        "Free",
+        "Starter",
+        "Basic",
+        "Standard",
+        "Pro",
+        "Premium",
+        "Business",
+        "Enterprise"
+      ],
+      "commercial_flags": {
+        "free_plan": true,
+        "free_trial": true,
+        "enterprise_or_contact_sales": true
+      },
+      "capabilities": {
+        "avatars": true,
+        "text_to_video": true,
+        "image_to_video": false,
+        "voice_cloning": true,
+        "subtitle_generation": true,
+        "video_editing": true,
+        "api_or_sdk": true
+      },
+      "languages_supported_numbers": [
+        "80",
+        "100",
+        "70"
+      ],
+      "pricing_snippets": [
+        "\"price\": \"0\",",
+        "\"description\": \"Free 14-day trial available, no credit card required\"",
+        "// Means that we created a fake referral attribution event to track where the traffic came from.",
+        "Make the following elements inherit typography styles from the parent and not have hardcoded values.",
+        "Choose from over 600 AI voices to narrate your text.",
+        "Pricing Enterprise"
+      ],
+      "source_urls": [
+        "https://www.colossyan.com/",
+        "https://www.colossyan.com/pricing"
+      ],
+      "confidence": "high"
+    },
+    {
+      "key": "kaiber",
+      "name": "Kaiber",
+      "base_url": "https://kaiber.ai/",
+      "price_points": [],
+      "plan_names": [
+        "Creator",
+        "Plus",
+        "Max"
+      ],
+      "commercial_flags": {
+        "free_plan": false,
+        "free_trial": false,
+        "enterprise_or_contact_sales": false
+      },
+      "capabilities": {
+        "avatars": false,
+        "text_to_video": false,
+        "image_to_video": false,
+        "voice_cloning": false,
+        "subtitle_generation": false,
+        "video_editing": true,
+        "api_or_sdk": false
+      },
+      "languages_supported_numbers": [],
+      "pricing_snippets": [
+        "Superstudio from Kaiber",
+        "Pricing",
+        "Train Custom Models, craft scenes, reimagine visuals, and bring entire narratives to life—right from your Canvas.",
+        "Restyle logos, remix graphics, and map visuals onto anything from packaging to billboards.",
+        "Create stunning AI-generated videos. Storyboard, animate, and refine motion—all from a single canvas.",
+        "Labs collaborated with artist Jon Rafman to create visuals for a Live From Earth rave hosted with Praying."
+      ],
+      "source_urls": [
+        "https://www.kaiber.ai/superstudio",
+        "https://kaiber.ai/pricing",
+        "https://kaiber.ai/plans"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "key": "descript",
+      "name": "Descript",
+      "base_url": "https://www.descript.com/",
+      "price_points": [
+        "$0",
+        "$24",
+        "$16",
+        "$35"
+      ],
+      "plan_names": [
+        "Free",
+        "Standard",
+        "Pro",
+        "Business",
+        "Enterprise",
+        "Team",
+        "Creator",
+        "Plus"
+      ],
+      "commercial_flags": {
+        "free_plan": true,
+        "free_trial": false,
+        "enterprise_or_contact_sales": true
+      },
+      "capabilities": {
+        "avatars": true,
+        "text_to_video": false,
+        "image_to_video": false,
+        "voice_cloning": true,
+        "subtitle_generation": true,
+        "video_editing": true,
+        "api_or_sdk": true
+      },
+      "languages_supported_numbers": [
+        "30",
+        "25",
+        "61",
+        "14"
+      ],
+      "pricing_snippets": [
+        "Descript – AI Video & Podcast Editor | Free, Online",
+        "Create bespoke, custom video and images from a prompt.",
+        "Easily create a realistic voice clone or pick from our stock AI voices.",
+        "Pick an avatar from our gallery or upload a photo to create your own.",
+        "Pricing",
+        "Pricing Contact sales"
+      ],
+      "source_urls": [
+        "https://www.descript.com/",
+        "https://www.descript.com/pricing"
+      ],
+      "confidence": "high"
+    },
+    {
+      "key": "fliki",
+      "name": "Fliki",
+      "base_url": "https://fliki.ai/",
+      "price_points": [
+        "$4800/month",
+        "$6",
+        "$10",
+        "$20"
+      ],
+      "plan_names": [
+        "Free",
+        "Standard",
+        "Premium",
+        "Business",
+        "Enterprise",
+        "Team",
+        "Plus"
+      ],
+      "commercial_flags": {
+        "free_plan": true,
+        "free_trial": false,
+        "enterprise_or_contact_sales": true
+      },
+      "capabilities": {
+        "avatars": true,
+        "text_to_video": true,
+        "image_to_video": true,
+        "voice_cloning": true,
+        "subtitle_generation": true,
+        "video_editing": true,
+        "api_or_sdk": true
+      },
+      "languages_supported_numbers": [
+        "80"
+      ],
+      "pricing_snippets": [
+        "Fliki - Create AI Videos and Voiceovers in Minutes | Free",
+        "Pricing Login Signup",
+        "// Default segment - if we can't determine status, default to \"free\"",
+        "let segment = \"free user\";",
+        "// Try to get user_paid from session data",
+        "// If anything goes wrong, default to \"free\" segment"
+      ],
+      "source_urls": [
+        "https://fliki.ai/",
+        "https://fliki.ai/pricing"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
