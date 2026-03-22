@@ -27,7 +27,9 @@
 
   const $updated = document.getElementById('pricing-updated');
   const $status = document.getElementById('pricing-snapshot-status');
-  const $tableWrap = document.getElementById('pricing-snapshot-table-wrap');
+  const $tableWrap =
+    document.getElementById('pricing-snapshot-table-wrap') ||
+    document.getElementById('pricing-snapshot-grid');
   const $toolsTotal = document.getElementById('pricing-tools-total');
   const $toolsMonthly = document.getElementById('pricing-tools-monthly');
 
@@ -111,13 +113,29 @@
       .filter((amount) => typeof amount === 'number');
   }
 
+  function extractFallbackValues(points) {
+    return points
+      .map((point) => {
+        const text = String(point || '').toLowerCase();
+        if (!text) return null;
+
+        const hasYearlySignal = /\byear\b|\byearly\b|\bannual\b|\/\s*yr\b|\/\s*year\b/.test(text);
+        if (hasYearlySignal) return null;
+
+        const match = text.match(/\$\s*([0-9]+(?:,[0-9]{3})*(?:\.[0-9]+)?)/);
+        if (!match) return null;
+        const amount = Number(match[1].replace(/,/g, ''));
+        return Number.isFinite(amount) ? amount : null;
+      })
+      .filter((amount) => typeof amount === 'number');
+  }
+
   function getMonthlyData(points) {
     const monthlyValues = extractMonthlyValues(points);
-    if (monthlyValues.length === 0) {
-      return { label: '', value: null };
-    }
+    const sourceValues = monthlyValues.length > 0 ? monthlyValues : extractFallbackValues(points);
+    if (sourceValues.length === 0) return { label: '', value: null };
 
-    const lowest = Math.min(...monthlyValues);
+    const lowest = Math.min(...sourceValues);
     if (lowest === 0) return { label: 'Free ($0/mo)', value: 0 };
     const formatted = Number.isInteger(lowest) ? String(lowest) : lowest.toFixed(2);
     return { label: `From $${formatted}/mo`, value: lowest };
@@ -167,7 +185,11 @@
         link.textContent = 'Read battle →';
         battle.appendChild(link);
       } else {
-        battle.textContent = 'N/A';
+        const fallback = document.createElement('a');
+        fallback.className = 'btn btn-ghost btn-sm';
+        fallback.href = '#battles';
+        fallback.textContent = 'See battles →';
+        battle.appendChild(fallback);
       }
       tr.appendChild(battle);
 
