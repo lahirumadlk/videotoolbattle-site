@@ -125,6 +125,7 @@
             </a>
             <nav class="nav-links" aria-label="Main navigation">
                 <a href="#battles" class="active">Battles</a>
+                <a href="#pricing">Pricing Battle</a>
                 <a href="#trust">How We Compare</a>
                 <a href="#newsletter">Stay Updated</a>
             </nav>
@@ -140,6 +141,7 @@
     <!-- Mobile Menu -->
     <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
         <a href="#battles">Battles</a>
+        <a href="#pricing">Pricing Battle</a>
         <a href="#trust">How We Compare</a>
         <a href="#newsletter">Stay Updated</a>
     </nav>
@@ -662,15 +664,30 @@
     <!-- ===== LATEST PRICING SNAPSHOT (AUTO-UPDATED) ===== -->
     <section id="pricing" class="pricing-section">
         <div class="page-wrap">
-            <div class="section-header" style="margin-bottom: 18px;">
-                <h2>Latest Pricing Snapshot</h2>
-                <p class="section-subtitle">
-                    Auto-updated from public pricing pages. Last checked:
-                    <span id="pricing-updated" class="pricing-updated">—</span>
-                </p>
+            <div class="pricing-shell">
+                <div class="section-header pricing-header">
+                    <h2>Pricing Battle</h2>
+                    <p class="section-subtitle">
+                        Monthly entry pricing snapshot from official public pages.
+                    </p>
+                </div>
+                <div class="pricing-kpis" aria-label="Pricing summary">
+                    <div class="pricing-kpi">
+                        <span class="pricing-kpi-label">Tools tracked</span>
+                        <span class="pricing-kpi-value" id="pricing-tools-total">—</span>
+                    </div>
+                    <div class="pricing-kpi">
+                        <span class="pricing-kpi-label">Monthly prices found</span>
+                        <span class="pricing-kpi-value" id="pricing-tools-monthly">—</span>
+                    </div>
+                    <div class="pricing-kpi">
+                        <span class="pricing-kpi-label">Last checked (UTC)</span>
+                        <span class="pricing-kpi-value" id="pricing-updated">—</span>
+                    </div>
+                </div>
             </div>
 
-            <div id="pricing-snapshot-status" class="pricing-status" role="status" aria-live="polite"></div>
+            <div id="pricing-snapshot-status" class="pricing-status" role="status" aria-live="polite" hidden></div>
             <div id="pricing-snapshot-grid" class="pricing-grid" aria-label="Latest pricing snapshot"></div>
 
             <p class="pricing-fineprint">
