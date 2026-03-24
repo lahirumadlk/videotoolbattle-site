@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-03-22T19:10:55+00:00",
+  "generated_at_utc": "2026-03-24T09:00:48+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 13,
   "tools": [
@@ -8,8 +8,8 @@
       "name": "InVideo AI",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$7",
         "$5",
+        "$26",
         "$27",
         "$28",
         "$29"
@@ -217,15 +217,16 @@
       "name": "Luma Dream Machine",
       "base_url": "https://lumalabs.ai/dream-machine",
       "price_points": [
-        "$17",
-        "$20",
+        "$22",
+        "$23",
+        "$24",
+        "$25",
         "$30 /month",
         "$300 billed yearly",
         "$90 /month",
         "$900 billed yearly",
         "$300 /month",
-        "$3,000 billed yearly",
-        "$30"
+        "$3,000 billed yearly"
       ],
       "plan_names": [
         "Free",
@@ -238,7 +239,7 @@
         "Creator"
       ],
       "commercial_flags": {
-        "free_plan": true,
+        "free_plan": false,
         "free_trial": true,
         "enterprise_or_contact_sales": true
       },
@@ -257,8 +258,8 @@
         "From idea to final, uninterrupted",
         "From ideation to final image or video, work inside a single platform, without handoffs, context loss, or tool switching.",
         "Try now Explore pricing",
-        "Dream Machine allows users to generate images and videos directly from text prompts or images, enabling seamless creative ideation and storytelling.",
-        "Can I create videos from images using Dream Machine?"
+        "Can I create videos from images using Dream Machine?",
+        "Is Dream Machine free to use?"
       ],
       "source_urls": [
         "https://lumalabs.ai/dream-machine",
@@ -346,10 +347,11 @@
       ],
       "pricing_snippets": [
         "FREE 7-day Pro for new desktop users—download and enjoy yours today! Download",
-        "Download for free Try online",
+        "Try online for free Download",
+        "Create professional designs with AI online. Generate layouts for social media posts, covers, and marketing materials automatically—easy and free.",
         "A quick chat with CapCut's AI video editor and it'll build a video from scratch, style, avatar, everything.",
         "The reliable and essential AI editing features from CapCut for text, audio, and video.",
-        "Find the perfect caption style from 100+ templates for music, gaming, and more in our video editor."
+        "Resize images online for free with AI. Adjust dimensions and aspect ratios quickly for social media, websites, ads, and digital content."
       ],
       "source_urls": [
         "https://www.capcut.com/"
