@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-03-24T09:00:48+00:00",
+  "generated_at_utc": "2026-03-25T06:13:59+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 13,
   "tools": [
@@ -58,8 +58,8 @@
       "name": "InVideo",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$7",
         "$5",
+        "$26",
         "$27",
         "$28",
         "$29"
@@ -110,11 +110,12 @@
       "price_points": [
         "$7",
         "$14",
-        "$30",
-        "$36",
-        "$10",
+        "$32",
         "$38",
-        "$39"
+        "$39",
+        "$95",
+        "$96",
+        "$97"
       ],
       "plan_names": [
         "Free",
