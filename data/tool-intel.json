@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-03-27T06:20:16+00:00",
+  "generated_at_utc": "2026-03-28T06:10:59+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 13,
   "tools": [
@@ -110,10 +110,10 @@
       "price_points": [
         "$7",
         "$14",
-        "$24",
-        "$25",
-        "$84",
-        "$10"
+        "$21",
+        "$37",
+        "$10",
+        "$25"
       ],
       "plan_names": [
         "Free",
@@ -216,10 +216,10 @@
       "base_url": "https://lumalabs.ai/dream-machine",
       "price_points": [
         "$20",
-        "$22",
         "$23",
         "$24",
         "$25",
+        "$26",
         "$30 /month",
         "$300 billed yearly",
         "$90 /month",
@@ -372,7 +372,7 @@
         "Team"
       ],
       "commercial_flags": {
-        "free_plan": true,
+        "free_plan": false,
         "free_trial": false,
         "enterprise_or_contact_sales": true
       },
@@ -391,11 +391,11 @@
         "150"
       ],
       "pricing_snippets": [
-        "Remove Background Noise from Audio",
         "Pricing",
-        "Start for free",
-        "Select from 2M+ video and audio assets from our royalty-free stock library.",
-        "Make your content more engaging. Keep eye contact, 'speak' another language and create videos from text prompts—all powered by AI technology."
+        "Remove Background Noise From Audio",
+        "Remove Background Noise From Video",
+        "Pricing Enterprise",
+        "Pricing - VEED.IO"
       ],
       "source_urls": [
         "https://www.veed.io/",
