@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-03-29T06:18:31+00:00",
+  "generated_at_utc": "2026-03-30T07:00:40+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 13,
   "tools": [
@@ -8,8 +8,8 @@
       "name": "InVideo AI",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$7",
         "$5",
+        "$26",
         "$27",
         "$28",
         "$29"
@@ -58,8 +58,8 @@
       "name": "InVideo",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$7",
         "$5",
+        "$26",
         "$27",
         "$28",
         "$29"
@@ -111,8 +111,8 @@
         "$7",
         "$14",
         "$22",
-        "$23",
         "$10",
+        "$23",
         "$25"
       ],
       "plan_names": [
@@ -215,6 +215,7 @@
       "name": "Luma Dream Machine",
       "base_url": "https://lumalabs.ai/dream-machine",
       "price_points": [
+        "$20",
         "$23",
         "$24",
         "$25",
@@ -223,8 +224,7 @@
         "$300 billed yearly",
         "$90 /month",
         "$900 billed yearly",
-        "$300 /month",
-        "$3,000 billed yearly"
+        "$300 /month"
       ],
       "plan_names": [
         "Free",
@@ -560,20 +560,23 @@
       "name": "Descript",
       "base_url": "https://www.descript.com/",
       "price_points": [
-        "$0",
-        "$24",
         "$16",
-        "$35"
+        "$24",
+        "$35",
+        "$50",
+        "$65",
+        "$0",
+        "$16/month"
       ],
       "plan_names": [
         "Free",
-        "Standard",
         "Pro",
         "Business",
         "Enterprise",
         "Team",
         "Creator",
-        "Plus"
+        "Plus",
+        "Max"
       ],
       "commercial_flags": {
         "free_plan": true,
@@ -596,7 +599,7 @@
         "14"
       ],
       "pricing_snippets": [
-        "Descript – AI Video & Podcast Editor | Free, Online",
+        "Pricing & Plans | Descript",
         "Create bespoke, custom video and images from a prompt.",
         "Easily create a realistic voice clone or pick from our stock AI voices.",
         "Pick an avatar from our gallery or upload a photo to create your own.",
@@ -604,10 +607,9 @@
         "Pricing Contact sales"
       ],
       "source_urls": [
-        "https://www.descript.com/",
         "https://www.descript.com/pricing"
       ],
-      "confidence": "high"
+      "confidence": "medium"
     },
     {
       "key": "fliki",
