@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-01T06:54:49+00:00",
+  "generated_at_utc": "2026-04-02T06:19:35+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 13,
   "tools": [
@@ -19,10 +19,10 @@
         "Standard",
         "Pro",
         "Premium",
+        "Business",
         "Enterprise",
         "Team",
-        "Creator",
-        "Max"
+        "Creator"
       ],
       "commercial_flags": {
         "free_plan": false,
@@ -69,10 +69,10 @@
         "Standard",
         "Pro",
         "Premium",
+        "Business",
         "Enterprise",
         "Team",
-        "Creator",
-        "Max"
+        "Creator"
       ],
       "commercial_flags": {
         "free_plan": false,
@@ -110,10 +110,9 @@
       "price_points": [
         "$7",
         "$14",
-        "$16",
-        "$36",
-        "$17",
-        "$31"
+        "$24",
+        "$25",
+        "$27"
       ],
       "plan_names": [
         "Free",
@@ -215,7 +214,6 @@
       "name": "Luma Dream Machine",
       "base_url": "https://lumalabs.ai/dream-machine",
       "price_points": [
-        "$20",
         "$23",
         "$24",
         "$25",
@@ -224,7 +222,8 @@
         "$300 billed yearly",
         "$90 /month",
         "$900 billed yearly",
-        "$300 /month"
+        "$300 /month",
+        "$3,000 billed yearly"
       ],
       "plan_names": [
         "Free",
@@ -392,8 +391,8 @@
       ],
       "pricing_snippets": [
         "Pricing",
-        "from { transform: scaleX(0); }",
-        "Start from scratch",
+        "Remove Background Noise From Audio",
+        "Remove Background Noise From Video",
         "Pricing Enterprise",
         "Pricing - VEED.IO"
       ],
