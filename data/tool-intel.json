@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-08T06:50:51+00:00",
+  "generated_at_utc": "2026-04-09T06:51:05+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 13,
   "tools": [
@@ -8,8 +8,8 @@
       "name": "InVideo AI",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$7",
         "$5",
+        "$26",
         "$27",
         "$28",
         "$29"
@@ -58,8 +58,8 @@
       "name": "InVideo",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$7",
         "$5",
+        "$26",
         "$27",
         "$28",
         "$29"
@@ -110,10 +110,12 @@
       "price_points": [
         "$7",
         "$14",
-        "$24",
-        "$25",
-        "$84",
-        "$10"
+        "$10",
+        "$34",
+        "$96",
+        "$97",
+        "$98",
+        "$99"
       ],
       "plan_names": [
         "Free",
@@ -392,8 +394,8 @@
       ],
       "pricing_snippets": [
         "Pricing",
-        "Remove Background Noise From Audio",
-        "Remove Background Noise From Video",
+        "from { transform: scaleX(0); }",
+        "Start from scratch",
         "Pricing Enterprise",
         "Pricing - VEED.IO"
       ],
@@ -647,7 +649,7 @@
       ],
       "pricing_snippets": [
         "Fliki - Create AI Videos and Voiceovers in Minutes | Free",
-        "Pricing Login Signup",
+        "Pricing 50 % off! Login Signup",
         "// Default segment - if we can't determine status, default to \"free\"",
         "let segment = \"free user\";",
         "// Try to get user_paid from session data",
