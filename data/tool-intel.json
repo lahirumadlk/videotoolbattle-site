@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-11T06:13:05+00:00",
+  "generated_at_utc": "2026-04-12T06:48:32+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 13,
   "tools": [
@@ -8,9 +8,8 @@
       "name": "InVideo AI",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$7",
-        "$10",
         "$5",
+        "$28",
         "$29"
       ],
       "plan_names": [
@@ -50,16 +49,15 @@
         "https://invideo.io/pricing/",
         "https://invideo.io/plans"
       ],
-      "confidence": "high"
+      "confidence": "medium"
     },
     {
       "key": "invideo",
       "name": "InVideo",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$7",
-        "$10",
         "$5",
+        "$28",
         "$29"
       ],
       "plan_names": [
@@ -99,7 +97,7 @@
         "https://invideo.io/pricing/",
         "https://invideo.io/plans"
       ],
-      "confidence": "high"
+      "confidence": "medium"
     },
     {
       "key": "heygen",
@@ -108,12 +106,9 @@
       "price_points": [
         "$7",
         "$14",
-        "$33",
-        "$39",
-        "$10",
-        "$96",
-        "$97",
-        "$98"
+        "$24",
+        "$25",
+        "$27"
       ],
       "plan_names": [
         "Free",
@@ -146,7 +141,7 @@
       ],
       "pricing_snippets": [
         "Free AI Video Generator: Create Stunning Videos with AI",
-        "Platform Enterprise Use cases Learning Pricing Research Company",
+        "Platform Enterprise Developers Research Pricing Use cases Learning Company",
         "Go from script, image, presentation, or PDF to finished video. No cameras, no crew, no editing skills required. Create full-length videos and hours of content, not just short clips.",
         "Get Started for Free",
         "Create training, marketing, sales, and internal content from a single workspace with enterprise-grade security and admin controls."
