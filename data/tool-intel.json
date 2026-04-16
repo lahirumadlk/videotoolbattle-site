@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-15T07:02:58+00:00",
+  "generated_at_utc": "2026-04-16T07:03:16+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 13,
   "tools": [
@@ -613,10 +613,12 @@
       "name": "Fliki",
       "base_url": "https://fliki.ai/",
       "price_points": [
-        "$4800/month",
         "$6",
-        "$10",
-        "$20"
+        "$11",
+        "$100",
+        "$4800/month",
+        "$18",
+        "$0"
       ],
       "plan_names": [
         "Free",
@@ -625,6 +627,7 @@
         "Business",
         "Enterprise",
         "Team",
+        "Creator",
         "Plus"
       ],
       "commercial_flags": {
@@ -642,15 +645,17 @@
         "api_or_sdk": true
       },
       "languages_supported_numbers": [
-        "80"
+        "80",
+        "70",
+        "90"
       ],
       "pricing_snippets": [
-        "Fliki - Create AI Videos and Voiceovers in Minutes | Free",
         "Pricing 50 % off! Login Signup",
         "// Default segment - if we can't determine status, default to \"free\"",
         "let segment = \"free user\";",
         "// Try to get user_paid from session data",
-        "// If anything goes wrong, default to \"free\" segment"
+        "// If anything goes wrong, default to \"free\" segment",
+        "window.$crisp.push([\"set\", \"session:segments\", [[\"free\"], true]]);"
       ],
       "source_urls": [
         "https://fliki.ai/",
