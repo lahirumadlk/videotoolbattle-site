@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-17T07:04:17+00:00",
+  "generated_at_utc": "2026-04-18T06:19:44+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 13,
   "tools": [
@@ -8,9 +8,8 @@
       "name": "InVideo AI",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$7",
-        "$10",
         "$5",
+        "$28",
         "$29"
       ],
       "plan_names": [
@@ -50,16 +49,15 @@
         "https://invideo.io/pricing/",
         "https://invideo.io/plans"
       ],
-      "confidence": "high"
+      "confidence": "medium"
     },
     {
       "key": "invideo",
       "name": "InVideo",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$7",
-        "$10",
         "$5",
+        "$28",
         "$29"
       ],
       "plan_names": [
@@ -99,7 +97,7 @@
         "https://invideo.io/pricing/",
         "https://invideo.io/plans"
       ],
-      "confidence": "high"
+      "confidence": "medium"
     },
     {
       "key": "heygen",
@@ -108,10 +106,10 @@
       "price_points": [
         "$7",
         "$14",
-        "$20",
-        "$23",
-        "$24",
-        "$10"
+        "$22",
+        "$38",
+        "$10",
+        "$26"
       ],
       "plan_names": [
         "Free",
@@ -196,12 +194,11 @@
       },
       "languages_supported_numbers": [],
       "pricing_snippets": [
+        "Now through Monday, get 50% off when you upgrade to any plan with RUNWAY50. See terms .",
         "Built on our recently launched world model, GWM-1, Characters lets you generate expressive digital personas from a single image, with zero fine-tuning required.",
         "Pricing",
         "AI Image and Video Pricing from $12/month | Runway AI",
-        "Choose the best plan for you",
-        "Monthly",
-        "Yearly -20% off"
+        "Choose the best plan for you"
       ],
       "source_urls": [
         "https://runwayml.com/",
@@ -391,10 +388,9 @@
       ],
       "pricing_snippets": [
         "Pricing",
-        "from { transform: scaleX(0); }",
-        "Start from scratch",
-        "Pricing Enterprise",
-        "Pricing - VEED.IO"
+        "from { width: 0; }",
+        "Remove Background Noise From Audio",
+        "Remove Background Noise From Video"
       ],
       "source_urls": [
         "https://www.veed.io/",
@@ -650,7 +646,7 @@
         "90"
       ],
       "pricing_snippets": [
-        "Pricing 50 % off! Login Signup",
+        "Pricing 50 % off!",
         "// Default segment - if we can't determine status, default to \"free\"",
         "let segment = \"free user\";",
         "// Try to get user_paid from session data",
