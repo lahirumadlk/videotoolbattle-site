@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-18T06:19:44+00:00",
+  "generated_at_utc": "2026-04-19T06:53:53+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 13,
   "tools": [
@@ -8,8 +8,9 @@
       "name": "InVideo AI",
       "base_url": "https://invideo.io/",
       "price_points": [
+        "$7",
+        "$10",
         "$5",
-        "$28",
         "$29"
       ],
       "plan_names": [
@@ -49,15 +50,16 @@
         "https://invideo.io/pricing/",
         "https://invideo.io/plans"
       ],
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "key": "invideo",
       "name": "InVideo",
       "base_url": "https://invideo.io/",
       "price_points": [
+        "$7",
+        "$10",
         "$5",
-        "$28",
         "$29"
       ],
       "plan_names": [
@@ -97,7 +99,7 @@
         "https://invideo.io/pricing/",
         "https://invideo.io/plans"
       ],
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "key": "heygen",
@@ -106,10 +108,10 @@
       "price_points": [
         "$7",
         "$14",
-        "$22",
-        "$38",
-        "$10",
-        "$26"
+        "$20",
+        "$23",
+        "$24",
+        "$10"
       ],
       "plan_names": [
         "Free",
@@ -388,9 +390,10 @@
       ],
       "pricing_snippets": [
         "Pricing",
-        "from { width: 0; }",
         "Remove Background Noise From Audio",
-        "Remove Background Noise From Video"
+        "Remove Background Noise From Video",
+        "Pricing Enterprise",
+        "Pricing - VEED.IO"
       ],
       "source_urls": [
         "https://www.veed.io/",
