@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-20T07:24:46+00:00",
+  "generated_at_utc": "2026-04-21T07:05:34+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 13,
   "tools": [
@@ -109,9 +109,9 @@
         "$7",
         "$14",
         "$20",
-        "$34",
+        "$25",
         "$10",
-        "$41"
+        "$26"
       ],
       "plan_names": [
         "Free",
@@ -144,7 +144,7 @@
       ],
       "pricing_snippets": [
         "Free AI Video Generator: Create Stunning Videos with AI",
-        "Platform Enterprise Developers Research Pricing Use cases Learning Company",
+        "Platform Use cases Developers Resources Enterprise Research Pricing",
         "Go from script, image, presentation, or PDF to finished video. No cameras, no crew, no editing skills required. Create full-length videos and hours of content, not just short clips.",
         "Get Started for Free",
         "Create training, marketing, sales, and internal content from a single workspace with enterprise-grade security and admin controls."
@@ -413,7 +413,8 @@
         "$89 /mo",
         "$29 /month",
         "$0 /mo",
-        "$1000/year"
+        "$1000/year",
+        "$1,000/year"
       ],
       "plan_names": [
         "Free",
@@ -649,7 +650,7 @@
         "90"
       ],
       "pricing_snippets": [
-        "Pricing 50 % off!",
+        "Pricing",
         "// Default segment - if we can't determine status, default to \"free\"",
         "let segment = \"free user\";",
         "// Try to get user_paid from session data",
