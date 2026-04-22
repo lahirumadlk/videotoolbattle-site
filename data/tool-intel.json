@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-21T07:05:34+00:00",
+  "generated_at_utc": "2026-04-22T07:05:30+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 13,
   "tools": [
@@ -196,11 +196,12 @@
       },
       "languages_supported_numbers": [],
       "pricing_snippets": [
-        "Now through Monday, get 50% off when you upgrade to any plan with RUNWAY50. See terms .",
         "Built on our recently launched world model, GWM-1, Characters lets you generate expressive digital personas from a single image, with zero fine-tuning required.",
         "Pricing",
         "AI Image and Video Pricing from $12/month | Runway AI",
-        "Choose the best plan for you"
+        "Choose the best plan for you",
+        "Monthly",
+        "Yearly -20% off"
       ],
       "source_urls": [
         "https://runwayml.com/",
@@ -390,10 +391,9 @@
       ],
       "pricing_snippets": [
         "Pricing",
+        "from { width: 0; }",
         "Remove Background Noise From Audio",
-        "Remove Background Noise From Video",
-        "Pricing Enterprise",
-        "Pricing - VEED.IO"
+        "Remove Background Noise From Video"
       ],
       "source_urls": [
         "https://www.veed.io/",
