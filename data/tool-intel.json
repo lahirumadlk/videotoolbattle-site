@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-26T07:05:25+00:00",
+  "generated_at_utc": "2026-04-27T07:42:24+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 13,
   "tools": [
@@ -109,9 +109,9 @@
         "$7",
         "$14",
         "$20",
-        "$25",
+        "$34",
         "$10",
-        "$26"
+        "$41"
       ],
       "plan_names": [
         "Free",
@@ -391,9 +391,10 @@
       ],
       "pricing_snippets": [
         "Pricing",
-        "from { width: 0; }",
         "Remove Background Noise From Audio",
-        "Remove Background Noise From Video"
+        "Remove Background Noise From Video",
+        "Pricing Enterprise",
+        "Pricing - VEED.IO"
       ],
       "source_urls": [
         "https://www.veed.io/",
