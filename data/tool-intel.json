@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-28T07:41:17+00:00",
+  "generated_at_utc": "2026-04-29T07:35:55+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 13,
   "tools": [
@@ -11,6 +11,7 @@
         "$7",
         "$10",
         "$5",
+        "$28",
         "$29"
       ],
       "plan_names": [
@@ -60,6 +61,7 @@
         "$7",
         "$10",
         "$5",
+        "$28",
         "$29"
       ],
       "plan_names": [
@@ -599,8 +601,8 @@
         "Create bespoke, custom video and images from a prompt.",
         "Easily create a realistic voice clone or pick from our stock AI voices.",
         "Pick an avatar from our gallery or upload a photo to create your own.",
-        "Pricing",
-        "Pricing Contact sales Sign in"
+        "Produced 10+ clips from a single interview",
+        "Pricing"
       ],
       "source_urls": [
         "https://www.descript.com/",
