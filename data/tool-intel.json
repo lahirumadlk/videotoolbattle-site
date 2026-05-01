@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-04-30T07:38:26+00:00",
+  "generated_at_utc": "2026-05-01T07:37:14+00:00",
   "tool_count": 13,
-  "tools_with_pricing_signal": 13,
+  "tools_with_pricing_signal": 12,
   "tools": [
     {
       "key": "invideo-ai",
@@ -11,6 +11,7 @@
         "$7",
         "$10",
         "$5",
+        "$27",
         "$28",
         "$29"
       ],
@@ -61,6 +62,7 @@
         "$7",
         "$10",
         "$5",
+        "$27",
         "$28",
         "$29"
       ],
@@ -111,11 +113,9 @@
         "$7",
         "$14",
         "$20",
-        "$34",
-        "$10",
-        "$38",
-        "$52",
-        "$35"
+        "$25",
+        "$26",
+        "$8"
       ],
       "plan_names": [
         "Free",
@@ -523,11 +523,7 @@
       "name": "Kaiber",
       "base_url": "https://kaiber.ai/",
       "price_points": [],
-      "plan_names": [
-        "Creator",
-        "Plus",
-        "Max"
-      ],
+      "plan_names": [],
       "commercial_flags": {
         "free_plan": false,
         "free_trial": false,
@@ -539,20 +535,13 @@
         "image_to_video": false,
         "voice_cloning": false,
         "subtitle_generation": false,
-        "video_editing": true,
+        "video_editing": false,
         "api_or_sdk": false
       },
       "languages_supported_numbers": [],
-      "pricing_snippets": [
-        "Superstudio from Kaiber",
-        "Pricing",
-        "Train Custom Models, craft scenes, reimagine visuals, and bring entire narratives to life—right from your Canvas.",
-        "Restyle logos, remix graphics, and map visuals onto anything from packaging to billboards.",
-        "Create stunning AI-generated videos. Storyboard, animate, and refine motion—all from a single canvas.",
-        "Labs collaborated with artist Jon Rafman to create visuals for a Live From Earth rave hosted with Praying."
-      ],
+      "pricing_snippets": [],
       "source_urls": [
-        "https://www.kaiber.ai/superstudio",
+        "https://kaiber.ai/",
         "https://kaiber.ai/pricing",
         "https://kaiber.ai/plans"
       ],
