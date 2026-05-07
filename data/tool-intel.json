@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-05T07:27:41+00:00",
+  "generated_at_utc": "2026-05-07T07:52:19+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -113,10 +113,9 @@
         "$7",
         "$14",
         "$22",
-        "$36",
+        "$27",
         "$10",
-        "$42",
-        "$43"
+        "$28"
       ],
       "plan_names": [
         "Free",
@@ -256,7 +255,7 @@
       },
       "languages_supported_numbers": [],
       "pricing_snippets": [
-        "Product Pricing Enterprise News Join us",
+        "Product Pricing API Enterprise News Join us",
         "Luma Agents are the force multiplier for your team. They plan, generate, iterate, and refine with full context across every stage of creative work.",
         "Context moves through agents across teams, carrying shared intelligence across video, image, audio, and text so work advances from concept to delivery without fragmentation.",
         "Visualize packaging and labels in photorealistic 3D—from shelf views to close-ups.",
@@ -524,7 +523,9 @@
       "name": "Kaiber",
       "base_url": "https://kaiber.ai/",
       "price_points": [],
-      "plan_names": [],
+      "plan_names": [
+        "Creator"
+      ],
       "commercial_flags": {
         "free_plan": false,
         "free_trial": false,
