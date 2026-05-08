@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-07T07:52:19+00:00",
+  "generated_at_utc": "2026-05-08T07:00:04+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -164,12 +164,11 @@
       "name": "Runway",
       "base_url": "https://runwayml.com/",
       "price_points": [
-        "$13",
+        "$12",
         "$7",
-        "$21",
+        "$20",
         "$12/month",
         "$0",
-        "$12",
         "$144",
         "$28",
         "$336"
