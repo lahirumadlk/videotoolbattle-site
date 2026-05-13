@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-12T08:04:33+00:00",
+  "generated_at_utc": "2026-05-13T08:12:27+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -112,11 +112,11 @@
       "price_points": [
         "$7",
         "$14",
-        "$22",
-        "$37",
+        "$24",
+        "$29",
         "$10",
-        "$49",
-        "$29/month"
+        "$95",
+        "$36"
       ],
       "plan_names": [
         "Free",
@@ -224,10 +224,10 @@
         "$900 billed yearly",
         "$300 /month",
         "$3,000 billed yearly",
-        "$12",
-        "$13",
-        "$14",
-        "$15"
+        "$30/month",
+        "$90/month",
+        "$300/month",
+        "$30"
       ],
       "plan_names": [
         "Free",
@@ -507,10 +507,10 @@
       "pricing_snippets": [
         "\"price\": \"0\",",
         "\"description\": \"Free 14-day trial available, no credit card required\"",
+        "border-radius: 8px!important; /* Updated from 30px to 8px */",
         "// Means that we created a fake referral attribution event to track where the traffic came from.",
         "Make the following elements inherit typography styles from the parent and not have hardcoded values.",
-        "Choose from over 600 AI voices to narrate your text.",
-        "Pricing Enterprise"
+        "Choose from over 600 AI voices to narrate your text."
       ],
       "source_urls": [
         "https://www.colossyan.com/",
