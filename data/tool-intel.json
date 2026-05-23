@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-22T08:31:31+00:00",
+  "generated_at_utc": "2026-05-23T07:42:42+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -8,8 +8,9 @@
       "name": "InVideo AI",
       "base_url": "https://invideo.io/",
       "price_points": [
+        "$7",
+        "$10",
         "$5",
-        "$26",
         "$27",
         "$28",
         "$29"
@@ -58,8 +59,9 @@
       "name": "InVideo",
       "base_url": "https://invideo.io/",
       "price_points": [
+        "$7",
+        "$10",
         "$5",
-        "$26",
         "$27",
         "$28",
         "$29"
@@ -110,9 +112,11 @@
       "price_points": [
         "$7",
         "$14",
+        "$27",
+        "$43",
         "$10",
-        "$20",
-        "$57"
+        "$60",
+        "$61"
       ],
       "plan_names": [
         "Free",
@@ -238,7 +242,7 @@
       ],
       "commercial_flags": {
         "free_plan": false,
-        "free_trial": true,
+        "free_trial": false,
         "enterprise_or_contact_sales": true
       },
       "capabilities": {
@@ -520,9 +524,7 @@
       "name": "Kaiber",
       "base_url": "https://kaiber.ai/",
       "price_points": [],
-      "plan_names": [
-        "Creator"
-      ],
+      "plan_names": [],
       "commercial_flags": {
         "free_plan": false,
         "free_trial": false,
@@ -643,11 +645,11 @@
       ],
       "pricing_snippets": [
         "Pricing",
-        "// Default segment - if we can't determine status, default to \"free\"",
-        "let segment = \"free user\";",
-        "// Try to get user_paid from session data",
-        "// If anything goes wrong, default to \"free\" segment",
-        "window.$crisp.push([\"set\", \"session:segments\", [[\"free\"], true]]);"
+        "Start creating for free",
+        "Fliki's AI video generator builds the entire video from a single prompt - script, visuals, voiceover, music, and captions. Used by 12M+ creators for TikToks, Reels, and YouTube.",
+        "Studio-quality AI voiceover in 2,000+ lifelike voices and 80+ languages - or clone your own voice from a short sample and use it across unlimited videos.",
+        "Top AI video tools, free to try",
+        "From script and slides to voice, translation, and screen capture — every Fliki tool ships in the same workspace as your voiceover, avatars, and editor."
       ],
       "source_urls": [
         "https://fliki.ai/",
