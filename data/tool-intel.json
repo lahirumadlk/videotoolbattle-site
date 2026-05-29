@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-28T08:52:57+00:00",
+  "generated_at_utc": "2026-05-29T08:51:40+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -108,16 +108,11 @@
       "name": "HeyGen",
       "base_url": "https://www.heygen.com/",
       "price_points": [
-        "$29/month",
-        "$24/month",
-        "$49/month",
-        "$149/month",
-        "$20/seat",
-        "$49",
-        "$4,300",
-        "$0/mo",
-        "$29 / mo",
-        "$49 / mo"
+        "$7",
+        "$14",
+        "$10",
+        "$46",
+        "$20"
       ],
       "plan_names": [
         "Free",
@@ -130,7 +125,7 @@
         "Creator"
       ],
       "commercial_flags": {
-        "free_plan": false,
+        "free_plan": true,
         "free_trial": false,
         "enterprise_or_contact_sales": true
       },
@@ -144,16 +139,16 @@
         "api_or_sdk": true
       },
       "languages_supported_numbers": [
-        "30",
-        "175"
+        "70",
+        "175",
+        "30"
       ],
       "pricing_snippets": [
-        "Pricing Plans for Creators and Marketers | HeyGen",
+        "Free AI Video Generator: Create Stunning Videos with AI",
+        "Say hello to Avatar V, the most lifelike avatar ever made. Create yours free",
         "Platform Use cases Developers Resources Enterprise Research Pricing",
-        "Flexible pricing plans for every creator and team",
-        "Free Creator Pro",
-        "Monthly Yearly",
-        "Free"
+        "Go from script, image, presentation, or PDF to finished video. No cameras, no crew, no editing skills required. Create full-length videos and hours of content, not just short clips.",
+        "Get Started for Free"
       ],
       "source_urls": [
         "https://www.heygen.com/",
