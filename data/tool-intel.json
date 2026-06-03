@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-02T09:17:41+00:00",
+  "generated_at_utc": "2026-06-03T10:04:59+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -8,9 +8,8 @@
       "name": "InVideo AI",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$7",
-        "$10",
         "$5",
+        "$26",
         "$27",
         "$28",
         "$29"
@@ -59,9 +58,8 @@
       "name": "InVideo",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$7",
-        "$10",
         "$5",
+        "$26",
         "$27",
         "$28",
         "$29"
@@ -110,12 +108,10 @@
       "name": "HeyGen",
       "base_url": "https://www.heygen.com/",
       "price_points": [
-        "$7",
-        "$14",
-        "$27",
-        "$44",
         "$10",
-        "$6"
+        "$9",
+        "$11",
+        "$37"
       ],
       "plan_names": [
         "Free",
@@ -587,8 +583,8 @@
         "Create bespoke, custom video and images from a prompt.",
         "Easily create a realistic voice clone or pick from our stock AI voices.",
         "Pick an avatar from our gallery or upload a photo to create your own.",
-        "Produced 10+ clips from a single interview",
-        "Pricing"
+        "API + MCP Edit video through code, or from inside your AI assistant",
+        "Produced 10+ clips from a single interview"
       ],
       "source_urls": [
         "https://www.descript.com/",
