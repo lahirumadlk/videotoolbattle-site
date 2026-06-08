@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-07T08:29:51+00:00",
+  "generated_at_utc": "2026-06-08T09:55:05+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -112,8 +112,10 @@
       "price_points": [
         "$21",
         "$38",
-        "$40",
-        "$42"
+        "$9",
+        "$64",
+        "$65",
+        "$67"
       ],
       "plan_names": [
         "Free",
