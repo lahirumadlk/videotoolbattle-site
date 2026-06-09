@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-08T09:55:05+00:00",
+  "generated_at_utc": "2026-06-09T08:40:44+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -10,20 +10,23 @@
       "price_points": [
         "$7",
         "$10",
-        "$5",
-        "$27",
-        "$28",
-        "$29"
+        "$29",
+        "$30",
+        "$31",
+        "$32",
+        "$33",
+        "$34",
+        "$35"
       ],
       "plan_names": [
         "Free",
+        "Basic",
         "Standard",
         "Pro",
         "Premium",
+        "Business",
         "Enterprise",
-        "Team",
-        "Creator",
-        "Max"
+        "Team"
       ],
       "commercial_flags": {
         "free_plan": false,
@@ -41,9 +44,10 @@
       },
       "languages_supported_numbers": [],
       "pricing_snippets": [
+        "Pricing Enterprise",
+        "Turn any script or idea into a shot-by-shot plan, then tweak as needed before generating.",
+        "From solo creatives to creative enterprises",
         "Pricing",
-        "Best Work From Cafe Spots",
-        "\" From my first video to a monetized channel, it took less than two months. \"",
         "Access to invideo v4 agent that can create up to 30 mins of video from a single prompt.",
         "invideo AI Pricing"
       ],
@@ -61,20 +65,23 @@
       "price_points": [
         "$7",
         "$10",
-        "$5",
-        "$27",
-        "$28",
-        "$29"
+        "$29",
+        "$30",
+        "$31",
+        "$32",
+        "$33",
+        "$34",
+        "$35"
       ],
       "plan_names": [
         "Free",
+        "Basic",
         "Standard",
         "Pro",
         "Premium",
+        "Business",
         "Enterprise",
-        "Team",
-        "Creator",
-        "Max"
+        "Team"
       ],
       "commercial_flags": {
         "free_plan": false,
@@ -92,9 +99,10 @@
       },
       "languages_supported_numbers": [],
       "pricing_snippets": [
+        "Pricing Enterprise",
+        "Turn any script or idea into a shot-by-shot plan, then tweak as needed before generating.",
+        "From solo creatives to creative enterprises",
         "Pricing",
-        "Best Work From Cafe Spots",
-        "\" From my first video to a monetized channel, it took less than two months. \"",
         "Access to invideo v4 agent that can create up to 30 mins of video from a single prompt.",
         "invideo AI Pricing"
       ],
@@ -444,7 +452,7 @@
         "160",
         "5",
         "80",
-        "130"
+        "70"
       ],
       "pricing_snippets": [
         "GetStarterBtn.href = '#free-ai-video';",
@@ -465,6 +473,7 @@
       "name": "Colossyan",
       "base_url": "https://www.colossyan.com/",
       "price_points": [
+        "$19/month billed annually",
         "$336 billed yearly",
         "$1152 billed yearly",
         "$19/month",
@@ -500,12 +509,12 @@
         "70"
       ],
       "pricing_snippets": [
-        "\"price\": \"0\",",
-        "\"description\": \"Free 14-day trial available, no credit card required\"",
-        "border-radius: 8px!important; /* Updated from 30px to 8px */",
-        "// Means that we created a fake referral attribution event to track where the traffic came from.",
-        "Make the following elements inherit typography styles from the parent and not have hardcoded values.",
-        "Choose from over 600 AI voices to narrate your text."
+        "AI Voiceovers Choose from over 600 AI voices to narrate your text.",
+        "Pricing Enterprise",
+        "Book a demo Sign up for free",
+        "From videos to complete training programs . Create, manage, and scale organizational knowledge.",
+        "Get started for free",
+        "From video to complete training programs."
       ],
       "source_urls": [
         "https://www.colossyan.com/",
