@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-09T08:40:44+00:00",
+  "generated_at_utc": "2026-06-10T09:00:55+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -118,12 +118,15 @@
       "name": "HeyGen",
       "base_url": "https://www.heygen.com/",
       "price_points": [
-        "$21",
-        "$38",
+        "$19",
         "$9",
-        "$64",
-        "$65",
-        "$67"
+        "$47",
+        "$5",
+        "$29/month",
+        "$24/month",
+        "$49/month",
+        "$149/month",
+        "$20/seat"
       ],
       "plan_names": [
         "Free",
@@ -611,9 +614,9 @@
       "base_url": "https://fliki.ai/",
       "price_points": [
         "$6",
-        "$11",
         "$100",
-        "$16"
+        "$15",
+        "$19"
       ],
       "plan_names": [
         "Free",
