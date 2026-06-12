@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-11T09:20:15+00:00",
+  "generated_at_utc": "2026-06-12T09:11:06+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -8,16 +8,15 @@
       "name": "InVideo AI",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$28",
+        "$7",
+        "$10",
         "$29",
         "$30",
         "$31",
         "$32",
         "$33",
         "$34",
-        "$35",
-        "$36",
-        "$37"
+        "$35"
       ],
       "plan_names": [
         "Free",
@@ -63,16 +62,15 @@
       "name": "InVideo",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$28",
+        "$7",
+        "$10",
         "$29",
         "$30",
         "$31",
         "$32",
         "$33",
         "$34",
-        "$35",
-        "$36",
-        "$37"
+        "$35"
       ],
       "plan_names": [
         "Free",
@@ -118,13 +116,12 @@
       "name": "HeyGen",
       "base_url": "https://www.heygen.com/",
       "price_points": [
-        "$18",
+        "$20",
+        "$38",
         "$9",
-        "$46",
-        "$19",
-        "$5",
-        "$29/month",
-        "$24/month"
+        "$64",
+        "$65",
+        "$67"
       ],
       "plan_names": [
         "Free",
@@ -308,7 +305,7 @@
       "pricing_snippets": [
         "Careers Contact Us Pricing Blog API",
         "Subscription Pricing",
-        "Yearly -20% off Monthly",
+        "Yearly -20% off Monthly Weekly",
         "Free",
         "billed yearly",
         "80 monthly video credits self.__wrap_n!=1&&self.__wrap_b(\"_R_hebclucnp3b_\",1)"
@@ -393,8 +390,8 @@
         "api_or_sdk": true
       },
       "languages_supported_numbers": [
-        "50",
         "25",
+        "50",
         "150"
       ],
       "pricing_snippets": [
