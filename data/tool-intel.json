@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-15T11:22:59+00:00",
+  "generated_at_utc": "2026-06-16T10:20:32+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -116,13 +116,13 @@
       "name": "HeyGen",
       "base_url": "https://www.heygen.com/",
       "price_points": [
-        "$18",
         "$9",
-        "$46",
-        "$19",
+        "$44",
         "$5",
-        "$29/month",
-        "$24/month"
+        "$63",
+        "$64",
+        "$65",
+        "$67"
       ],
       "plan_names": [
         "Free",
