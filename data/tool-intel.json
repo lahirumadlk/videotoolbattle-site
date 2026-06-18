@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-17T10:02:17+00:00",
+  "generated_at_utc": "2026-06-18T09:45:06+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -118,13 +118,12 @@
       "name": "HeyGen",
       "base_url": "https://www.heygen.com/",
       "price_points": [
-        "$18",
+        "$20",
+        "$38",
         "$9",
-        "$46",
-        "$19",
-        "$5",
-        "$29/month",
-        "$24/month"
+        "$64",
+        "$65",
+        "$67"
       ],
       "plan_names": [
         "Free",
@@ -306,12 +305,9 @@
       },
       "languages_supported_numbers": [],
       "pricing_snippets": [
+        "Pricing",
         "Careers Contact Us Pricing Blog API",
-        "Subscription Pricing",
-        "Yearly -20% off Monthly Weekly",
-        "Free",
-        "billed yearly",
-        "80 monthly video credits self.__wrap_n!=1&&self.__wrap_b(\"_R_hebclucnp3b_\",1)"
+        "Subscription Pricing"
       ],
       "source_urls": [
         "https://pika.art/",
@@ -379,7 +375,7 @@
         "Enterprise"
       ],
       "commercial_flags": {
-        "free_plan": false,
+        "free_plan": true,
         "free_trial": false,
         "enterprise_or_contact_sales": true
       },
@@ -596,9 +592,9 @@
         "Descript – AI Video & Podcast Editor | Free, Online",
         "Create bespoke, custom video and images from a prompt.",
         "Easily create a realistic voice clone or pick from our stock AI voices.",
-        "Pick an avatar from our gallery or upload a photo to create your own.",
         "API + MCP Edit video through code, or from inside your AI assistant",
-        "Produced 10+ clips from a single interview"
+        "Produced 10+ clips from a single interview",
+        "Pricing"
       ],
       "source_urls": [
         "https://www.descript.com/",
