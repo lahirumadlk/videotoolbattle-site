@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-22T10:47:14+00:00",
+  "generated_at_utc": "2026-06-23T08:37:38+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -276,7 +276,7 @@
       "price_points": [
         "$7",
         "$0",
-        "$23",
+        "$24",
         "$8",
         "$28"
       ],
@@ -303,6 +303,7 @@
       },
       "languages_supported_numbers": [],
       "pricing_snippets": [
+        "Careers Contact Us Pricing API Experiments",
         "Pricing",
         "Careers Contact Us Pricing Blog API",
         "Subscription Pricing"
