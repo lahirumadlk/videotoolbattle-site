@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-24T08:33:22+00:00",
+  "generated_at_utc": "2026-06-25T08:31:14+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -116,10 +116,14 @@
       "name": "HeyGen",
       "base_url": "https://www.heygen.com/",
       "price_points": [
-        "$24",
         "$25",
-        "$19",
-        "$29"
+        "$9",
+        "$26",
+        "$29/month",
+        "$24/month",
+        "$49/month",
+        "$149/month",
+        "$20/seat"
       ],
       "plan_names": [
         "Free",
@@ -639,7 +643,7 @@
         "90"
       ],
       "pricing_snippets": [
-        "Pricing",
+        "Pricing 50 % off!",
         "Start creating for free",
         "Fliki's AI video generator builds the entire video from a single prompt - script, visuals, voiceover, music, and captions. Used by 12M+ creators for TikToks, Reels, and YouTube.",
         "Studio-quality AI voiceover in 2,000+ lifelike voices and 80+ languages - or clone your own voice from a short sample and use it across unlimited videos.",
