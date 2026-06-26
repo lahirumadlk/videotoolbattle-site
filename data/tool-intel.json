@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-25T08:31:14+00:00",
+  "generated_at_utc": "2026-06-26T08:35:36+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -116,14 +116,10 @@
       "name": "HeyGen",
       "base_url": "https://www.heygen.com/",
       "price_points": [
-        "$25",
-        "$9",
-        "$26",
-        "$29/month",
-        "$24/month",
-        "$49/month",
-        "$149/month",
-        "$20/seat"
+        "$27",
+        "$28",
+        "$8",
+        "$9"
       ],
       "plan_names": [
         "Free",
@@ -173,9 +169,13 @@
       "base_url": "https://runwayml.com/",
       "price_points": [
         "$7",
-        "$12",
-        "$18",
-        "$20"
+        "$10",
+        "$14",
+        "$22",
+        "$12/month",
+        "$0",
+        "$36/year",
+        "$15"
       ],
       "plan_names": [
         "Free",
@@ -203,12 +203,11 @@
       },
       "languages_supported_numbers": [],
       "pricing_snippets": [
+        "Agent 2.0 is here. Get 30% off any plan with code AGENT",
         "Built on our recently launched world model, GWM-1, Characters lets you generate expressive digital personas from a single image, with zero fine-tuning required.",
         "Pricing",
         "AI Image and Video Pricing from $12/month | Runway AI",
-        "Runway Pricing: Choose the Right Plan for You",
-        "Monthly",
-        "Yearly -20% off"
+        "Runway Pricing: Choose the Right Plan for You"
       ],
       "source_urls": [
         "https://runwayml.com/",
@@ -416,10 +415,10 @@
         "$18 /month",
         "$29 /mo",
         "$89 /mo",
-        "$29 /month",
         "$0 /mo",
         "$1000/year",
-        "$1,000/year"
+        "$1,000/year",
+        "$29 /month"
       ],
       "plan_names": [
         "Free",
@@ -608,10 +607,9 @@
       "name": "Fliki",
       "base_url": "https://fliki.ai/",
       "price_points": [
-        "$6",
+        "$7",
         "$100",
-        "$15",
-        "$19"
+        "$16"
       ],
       "plan_names": [
         "Free",
@@ -654,7 +652,7 @@
         "https://fliki.ai/",
         "https://fliki.ai/pricing"
       ],
-      "confidence": "high"
+      "confidence": "medium"
     }
   ]
 }
