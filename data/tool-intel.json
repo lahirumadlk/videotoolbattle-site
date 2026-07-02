@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-01T08:55:45+00:00",
+  "generated_at_utc": "2026-07-02T08:24:52+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -8,15 +8,16 @@
       "name": "InVideo AI",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$7",
-        "$10",
+        "$29",
         "$30",
         "$31",
         "$32",
         "$33",
         "$34",
         "$35",
-        "$36"
+        "$36",
+        "$37",
+        "$38"
       ],
       "plan_names": [
         "Free",
@@ -62,15 +63,16 @@
       "name": "InVideo",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$7",
-        "$10",
+        "$29",
         "$30",
         "$31",
         "$32",
         "$33",
         "$34",
         "$35",
-        "$36"
+        "$36",
+        "$37",
+        "$38"
       ],
       "plan_names": [
         "Free",
