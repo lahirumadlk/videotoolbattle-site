@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-02T08:24:52+00:00",
+  "generated_at_utc": "2026-07-03T08:27:07+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -8,6 +8,7 @@
       "name": "InVideo AI",
       "base_url": "https://invideo.io/",
       "price_points": [
+        "$28",
         "$29",
         "$30",
         "$31",
@@ -16,8 +17,7 @@
         "$34",
         "$35",
         "$36",
-        "$37",
-        "$38"
+        "$37"
       ],
       "plan_names": [
         "Free",
@@ -49,8 +49,8 @@
         "Turn any script or idea into a shot-by-shot plan, then tweak as needed before generating.",
         "From solo creatives to creative enterprises",
         "Pricing",
-        "Access to invideo v4 agent that can create up to 30 mins of video from a single prompt.",
-        "invideo AI Pricing"
+        "invideo AI Pricing",
+        "Pricing | invideo AI"
       ],
       "source_urls": [
         "https://invideo.io/",
@@ -63,6 +63,7 @@
       "name": "InVideo",
       "base_url": "https://invideo.io/",
       "price_points": [
+        "$28",
         "$29",
         "$30",
         "$31",
@@ -71,8 +72,7 @@
         "$34",
         "$35",
         "$36",
-        "$37",
-        "$38"
+        "$37"
       ],
       "plan_names": [
         "Free",
@@ -104,8 +104,8 @@
         "Turn any script or idea into a shot-by-shot plan, then tweak as needed before generating.",
         "From solo creatives to creative enterprises",
         "Pricing",
-        "Access to invideo v4 agent that can create up to 30 mins of video from a single prompt.",
-        "invideo AI Pricing"
+        "invideo AI Pricing",
+        "Pricing | invideo AI"
       ],
       "source_urls": [
         "https://invideo.io/",
@@ -118,14 +118,12 @@
       "name": "HeyGen",
       "base_url": "https://www.heygen.com/",
       "price_points": [
-        "$25",
         "$9",
-        "$26",
-        "$29/month",
-        "$24/month",
-        "$49/month",
-        "$149/month",
-        "$20/seat"
+        "$5",
+        "$62",
+        "$64",
+        "$65",
+        "$67"
       ],
       "plan_names": [
         "Free",
@@ -208,11 +206,12 @@
       },
       "languages_supported_numbers": [],
       "pricing_snippets": [
-        "Agent 2.0 is here. Get 30% off any plan with code AGENT",
         "Built on our recently launched world model, GWM-1, Characters lets you generate expressive digital personas from a single image, with zero fine-tuning required.",
         "Pricing",
         "AI Image and Video Pricing from $12/month | Runway AI",
-        "Runway Pricing: Choose the Right Plan for You"
+        "Runway Pricing: Choose the Right Plan for You",
+        "Monthly",
+        "Yearly -20% off"
       ],
       "source_urls": [
         "https://runwayml.com/",
