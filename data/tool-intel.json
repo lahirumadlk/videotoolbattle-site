@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-05T08:15:12+00:00",
+  "generated_at_utc": "2026-07-06T09:10:30+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -471,7 +471,7 @@
       "name": "Colossyan",
       "base_url": "https://www.colossyan.com/",
       "price_points": [
-        "$19/month billed annually",
+        "$59/month",
         "$336 billed yearly",
         "$1152 billed yearly",
         "$19/month",
