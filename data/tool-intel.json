@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-07T08:40:44+00:00",
+  "generated_at_utc": "2026-07-08T07:40:51+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -118,11 +118,14 @@
       "name": "HeyGen",
       "base_url": "https://www.heygen.com/",
       "price_points": [
-        "$37",
+        "$25",
         "$9",
-        "$64",
-        "$65",
-        "$67"
+        "$26",
+        "$29/month",
+        "$24/month",
+        "$49/month",
+        "$149/month",
+        "$20/seat"
       ],
       "plan_names": [
         "Free",
@@ -172,12 +175,13 @@
       "base_url": "https://runwayml.com/",
       "price_points": [
         "$7",
-        "$10",
-        "$15",
-        "$23",
+        "$11",
+        "$16",
+        "$24",
         "$12/month",
         "$0",
-        "$36/year"
+        "$36/year",
+        "$15"
       ],
       "plan_names": [
         "Free",
@@ -487,9 +491,9 @@
         "Standard",
         "Pro",
         "Premium",
-        "Business",
         "Enterprise",
-        "Team"
+        "Team",
+        "Creator"
       ],
       "commercial_flags": {
         "free_plan": true,
@@ -511,12 +515,12 @@
         "120"
       ],
       "pricing_snippets": [
-        "AI Voiceovers Choose from over 600 AI voices to narrate your text.",
+        "Replaced 10+ hrs of monthly walkthrough meetings.",
+        "Free AI tools Templates Integrations Support Partnerships Security",
+        "Quizzes & knowledge checks from content",
+        "Free AI tools Generate quizzes, outlines & objectives — free",
         "Pricing Enterprise",
-        "Book a demo Sign up for free",
-        "Colossyan's AI agents turn your existing content into videos and courses, while you stay in control from first draft to final publish. For training employees, partners, and customers.",
-        "Get started for free",
-        "Build videos and courses from a file, a prompt, or scratch."
+        "Free AI tools"
       ],
       "source_urls": [
         "https://www.colossyan.com/",
@@ -561,7 +565,11 @@
         "$0",
         "$24",
         "$16",
-        "$35"
+        "$35",
+        "$12",
+        "$17",
+        "$18",
+        "$19"
       ],
       "plan_names": [
         "Free",
@@ -648,7 +656,7 @@
         "90"
       ],
       "pricing_snippets": [
-        "Pricing 50 % off!",
+        "Pricing",
         "Start creating for free",
         "Fliki's AI video generator builds the entire video from a single prompt - script, visuals, voiceover, music, and captions. Used by 12M+ creators for TikToks, Reels, and YouTube.",
         "Studio-quality AI voiceover in 2,000+ lifelike voices and 80+ languages - or clone your own voice from a short sample and use it across unlimited videos.",
