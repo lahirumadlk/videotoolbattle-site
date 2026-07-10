@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-09T08:43:23+00:00",
+  "generated_at_utc": "2026-07-10T08:39:43+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -10,13 +10,13 @@
       "price_points": [
         "$7",
         "$10",
+        "$29",
         "$30",
         "$31",
         "$32",
         "$33",
         "$34",
-        "$35",
-        "$36"
+        "$35"
       ],
       "plan_names": [
         "Free",
@@ -64,13 +64,13 @@
       "price_points": [
         "$7",
         "$10",
+        "$29",
         "$30",
         "$31",
         "$32",
         "$33",
         "$34",
-        "$35",
-        "$36"
+        "$35"
       ],
       "plan_names": [
         "Free",
@@ -118,6 +118,8 @@
       "price_points": [
         "$25",
         "$26",
+        "$95",
+        "$9",
         "$28"
       ],
       "plan_names": [
@@ -160,7 +162,7 @@
         "https://www.heygen.com/",
         "https://www.heygen.com/pricing"
       ],
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "key": "runway",
@@ -172,9 +174,9 @@
         "$16",
         "$24",
         "$12/month",
+        "$0.00",
         "$0",
-        "$36/year",
-        "$15"
+        "$36/year"
       ],
       "plan_names": [
         "Free",
@@ -205,8 +207,8 @@
         "Built on our recently launched world model, GWM-1, Characters lets you generate expressive digital personas from a single image, with zero fine-tuning required.",
         "Pricing",
         "AI Image and Video Pricing from $12/month | Runway AI",
-        "Runway Pricing: Choose the Right Plan for You",
-        "Monthly Yearly -20% off",
+        "Choose the Right Plan for You",
+        "Yearly -20% off",
         "Free"
       ],
       "source_urls": [
