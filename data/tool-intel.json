@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-13T08:27:29+00:00",
+  "generated_at_utc": "2026-07-14T07:20:03+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -10,13 +10,13 @@
       "price_points": [
         "$7",
         "$10",
-        "$29",
         "$30",
         "$31",
         "$32",
         "$33",
         "$34",
-        "$35"
+        "$35",
+        "$36"
       ],
       "plan_names": [
         "Free",
@@ -64,13 +64,13 @@
       "price_points": [
         "$7",
         "$10",
-        "$29",
         "$30",
         "$31",
         "$32",
         "$33",
         "$34",
-        "$35"
+        "$35",
+        "$36"
       ],
       "plan_names": [
         "Free",
@@ -172,14 +172,9 @@
       "name": "Runway",
       "base_url": "https://runwayml.com/",
       "price_points": [
-        "$7",
-        "$11",
-        "$16",
-        "$24",
-        "$12/month",
-        "$0.00",
-        "$0",
-        "$36/year"
+        "$100",
+        "$15",
+        "$25"
       ],
       "plan_names": [
         "Free",
@@ -207,18 +202,18 @@
       },
       "languages_supported_numbers": [],
       "pricing_snippets": [
-        "Built on our recently launched world model, GWM-1, Characters lets you generate expressive digital personas from a single image, with zero fine-tuning required.",
+        "Try Runway for free",
+        "Used by 50m+ creatives around the world. Try free, cancel anytime.",
+        "See the latest from Runway",
         "Pricing",
         "AI Image and Video Pricing from $12/month | Runway AI",
-        "Choose the Right Plan for You",
-        "Yearly -20% off",
-        "Free"
+        "Choose the Right Plan for You"
       ],
       "source_urls": [
         "https://runwayml.com/",
         "https://runwayml.com/pricing"
       ],
-      "confidence": "high"
+      "confidence": "medium"
     },
     {
       "key": "luma",
@@ -489,9 +484,9 @@
         "Standard",
         "Pro",
         "Premium",
-        "Business",
         "Enterprise",
-        "Team"
+        "Team",
+        "Creator"
       ],
       "commercial_flags": {
         "free_plan": true,
