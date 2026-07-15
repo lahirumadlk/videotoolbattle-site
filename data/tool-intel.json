@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-14T07:20:03+00:00",
+  "generated_at_utc": "2026-07-15T07:23:21+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -173,8 +173,9 @@
       "base_url": "https://runwayml.com/",
       "price_points": [
         "$100",
-        "$15",
-        "$25"
+        "$14",
+        "$19",
+        "$29"
       ],
       "plan_names": [
         "Free",
@@ -202,18 +203,16 @@
       },
       "languages_supported_numbers": [],
       "pricing_snippets": [
+        "Pricing",
         "Try Runway for free",
         "Used by 50m+ creatives around the world. Try free, cancel anytime.",
-        "See the latest from Runway",
-        "Pricing",
-        "AI Image and Video Pricing from $12/month | Runway AI",
-        "Choose the Right Plan for You"
+        "See the latest from Runway"
       ],
       "source_urls": [
         "https://runwayml.com/",
         "https://runwayml.com/pricing"
       ],
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "key": "luma",
@@ -558,11 +557,7 @@
         "$0",
         "$24",
         "$16",
-        "$35",
-        "$12",
-        "$17",
-        "$18",
-        "$19"
+        "$35"
       ],
       "plan_names": [
         "Free",
