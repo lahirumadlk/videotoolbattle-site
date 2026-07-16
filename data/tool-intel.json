@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-15T07:23:21+00:00",
+  "generated_at_utc": "2026-07-16T07:31:46+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -172,10 +172,12 @@
       "name": "Runway",
       "base_url": "https://runwayml.com/",
       "price_points": [
+        "$17",
+        "$21",
         "$100",
-        "$14",
-        "$19",
-        "$29"
+        "$12/month",
+        "$0.00",
+        "$27"
       ],
       "plan_names": [
         "Free",
@@ -204,9 +206,8 @@
       "languages_supported_numbers": [],
       "pricing_snippets": [
         "Pricing",
-        "Try Runway for free",
-        "Used by 50m+ creatives around the world. Try free, cancel anytime.",
-        "See the latest from Runway"
+        "Built on our recently launched world model, GWM-1, Characters lets you generate expressive digital personas from a single image, with zero fine-tuning required.",
+        "AI Image and Video Pricing from $12/month | Runway AI"
       ],
       "source_urls": [
         "https://runwayml.com/",
@@ -557,7 +558,11 @@
         "$0",
         "$24",
         "$16",
-        "$35"
+        "$35",
+        "$12",
+        "$17",
+        "$18",
+        "$19"
       ],
       "plan_names": [
         "Free",
