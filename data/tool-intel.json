@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-16T07:31:46+00:00",
+  "generated_at_utc": "2026-07-17T07:28:37+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -10,13 +10,13 @@
       "price_points": [
         "$7",
         "$10",
+        "$29",
         "$30",
         "$31",
         "$32",
         "$33",
         "$34",
-        "$35",
-        "$36"
+        "$35"
       ],
       "plan_names": [
         "Free",
@@ -64,13 +64,13 @@
       "price_points": [
         "$7",
         "$10",
+        "$29",
         "$30",
         "$31",
         "$32",
         "$33",
         "$34",
-        "$35",
-        "$36"
+        "$35"
       ],
       "plan_names": [
         "Free",
@@ -116,14 +116,12 @@
       "name": "HeyGen",
       "base_url": "https://www.heygen.com/",
       "price_points": [
-        "$25",
         "$9",
-        "$26",
-        "$29/month",
-        "$24/month",
-        "$49/month",
-        "$149/month",
-        "$20/seat"
+        "$5",
+        "$62",
+        "$64",
+        "$65",
+        "$67"
       ],
       "plan_names": [
         "Free",
@@ -172,12 +170,13 @@
       "name": "Runway",
       "base_url": "https://runwayml.com/",
       "price_points": [
+        "$100",
         "$17",
         "$21",
-        "$100",
         "$12/month",
         "$0.00",
-        "$27"
+        "$0",
+        "$36/year"
       ],
       "plan_names": [
         "Free",
@@ -206,8 +205,9 @@
       "languages_supported_numbers": [],
       "pricing_snippets": [
         "Pricing",
-        "Built on our recently launched world model, GWM-1, Characters lets you generate expressive digital personas from a single image, with zero fine-tuning required.",
-        "AI Image and Video Pricing from $12/month | Runway AI"
+        "Try Runway for free",
+        "Used by 50m+ creatives around the world. Try free, cancel anytime.",
+        "See the latest from Runway"
       ],
       "source_urls": [
         "https://runwayml.com/",
@@ -394,10 +394,12 @@
         "150"
       ],
       "pricing_snippets": [
-        "Pricing",
-        "from { width: 0; }",
-        "Remove Background Noise From Audio",
-        "Remove Background Noise From Video"
+        "Generate videos, voices, avatars and images from a simple prompt. No filming, no studio - just type and create.",
+        "Remove Background Noise from Audio",
+        "Remove Background Noise from Video",
+        "Make scroll-stopping video ads in minutes. Start from a template, customize for any platform and scale what works.",
+        "Everything you need to edit, convert, subtitle and transcribe video - fast, free to try and right in your browser.",
+        "Pricing"
       ],
       "source_urls": [
         "https://www.veed.io/",
