@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-19T07:35:56+00:00",
+  "generated_at_utc": "2026-07-20T08:17:36+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -8,16 +8,15 @@
       "name": "InVideo AI",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$28",
+        "$7",
+        "$10",
         "$29",
         "$30",
         "$31",
         "$32",
         "$33",
         "$34",
-        "$35",
-        "$36",
-        "$37"
+        "$35"
       ],
       "plan_names": [
         "Free",
@@ -63,16 +62,15 @@
       "name": "InVideo",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$28",
+        "$7",
+        "$10",
         "$29",
         "$30",
         "$31",
         "$32",
         "$33",
         "$34",
-        "$35",
-        "$36",
-        "$37"
+        "$35"
       ],
       "plan_names": [
         "Free",
@@ -118,16 +116,14 @@
       "name": "HeyGen",
       "base_url": "https://www.heygen.com/",
       "price_points": [
+        "$25",
         "$9",
+        "$26",
         "$29/month",
         "$24/month",
         "$49/month",
         "$149/month",
-        "$20/seat",
-        "$49",
-        "$4,300",
-        "$0/mo",
-        "$29 / mo"
+        "$20/seat"
       ],
       "plan_names": [
         "Free",
@@ -178,9 +174,6 @@
       "price_points": [
         "$17",
         "$21",
-        "$100",
-        "$12/month",
-        "$0.00",
         "$27"
       ],
       "plan_names": [
@@ -217,7 +210,7 @@
         "https://runwayml.com/",
         "https://runwayml.com/pricing"
       ],
-      "confidence": "high"
+      "confidence": "medium"
     },
     {
       "key": "luma",
