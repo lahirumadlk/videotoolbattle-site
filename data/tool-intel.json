@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-22T07:42:37+00:00",
+  "generated_at_utc": "2026-07-23T07:44:12+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -116,11 +116,14 @@
       "name": "HeyGen",
       "base_url": "https://www.heygen.com/",
       "price_points": [
-        "$25",
-        "$9",
-        "$73",
         "$26",
-        "$5"
+        "$9",
+        "$27",
+        "$29/month",
+        "$24/month",
+        "$49/month",
+        "$149/month",
+        "$20/seat"
       ],
       "plan_names": [
         "Free",
@@ -174,18 +177,18 @@
         "$19",
         "$12/month",
         "$0.00",
-        "$0",
-        "$36/year"
+        "$31",
+        "$0"
       ],
       "plan_names": [
         "Free",
         "Starter",
         "Standard",
         "Pro",
+        "Premium",
         "Business",
         "Enterprise",
-        "Team",
-        "Creator"
+        "Team"
       ],
       "commercial_flags": {
         "free_plan": true,
