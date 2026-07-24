@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-23T07:44:12+00:00",
+  "generated_at_utc": "2026-07-24T07:41:49+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -10,13 +10,13 @@
       "price_points": [
         "$7",
         "$10",
+        "$29",
         "$30",
         "$31",
         "$32",
         "$33",
         "$34",
-        "$35",
-        "$36"
+        "$35"
       ],
       "plan_names": [
         "Free",
@@ -64,13 +64,13 @@
       "price_points": [
         "$7",
         "$10",
+        "$29",
         "$30",
         "$31",
         "$32",
         "$33",
         "$34",
-        "$35",
-        "$36"
+        "$35"
       ],
       "plan_names": [
         "Free",
@@ -157,7 +157,7 @@
       "pricing_snippets": [
         "Free AI Video Generator: Create Stunning Videos with AI",
         "Platform Use cases Developers Resources Enterprise Research Pricing",
-        "Say hello to Avatar V, the most lifelike avatar ever made. Create yours free",
+        "Limited offer 1 month of Creator Plan free - Use code 5GESQHRN",
         "Go from script, image, presentation, or PDF to finished video. No cameras, no crew, no editing skills required. Create full-length videos and hours of content, not just short clips.",
         "Get Started for Free"
       ],
@@ -213,8 +213,8 @@
         "AI Image and Video Pricing from $12/month | Runway AI"
       ],
       "source_urls": [
-        "https://runwayml.com/",
-        "https://runwayml.com/pricing"
+        "https://runway.com/",
+        "https://runway.com/pricing"
       ],
       "confidence": "high"
     },
@@ -262,10 +262,10 @@
       "pricing_snippets": [
         "Product Pricing API Enterprise News Join us",
         "Luma Agents are the force multiplier for your team. They plan, generate, iterate, and refine with full context across every stage of creative work.",
+        "Try for Free",
         "From assets to deliverables",
         "Visualize packaging and labels in photorealistic 3D—from shelf views to close-ups.",
-        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery.",
-        "Maintain brand and asset consistency as Luma Agents carry context from planning through final assembly, ensuring reliable, production-ready delivery."
+        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery."
       ],
       "source_urls": [
         "https://lumalabs.ai/app",
@@ -489,9 +489,9 @@
         "Standard",
         "Pro",
         "Premium",
-        "Business",
         "Enterprise",
-        "Team"
+        "Team",
+        "Creator"
       ],
       "commercial_flags": {
         "free_plan": true,
