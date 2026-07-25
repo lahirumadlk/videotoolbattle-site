@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-24T07:41:49+00:00",
+  "generated_at_utc": "2026-07-25T07:28:07+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -8,15 +8,16 @@
       "name": "InVideo AI",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$7",
-        "$10",
+        "$28",
         "$29",
         "$30",
         "$31",
         "$32",
         "$33",
         "$34",
-        "$35"
+        "$35",
+        "$36",
+        "$37"
       ],
       "plan_names": [
         "Free",
@@ -62,15 +63,16 @@
       "name": "InVideo",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$7",
-        "$10",
+        "$28",
         "$29",
         "$30",
         "$31",
         "$32",
         "$33",
         "$34",
-        "$35"
+        "$35",
+        "$36",
+        "$37"
       ],
       "plan_names": [
         "Free",
@@ -116,14 +118,12 @@
       "name": "HeyGen",
       "base_url": "https://www.heygen.com/",
       "price_points": [
-        "$26",
         "$9",
-        "$27",
-        "$29/month",
-        "$24/month",
-        "$49/month",
-        "$149/month",
-        "$20/seat"
+        "$5",
+        "$62",
+        "$65",
+        "$66",
+        "$68"
       ],
       "plan_names": [
         "Free",
@@ -157,7 +157,7 @@
       "pricing_snippets": [
         "Free AI Video Generator: Create Stunning Videos with AI",
         "Platform Use cases Developers Resources Enterprise Research Pricing",
-        "Limited offer 1 month of Creator Plan free - Use code 5GESQHRN",
+        "Say hello to Avatar V, the most lifelike avatar ever made. Create yours free",
         "Go from script, image, presentation, or PDF to finished video. No cameras, no crew, no editing skills required. Create full-length videos and hours of content, not just short clips.",
         "Get Started for Free"
       ],
