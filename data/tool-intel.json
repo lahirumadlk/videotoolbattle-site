@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-27T08:46:54+00:00",
+  "generated_at_utc": "2026-07-28T07:46:59+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -10,13 +10,13 @@
       "price_points": [
         "$7",
         "$10",
-        "$29",
         "$30",
         "$31",
         "$32",
         "$33",
         "$34",
-        "$35"
+        "$35",
+        "$36"
       ],
       "plan_names": [
         "Free",
@@ -64,13 +64,13 @@
       "price_points": [
         "$7",
         "$10",
-        "$29",
         "$30",
         "$31",
         "$32",
         "$33",
         "$34",
-        "$35"
+        "$35",
+        "$36"
       ],
       "plan_names": [
         "Free",
@@ -116,11 +116,11 @@
       "name": "HeyGen",
       "base_url": "https://www.heygen.com/",
       "price_points": [
+        "$200",
         "$37",
         "$9",
-        "$65",
-        "$66",
-        "$68"
+        "$64",
+        "$67"
       ],
       "plan_names": [
         "Free",
@@ -147,16 +147,15 @@
         "api_or_sdk": true
       },
       "languages_supported_numbers": [
-        "70",
         "175",
         "30"
       ],
       "pricing_snippets": [
         "Free AI Video Generator: Create Stunning Videos with AI",
         "Platform Use cases Developers Resources Enterprise Research Pricing",
-        "Say hello to Avatar V, the most lifelike avatar ever made. Create yours free",
-        "Go from script, image, presentation, or PDF to finished video. No cameras, no crew, no editing skills required. Create full-length videos and hours of content, not just short clips.",
-        "Get Started for Free"
+        "Get started for free",
+        "4.8 / 5 from 1,000+ reviews",
+        "Character consistency is what separates a useful avatar from a gimmick. Avatar V delivers it across every angle, every expression, and every video you create."
       ],
       "source_urls": [
         "https://www.heygen.com/",
@@ -259,10 +258,10 @@
       "pricing_snippets": [
         "Product Pricing API Enterprise News Join us",
         "Luma Agents are the force multiplier for your team. They plan, generate, iterate, and refine with full context across every stage of creative work.",
-        "Try for Free",
         "From assets to deliverables",
         "Visualize packaging and labels in photorealistic 3D—from shelf views to close-ups.",
-        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery."
+        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery.",
+        "Maintain brand and asset consistency as Luma Agents carry context from planning through final assembly, ensuring reliable, production-ready delivery."
       ],
       "source_urls": [
         "https://lumalabs.ai/app",
@@ -486,9 +485,9 @@
         "Standard",
         "Pro",
         "Premium",
-        "Business",
         "Enterprise",
-        "Team"
+        "Team",
+        "Creator"
       ],
       "commercial_flags": {
         "free_plan": true,
