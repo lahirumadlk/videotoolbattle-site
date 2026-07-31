@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-30T07:42:42+00:00",
+  "generated_at_utc": "2026-07-31T08:09:22+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -45,7 +45,7 @@
       },
       "languages_supported_numbers": [],
       "pricing_snippets": [
-        "Pricing Enterprise Academy",
+        "Enterprise Pricing",
         "Turn any script or idea into a shot-by-shot plan, then tweak as needed before generating.",
         "From solo creatives to creative enterprises",
         "Pricing",
@@ -100,7 +100,7 @@
       },
       "languages_supported_numbers": [],
       "pricing_snippets": [
-        "Pricing Enterprise Academy",
+        "Enterprise Pricing",
         "Turn any script or idea into a shot-by-shot plan, then tweak as needed before generating.",
         "From solo creatives to creative enterprises",
         "Pricing",
@@ -174,12 +174,12 @@
       "base_url": "https://runwayml.com/",
       "price_points": [
         "$100",
-        "$15",
-        "$19",
+        "$12",
+        "$16",
         "$12/month",
         "$0.00",
-        "$32",
-        "$0"
+        "$0",
+        "$36/year"
       ],
       "plan_names": [
         "Free",
@@ -490,9 +490,9 @@
         "Standard",
         "Pro",
         "Premium",
+        "Business",
         "Enterprise",
-        "Team",
-        "Creator"
+        "Team"
       ],
       "commercial_flags": {
         "free_plan": true,
