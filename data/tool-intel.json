@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-03T08:41:26+00:00",
+  "generated_at_utc": "2026-08-04T07:47:55+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -8,15 +8,16 @@
       "name": "InVideo AI",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$7",
-        "$10",
+        "$29",
         "$30",
         "$31",
         "$32",
         "$33",
         "$34",
         "$35",
-        "$36"
+        "$36",
+        "$37",
+        "$38"
       ],
       "plan_names": [
         "Free",
@@ -62,15 +63,16 @@
       "name": "InVideo",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$7",
-        "$10",
+        "$29",
         "$30",
         "$31",
         "$32",
         "$33",
         "$34",
         "$35",
-        "$36"
+        "$36",
+        "$37",
+        "$38"
       ],
       "plan_names": [
         "Free",
@@ -117,12 +119,12 @@
       "base_url": "https://www.heygen.com/",
       "price_points": [
         "$200",
+        "GBp9",
         "$27",
+        "$92",
         "$9",
         "$29/month",
-        "$24/month",
-        "$49/month",
-        "$149/month"
+        "$24/month"
       ],
       "plan_names": [
         "Free",
@@ -153,11 +155,11 @@
         "30"
       ],
       "pricing_snippets": [
-        "Free AI Video Generator: Create Stunning Videos with AI",
         "Platform Use cases Developers Resources Enterprise Research Pricing",
         "Get started for free",
         "4.8 / 5 from 1,000+ reviews",
-        "Character consistency is what separates a useful avatar from a gimmick. Avatar V delivers it across every angle, every expression, and every video you create."
+        "Character consistency is what separates a useful avatar from a gimmick. Avatar V delivers it across every angle, every expression, and every video you create.",
+        "Avatar V learns how you talk, gesture, and move, then generates video that's convincingly you. The same micro-expressions, the same presence, all from a single prompt."
       ],
       "source_urls": [
         "https://www.heygen.com/",
@@ -175,8 +177,8 @@
         "$16",
         "$12/month",
         "$0.00",
-        "$0",
-        "$36/year"
+        "$5",
+        "$500"
       ],
       "plan_names": [
         "Free",
@@ -260,10 +262,10 @@
       "pricing_snippets": [
         "Product Pricing API Enterprise News Join us",
         "Luma Agents are the force multiplier for your team. They plan, generate, iterate, and refine with full context across every stage of creative work.",
+        "Try for Free",
         "From assets to deliverables",
         "Visualize packaging and labels in photorealistic 3D—from shelf views to close-ups.",
-        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery.",
-        "Maintain brand and asset consistency as Luma Agents carry context from planning through final assembly, ensuring reliable, production-ready delivery."
+        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery."
       ],
       "source_urls": [
         "https://lumalabs.ai/app",
