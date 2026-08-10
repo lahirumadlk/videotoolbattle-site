@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-09T05:56:27+00:00",
+  "generated_at_utc": "2026-08-10T06:22:10+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -119,7 +119,7 @@
         "$200",
         "$25",
         "$28",
-        "$95"
+        "$90"
       ],
       "plan_names": [
         "Free",
@@ -258,10 +258,10 @@
       "pricing_snippets": [
         "Product Pricing API Enterprise News Join us",
         "Luma Agents are the force multiplier for your team. They plan, generate, iterate, and refine with full context across every stage of creative work.",
+        "Try for Free",
         "From assets to deliverables",
         "Visualize packaging and labels in photorealistic 3D—from shelf views to close-ups.",
-        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery.",
-        "Maintain brand and asset consistency as Luma Agents carry context from planning through final assembly, ensuring reliable, production-ready delivery."
+        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery."
       ],
       "source_urls": [
         "https://lumalabs.ai/app",
