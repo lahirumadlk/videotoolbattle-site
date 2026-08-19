@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-18T05:43:55+00:00",
+  "generated_at_utc": "2026-08-19T05:45:28+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -8,16 +8,15 @@
       "name": "InVideo AI",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$10",
-        "$17",
-        "$30",
-        "$31",
-        "$32",
-        "$33",
-        "$34",
-        "$35",
-        "$36",
-        "$37"
+        "$17 /mo",
+        "$200",
+        "$85 /mo",
+        "$1,000",
+        "$170 /mo",
+        "$2,000",
+        "$900 /mo",
+        "$10,800",
+        "$7"
       ],
       "plan_names": [
         "Free",
@@ -49,8 +48,8 @@
         "Turn any script or idea into a shot-by-shot plan, then tweak as needed before generating.",
         "From solo creatives to creative enterprises",
         "Pricing",
-        "invideo AI Pricing",
-        "Pricing | invideo AI"
+        "*Billed $200 yearly",
+        "Annual 15% off"
       ],
       "source_urls": [
         "https://invideo.io/",
@@ -63,16 +62,15 @@
       "name": "InVideo",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$10",
-        "$17",
-        "$30",
-        "$31",
-        "$32",
-        "$33",
-        "$34",
-        "$35",
-        "$36",
-        "$37"
+        "$17 /mo",
+        "$200",
+        "$85 /mo",
+        "$1,000",
+        "$170 /mo",
+        "$2,000",
+        "$900 /mo",
+        "$10,800",
+        "$7"
       ],
       "plan_names": [
         "Free",
@@ -104,8 +102,8 @@
         "Turn any script or idea into a shot-by-shot plan, then tweak as needed before generating.",
         "From solo creatives to creative enterprises",
         "Pricing",
-        "invideo AI Pricing",
-        "Pricing | invideo AI"
+        "*Billed $200 yearly",
+        "Annual 15% off"
       ],
       "source_urls": [
         "https://invideo.io/",
@@ -309,7 +307,7 @@
       },
       "languages_supported_numbers": [],
       "pricing_snippets": [
-        "Careers Referral Contact Us Pricing API Experiments",
+        "Careers Referral Contact Us Pricing API Experiments Blog",
         "Pricing",
         "Careers Contact Us Support Pricing Blog API",
         "Subscription Pricing"
@@ -562,14 +560,14 @@
       "name": "Descript",
       "base_url": "https://www.descript.com/",
       "price_points": [
-        "$0",
-        "$24",
-        "$16",
-        "$35",
         "$12",
         "$17",
-        "$18",
-        "$19"
+        "$16",
+        "$24",
+        "$35",
+        "$50",
+        "$65",
+        "$0"
       ],
       "plan_names": [
         "Free",
@@ -602,7 +600,7 @@
         "14"
       ],
       "pricing_snippets": [
-        "Descript – AI Video & Podcast Editor | Free, Online",
+        "Descript: AI Video & Audio Text-based Editor — Try Free",
         "Create bespoke, custom video and images from a prompt.",
         "Easily create a realistic voice clone or pick from our stock AI voices.",
         "API + MCP Edit video through code, or from inside your AI assistant",
