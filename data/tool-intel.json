@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-26T05:48:57+00:00",
+  "generated_at_utc": "2026-08-27T16:29:53+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -117,9 +117,8 @@
       "base_url": "https://www.heygen.com/",
       "price_points": [
         "$200",
-        "$9",
-        "$50",
-        "$29/month"
+        "$7",
+        "$25"
       ],
       "plan_names": [
         "Free",
@@ -160,7 +159,7 @@
         "https://www.heygen.com/",
         "https://www.heygen.com/pricing"
       ],
-      "confidence": "high"
+      "confidence": "medium"
     },
     {
       "key": "runway",
@@ -590,6 +589,7 @@
         "api_or_sdk": true
       },
       "languages_supported_numbers": [
+        "20",
         "30",
         "25",
         "61",
