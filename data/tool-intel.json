@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-27T16:29:53+00:00",
+  "generated_at_utc": "2026-08-28T17:26:10+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -203,9 +203,9 @@
         "Pricing",
         "Try Runway for free",
         "Used by 60m+ creatives around the world. Try free, cancel anytime.",
-        "See the latest from Runway",
-        "How Chime Used Runway to Produce Their Latest National TV Spot Chime turned photos from nearly 100 real members into a broadcast-ready TV campaign using Runway, saving $200K on a single clip.",
-        "The AI Media Report: Cost, Speed and What Comes Next Our findings from hundreds of enterprises using Runway for media production: cost and speed gains and the creative shifts ahead."
+        "The AI media platform for developers to build with the best models from Runway and other labs.",
+        "The API platform with Runway's expertise built in. Access the best models and the creative tooling to easily get production-ready output from them, at scale.",
+        "See the latest from Runway"
       ],
       "source_urls": [
         "https://runway.com/",
@@ -555,14 +555,16 @@
       "name": "Descript",
       "base_url": "https://www.descript.com/",
       "price_points": [
-        "$12",
-        "$16",
+        "$15",
+        "$20",
+        "$21",
+        "$22",
+        "$23",
         "$24",
-        "$35",
-        "$50",
-        "$65",
-        "$0",
-        "$16/month"
+        "$25",
+        "$26",
+        "$28",
+        "$29"
       ],
       "plan_names": [
         "Free",
