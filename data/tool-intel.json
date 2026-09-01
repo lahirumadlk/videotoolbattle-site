@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-31T11:35:12+00:00",
+  "generated_at_utc": "2026-09-01T10:04:10+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -118,9 +118,7 @@
       "price_points": [
         "$200",
         "$7",
-        "$36",
-        "$64",
-        "$67"
+        "$25"
       ],
       "plan_names": [
         "Free",
@@ -161,7 +159,7 @@
         "https://www.heygen.com/",
         "https://www.heygen.com/pricing"
       ],
-      "confidence": "high"
+      "confidence": "medium"
     },
     {
       "key": "runway",
@@ -415,12 +413,11 @@
       "price_points": [
         "$56",
         "$18 /month",
+        "$0 /mo",
         "$29 /mo",
         "$89 /mo",
-        "$0 /mo",
         "$1000/year",
-        "$1,000/year",
-        "$29 /month"
+        "$1,000/year"
       ],
       "plan_names": [
         "Free",
@@ -557,16 +554,14 @@
       "name": "Descript",
       "base_url": "https://www.descript.com/",
       "price_points": [
-        "$15",
-        "$20",
-        "$21",
-        "$22",
-        "$23",
+        "$12",
+        "$18",
+        "$16",
         "$24",
-        "$25",
-        "$26",
-        "$28",
-        "$29"
+        "$35",
+        "$50",
+        "$65",
+        "$0"
       ],
       "plan_names": [
         "Free",
