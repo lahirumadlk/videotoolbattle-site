@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-03T09:46:36+00:00",
+  "generated_at_utc": "2026-09-04T09:37:40+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -227,7 +227,7 @@
         "$30/month",
         "$90/month",
         "$300/month",
-        "$12"
+        "$30"
       ],
       "plan_names": [
         "Free",
@@ -256,11 +256,11 @@
       "languages_supported_numbers": [],
       "pricing_snippets": [
         "Product Pricing API Enterprise News Join us",
-        "Frame-by-frame, control, continuity, and cinematic direction from Luma Labs.",
-        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery.",
-        "Try Luma free",
-        "Maintain brand and asset consistency as Luma Agents carry context from planning through final assembly, ensuring reliable, production-ready delivery.",
-        "Plans & Pricing"
+        "Plan, generate, iterate, and refine, keeping full context across every stage of creative work.",
+        "Try for free Contact Sales",
+        "From assets to deliverables",
+        "Visualize packaging and labels in photorealistic 3D—from shelf views to close-ups.",
+        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery."
       ],
       "source_urls": [
         "https://lumalabs.ai/app",
@@ -555,23 +555,17 @@
       "base_url": "https://www.descript.com/",
       "price_points": [
         "$12",
-        "$18",
-        "$16",
-        "$24",
-        "$35",
-        "$50",
-        "$65",
-        "$0"
+        "$18"
       ],
       "plan_names": [
         "Free",
         "Standard",
-        "Pro",
         "Business",
         "Enterprise",
         "Team",
         "Creator",
-        "Plus"
+        "Plus",
+        "Max"
       ],
       "commercial_flags": {
         "free_plan": true,
@@ -588,11 +582,7 @@
         "api_or_sdk": true
       },
       "languages_supported_numbers": [
-        "20",
-        "30",
-        "25",
-        "61",
-        "14"
+        "20"
       ],
       "pricing_snippets": [
         "Descript: AI Video & Audio Text-based Editor — Try Free",
@@ -603,10 +593,9 @@
         "Pricing"
       ],
       "source_urls": [
-        "https://www.descript.com/",
-        "https://www.descript.com/pricing"
+        "https://www.descript.com/"
       ],
-      "confidence": "high"
+      "confidence": "medium"
     },
     {
       "key": "fliki",
