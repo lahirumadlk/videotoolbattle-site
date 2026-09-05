@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-04T09:37:40+00:00",
+  "generated_at_utc": "2026-09-05T09:03:16+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -20,13 +20,12 @@
       ],
       "plan_names": [
         "Free",
-        "Basic",
-        "Standard",
         "Pro",
         "Premium",
-        "Business",
         "Enterprise",
-        "Team"
+        "Team",
+        "Plus",
+        "Max"
       ],
       "commercial_flags": {
         "free_plan": false,
@@ -74,13 +73,12 @@
       ],
       "plan_names": [
         "Free",
-        "Basic",
-        "Standard",
         "Pro",
         "Premium",
-        "Business",
         "Enterprise",
-        "Team"
+        "Team",
+        "Plus",
+        "Max"
       ],
       "commercial_flags": {
         "free_plan": false,
@@ -193,7 +191,7 @@
         "avatars": true,
         "text_to_video": true,
         "image_to_video": true,
-        "voice_cloning": false,
+        "voice_cloning": true,
         "subtitle_generation": true,
         "video_editing": true,
         "api_or_sdk": true
@@ -201,11 +199,11 @@
       "languages_supported_numbers": [],
       "pricing_snippets": [
         "Pricing",
+        "Runway AI Summit: 9/30 in San Francisco. Register now for the Runway AI Summit on 9/30 in San Francisco to hear from leaders at DeepMind, NVIDIA, Physical Intelligence and more.",
         "Try Runway for free",
         "Used by 60m+ creatives around the world. Try free, cancel anytime.",
         "The AI media platform for developers to build with the best models from Runway and other labs.",
-        "The API platform with Runway's expertise built in. Access the best models and the creative tooling to easily get production-ready output from them, at scale.",
-        "See the latest from Runway"
+        "The API platform with Runway's expertise built in. Access the best models and the creative tooling to easily get production-ready output from them, at scale."
       ],
       "source_urls": [
         "https://runway.com/",
@@ -555,17 +553,23 @@
       "base_url": "https://www.descript.com/",
       "price_points": [
         "$12",
-        "$18"
+        "$18",
+        "$16",
+        "$24",
+        "$35",
+        "$50",
+        "$65",
+        "$0"
       ],
       "plan_names": [
         "Free",
         "Standard",
+        "Pro",
         "Business",
         "Enterprise",
         "Team",
         "Creator",
-        "Plus",
-        "Max"
+        "Plus"
       ],
       "commercial_flags": {
         "free_plan": true,
@@ -582,7 +586,11 @@
         "api_or_sdk": true
       },
       "languages_supported_numbers": [
-        "20"
+        "20",
+        "30",
+        "25",
+        "61",
+        "14"
       ],
       "pricing_snippets": [
         "Descript: AI Video & Audio Text-based Editor — Try Free",
@@ -593,9 +601,10 @@
         "Pricing"
       ],
       "source_urls": [
-        "https://www.descript.com/"
+        "https://www.descript.com/",
+        "https://www.descript.com/pricing"
       ],
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "key": "fliki",
