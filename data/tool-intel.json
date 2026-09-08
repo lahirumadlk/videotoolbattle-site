@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-07T10:14:53+00:00",
+  "generated_at_utc": "2026-09-08T09:39:23+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -16,8 +16,7 @@
         "$2,000",
         "$900 /mo",
         "$10,800",
-        "$10",
-        "$18"
+        "$7"
       ],
       "plan_names": [
         "Free",
@@ -70,8 +69,7 @@
         "$2,000",
         "$900 /mo",
         "$10,800",
-        "$10",
-        "$18"
+        "$7"
       ],
       "plan_names": [
         "Free",
@@ -227,7 +225,7 @@
         "$30/month",
         "$90/month",
         "$300/month",
-        "$12"
+        "$30"
       ],
       "plan_names": [
         "Free",
@@ -256,11 +254,11 @@
       "languages_supported_numbers": [],
       "pricing_snippets": [
         "Product Pricing API Enterprise News Join us",
-        "Frame-by-frame, control, continuity, and cinematic direction from Luma Labs.",
-        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery.",
-        "Try Luma free",
-        "Maintain brand and asset consistency as Luma Agents carry context from planning through final assembly, ensuring reliable, production-ready delivery.",
-        "Plans & Pricing"
+        "Plan, generate, iterate, and refine, keeping full context across every stage of creative work.",
+        "Try for free Contact Sales",
+        "From assets to deliverables",
+        "Visualize packaging and labels in photorealistic 3D—from shelf views to close-ups.",
+        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery."
       ],
       "source_urls": [
         "https://lumalabs.ai/app",
@@ -366,11 +364,11 @@
         "Free",
         "Starter",
         "Basic",
-        "Standard",
         "Pro",
         "Premium",
         "Business",
-        "Enterprise"
+        "Enterprise",
+        "Team"
       ],
       "commercial_flags": {
         "free_plan": true,
