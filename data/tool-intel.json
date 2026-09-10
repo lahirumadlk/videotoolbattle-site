@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-09T09:42:57+00:00",
+  "generated_at_utc": "2026-09-10T09:41:33+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -8,24 +8,25 @@
       "name": "InVideo AI",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$17 /mo",
-        "$200",
-        "$85 /mo",
-        "$1,000",
-        "$170 /mo",
-        "$2,000",
-        "$900 /mo",
-        "$10,800",
-        "$7"
+        "$20/seat billed annually",
+        "$60 billed annually",
+        "$50/seat billed annually",
+        "$120/seat",
+        "$150 billed annually",
+        "$100/seat billed annually",
+        "$600/seat",
+        "$7",
+        "$13"
       ],
       "plan_names": [
         "Free",
+        "Starter",
+        "Basic",
         "Pro",
         "Premium",
+        "Business",
         "Enterprise",
-        "Team",
-        "Plus",
-        "Max"
+        "Team"
       ],
       "commercial_flags": {
         "free_plan": false,
@@ -46,9 +47,9 @@
         "Enterprise Pricing",
         "Turn any script or idea into a shot-by-shot plan, then tweak as needed before generating.",
         "From solo creatives to creative enterprises",
+        "Annual plans only Free image September 1000 images everyday till 30th Sep on annual plans. GPT image 2 · Nano Banana Pro · Nano Banana 2",
         "Pricing",
-        "*Billed $200 yearly",
-        "Annual 15% off"
+        "Monthly Annual"
       ],
       "source_urls": [
         "https://invideo.io/",
@@ -61,24 +62,25 @@
       "name": "InVideo",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$17 /mo",
-        "$200",
-        "$85 /mo",
-        "$1,000",
-        "$170 /mo",
-        "$2,000",
-        "$900 /mo",
-        "$10,800",
-        "$7"
+        "$20/seat billed annually",
+        "$60 billed annually",
+        "$50/seat billed annually",
+        "$120/seat",
+        "$150 billed annually",
+        "$100/seat billed annually",
+        "$600/seat",
+        "$7",
+        "$13"
       ],
       "plan_names": [
         "Free",
+        "Starter",
+        "Basic",
         "Pro",
         "Premium",
+        "Business",
         "Enterprise",
-        "Team",
-        "Plus",
-        "Max"
+        "Team"
       ],
       "commercial_flags": {
         "free_plan": false,
@@ -99,9 +101,9 @@
         "Enterprise Pricing",
         "Turn any script or idea into a shot-by-shot plan, then tweak as needed before generating.",
         "From solo creatives to creative enterprises",
+        "Annual plans only Free image September 1000 images everyday till 30th Sep on annual plans. GPT image 2 · Nano Banana Pro · Nano Banana 2",
         "Pricing",
-        "*Billed $200 yearly",
-        "Annual 15% off"
+        "Monthly Annual"
       ],
       "source_urls": [
         "https://invideo.io/",
@@ -226,7 +228,7 @@
         "$30/month",
         "$90/month",
         "$300/month",
-        "$30"
+        "$12"
       ],
       "plan_names": [
         "Free",
@@ -255,11 +257,11 @@
       "languages_supported_numbers": [],
       "pricing_snippets": [
         "Product Pricing API Enterprise News Join us",
-        "Plan, generate, iterate, and refine, keeping full context across every stage of creative work.",
-        "Try for free Contact Sales",
-        "From assets to deliverables",
-        "Visualize packaging and labels in photorealistic 3D—from shelf views to close-ups.",
-        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery."
+        "Frame-by-frame, control, continuity, and cinematic direction from Luma Labs.",
+        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery.",
+        "Try Luma free",
+        "Maintain brand and asset consistency as Luma Agents carry context from planning through final assembly, ensuring reliable, production-ready delivery.",
+        "Plans & Pricing"
       ],
       "source_urls": [
         "https://lumalabs.ai/app",
