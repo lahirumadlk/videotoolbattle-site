@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-11T09:38:54+00:00",
+  "generated_at_utc": "2026-09-12T09:18:50+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -45,11 +45,11 @@
       "languages_supported_numbers": [],
       "pricing_snippets": [
         "Enterprise Pricing",
+        "Nobody wants to make the same change on forty clips by hand. Give invideo's editing agent one direction and it applies it to every shot on the timeline, from cutting the pauses to matching the look.",
         "Turn any script or idea into a shot-by-shot plan, then tweak as needed before generating.",
         "From solo creatives to creative enterprises",
         "Annual plans only Free image September 1000 images everyday till 30th Sep on annual plans. GPT image 2 · Nano Banana Pro · Nano Banana 2",
-        "Pricing",
-        "Monthly Annual"
+        "Pricing"
       ],
       "source_urls": [
         "https://invideo.io/",
@@ -99,11 +99,11 @@
       "languages_supported_numbers": [],
       "pricing_snippets": [
         "Enterprise Pricing",
+        "Nobody wants to make the same change on forty clips by hand. Give invideo's editing agent one direction and it applies it to every shot on the timeline, from cutting the pauses to matching the look.",
         "Turn any script or idea into a shot-by-shot plan, then tweak as needed before generating.",
         "From solo creatives to creative enterprises",
         "Annual plans only Free image September 1000 images everyday till 30th Sep on annual plans. GPT image 2 · Nano Banana Pro · Nano Banana 2",
-        "Pricing",
-        "Monthly Annual"
+        "Pricing"
       ],
       "source_urls": [
         "https://invideo.io/",
@@ -118,8 +118,9 @@
       "price_points": [
         "$200",
         "$7",
-        "$36",
-        "$42"
+        "$20",
+        "$39",
+        "$67"
       ],
       "plan_names": [
         "Free",
@@ -168,13 +169,14 @@
       "name": "Runway",
       "base_url": "https://runwayml.com/",
       "price_points": [
-        "$200",
-        "$100",
         "$8",
         "$10",
         "$14",
         "$12/month",
-        "$0.00"
+        "$0.00",
+        "$5",
+        "$500",
+        "$38"
       ],
       "plan_names": [
         "Free",
