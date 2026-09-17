@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-16T09:55:54+00:00",
+  "generated_at_utc": "2026-09-17T09:58:25+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -11,11 +11,11 @@
         "$20/seat billed annually",
         "$60 billed annually",
         "$50/seat billed annually",
-        "$120/seat",
+        "$122/seat",
         "$150 billed annually",
-        "$100/seat billed annually",
-        "$600/seat",
-        "$10",
+        "$101/seat billed annually",
+        "$579/seat",
+        "$11",
         "$5",
         "$30"
       ],
@@ -23,11 +23,11 @@
         "Free",
         "Starter",
         "Basic",
+        "Standard",
         "Pro",
         "Premium",
         "Business",
-        "Enterprise",
-        "Team"
+        "Enterprise"
       ],
       "commercial_flags": {
         "free_plan": false,
@@ -49,7 +49,7 @@
         "Nobody wants to make the same change on forty clips by hand. Give invideo's editing agent one direction and it applies it to every shot on the timeline, from cutting the pauses to matching the look.",
         "Turn any script or idea into a shot-by-shot plan, then tweak as needed before generating.",
         "From solo creatives to creative enterprises",
-        "Annual plans only Free image September 1000 images everyday till 30th Sep on annual plans. GPT image 2 · Nano Banana Pro · Nano Banana 2",
+        "All paid plans Free image",
         "Pricing"
       ],
       "source_urls": [
@@ -66,11 +66,11 @@
         "$20/seat billed annually",
         "$60 billed annually",
         "$50/seat billed annually",
-        "$120/seat",
+        "$122/seat",
         "$150 billed annually",
-        "$100/seat billed annually",
-        "$600/seat",
-        "$10",
+        "$101/seat billed annually",
+        "$579/seat",
+        "$11",
         "$5",
         "$30"
       ],
@@ -78,11 +78,11 @@
         "Free",
         "Starter",
         "Basic",
+        "Standard",
         "Pro",
         "Premium",
         "Business",
-        "Enterprise",
-        "Team"
+        "Enterprise"
       ],
       "commercial_flags": {
         "free_plan": false,
@@ -104,7 +104,7 @@
         "Nobody wants to make the same change on forty clips by hand. Give invideo's editing agent one direction and it applies it to every shot on the timeline, from cutting the pauses to matching the look.",
         "Turn any script or idea into a shot-by-shot plan, then tweak as needed before generating.",
         "From solo creatives to creative enterprises",
-        "Annual plans only Free image September 1000 images everyday till 30th Sep on annual plans. GPT image 2 · Nano Banana Pro · Nano Banana 2",
+        "All paid plans Free image",
         "Pricing"
       ],
       "source_urls": [
@@ -121,8 +121,7 @@
         "$200",
         "$7",
         "$20",
-        "$38",
-        "$63"
+        "$27"
       ],
       "plan_names": [
         "Free",
@@ -233,7 +232,7 @@
         "$30/month",
         "$90/month",
         "$300/month",
-        "$30"
+        "$12"
       ],
       "plan_names": [
         "Free",
@@ -262,11 +261,11 @@
       "languages_supported_numbers": [],
       "pricing_snippets": [
         "Product Pricing API Enterprise News Join us",
-        "Plan, generate, iterate, and refine, keeping full context across every stage of creative work.",
-        "Try for free Contact Sales",
-        "From assets to deliverables",
-        "Visualize packaging and labels in photorealistic 3D—from shelf views to close-ups.",
-        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery."
+        "Frame-by-frame, control, continuity, and cinematic direction from Luma Labs.",
+        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery.",
+        "Try Luma free",
+        "Maintain brand and asset consistency as Luma Agents carry context from planning through final assembly, ensuring reliable, production-ready delivery.",
+        "Plans & Pricing"
       ],
       "source_urls": [
         "https://lumalabs.ai/app",
@@ -279,27 +278,32 @@
       "name": "Pika",
       "base_url": "https://pika.art/",
       "price_points": [
-        "$7",
         "$0",
-        "$25",
+        "$10",
         "$8",
-        "$28"
+        "$8012",
+        "$35",
+        "$28",
+        "$2012"
       ],
       "plan_names": [
         "Free",
-        "Basic",
+        "Starter",
         "Standard",
         "Pro",
-        "Max"
+        "Enterprise",
+        "Team",
+        "Creator",
+        "Lite"
       ],
       "commercial_flags": {
-        "free_plan": false,
+        "free_plan": true,
         "free_trial": false,
-        "enterprise_or_contact_sales": false
+        "enterprise_or_contact_sales": true
       },
       "capabilities": {
-        "avatars": false,
-        "text_to_video": false,
+        "avatars": true,
+        "text_to_video": true,
         "image_to_video": false,
         "voice_cloning": false,
         "subtitle_generation": true,
@@ -308,15 +312,14 @@
       },
       "languages_supported_numbers": [],
       "pricing_snippets": [
-        "Careers Referral Contact Us Pricing API Experiments Blog",
         "Pricing",
-        "Careers Contact Us Support Pricing Blog API",
-        "Subscription Pricing"
+        "Login Try Pika Free",
+        "Try Pika Free See it in Action"
       ],
       "source_urls": [
         "https://pika.art/",
         "https://pika.art/pricing",
-        "https://pika.art/login"
+        "https://create.pika.art/login?redirect=%2Fplans"
       ],
       "confidence": "high"
     },
@@ -619,12 +622,12 @@
       "name": "Fliki",
       "base_url": "https://fliki.ai/",
       "price_points": [
-        "$7",
-        "$11",
+        "$9",
+        "$13",
         "$18",
         "$100",
-        "$16",
-        "$21"
+        "$0",
+        "$26"
       ],
       "plan_names": [
         "Free",
