@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-17T09:58:25+00:00",
+  "generated_at_utc": "2026-09-18T09:44:03+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -149,7 +149,6 @@
       },
       "languages_supported_numbers": [
         "175",
-        "177",
         "30"
       ],
       "pricing_snippets": [
@@ -172,12 +171,12 @@
       "price_points": [
         "$8",
         "$10",
-        "$14",
+        "$33",
         "$12/month",
         "$0.00",
         "$5",
         "$500",
-        "$39"
+        "$0"
       ],
       "plan_names": [
         "Free",
@@ -563,14 +562,14 @@
       "name": "Descript",
       "base_url": "https://www.descript.com/",
       "price_points": [
-        "$12",
-        "$18",
+        "$17",
         "$16",
         "$24",
         "$35",
         "$50",
         "$65",
-        "$0"
+        "$0",
+        "$12"
       ],
       "plan_names": [
         "Free",
