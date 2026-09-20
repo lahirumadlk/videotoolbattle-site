@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-19T09:29:14+00:00",
+  "generated_at_utc": "2026-09-20T09:47:51+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -15,8 +15,9 @@
         "$150 billed annually",
         "$101/seat billed annually",
         "$579/seat",
-        "$7",
-        "$12"
+        "$11",
+        "$5",
+        "$30"
       ],
       "plan_names": [
         "Free",
@@ -69,8 +70,9 @@
         "$150 billed annually",
         "$101/seat billed annually",
         "$579/seat",
-        "$7",
-        "$12"
+        "$11",
+        "$5",
+        "$30"
       ],
       "plan_names": [
         "Free",
@@ -119,8 +121,8 @@
         "$200",
         "$7",
         "$20",
-        "$38",
-        "$41"
+        "$59",
+        "$60"
       ],
       "plan_names": [
         "Free",
@@ -169,14 +171,13 @@
       "base_url": "https://runwayml.com/",
       "price_points": [
         "$8",
-        "$11",
-        "$15",
+        "$10",
+        "$33",
         "$12/month",
         "$0.00",
         "$5",
         "$500",
-        "$35",
-        "$36"
+        "$0"
       ],
       "plan_names": [
         "Free",
