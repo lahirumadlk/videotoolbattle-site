@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-21T10:41:02+00:00",
+  "generated_at_utc": "2026-09-22T09:55:44+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -13,7 +13,7 @@
         "$50/seat billed annually",
         "$122/seat",
         "$150 billed annually",
-        "$101/seat billed annually",
+        "$100/seat billed annually",
         "$579/seat",
         "$7",
         "$12"
@@ -67,7 +67,7 @@
         "$50/seat billed annually",
         "$122/seat",
         "$150 billed annually",
-        "$101/seat billed annually",
+        "$100/seat billed annually",
         "$579/seat",
         "$7",
         "$12"
@@ -169,13 +169,13 @@
       "base_url": "https://runwayml.com/",
       "price_points": [
         "$8",
-        "$10",
-        "$33",
+        "$11",
+        "$15",
         "$12/month",
         "$0.00",
         "$5",
         "$500",
-        "$0"
+        "$25"
       ],
       "plan_names": [
         "Free",
@@ -656,7 +656,7 @@
         "90"
       ],
       "pricing_snippets": [
-        "Pricing",
+        "Pricing 40 % off!",
         "Start creating for free",
         "Fliki's AI video generator builds the entire video from a single prompt - script, visuals, voiceover, music, and captions. Used by 12M+ creators for TikToks, Reels, and YouTube.",
         "Studio-quality AI voiceover in 2,000+ lifelike voices and 80+ languages - or clone your own voice from a short sample and use it across unlimited videos.",
