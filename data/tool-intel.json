@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-23T09:57:49+00:00",
+  "generated_at_utc": "2026-09-24T09:58:23+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -119,8 +119,8 @@
         "$200",
         "$7",
         "$20",
-        "$29",
-        "$6"
+        "$38",
+        "$41"
       ],
       "plan_names": [
         "Free",
@@ -170,12 +170,8 @@
       "price_points": [
         "$8",
         "$11",
-        "$15",
-        "$12/month",
-        "$0.00",
-        "$5",
-        "$500",
-        "$0"
+        "$14",
+        "$26"
       ],
       "plan_names": [
         "Free",
@@ -230,7 +226,7 @@
         "$30/month",
         "$90/month",
         "$300/month",
-        "$12"
+        "$30"
       ],
       "plan_names": [
         "Free",
@@ -259,11 +255,11 @@
       "languages_supported_numbers": [],
       "pricing_snippets": [
         "Product Pricing API Enterprise News Join us",
-        "Frame-by-frame, control, continuity, and cinematic direction from Luma Labs.",
-        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery.",
-        "Try Luma free",
-        "Maintain brand and asset consistency as Luma Agents carry context from planning through final assembly, ensuring reliable, production-ready delivery.",
-        "Plans & Pricing"
+        "Plan, generate, iterate, and refine, keeping full context across every stage of creative work.",
+        "Try for free Contact Sales",
+        "From assets to deliverables",
+        "Visualize packaging and labels in photorealistic 3D—from shelf views to close-ups.",
+        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery."
       ],
       "source_urls": [
         "https://lumalabs.ai/app",
@@ -561,14 +557,14 @@
       "name": "Descript",
       "base_url": "https://www.descript.com/",
       "price_points": [
-        "$17",
+        "$12",
+        "$18",
         "$16",
         "$24",
         "$35",
         "$50",
         "$65",
-        "$0",
-        "$12"
+        "$0"
       ],
       "plan_names": [
         "Free",
