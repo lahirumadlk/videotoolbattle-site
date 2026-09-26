@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-25T10:11:04+00:00",
+  "generated_at_utc": "2026-09-26T09:51:15+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -48,8 +48,8 @@
         "Nobody wants to make the same change on forty clips by hand. Give invideo's editing agent one direction and it applies it to every shot on the timeline, from cutting the pauses to matching the look.",
         "Turn any script or idea into a shot-by-shot plan, then tweak as needed before generating.",
         "From solo creatives to creative enterprises",
-        "Annual plans only Free image",
-        "September 1000 images everyday till 30th Sep on annual plans. GPT Image 2.5, Nano Banana Pro and more"
+        "Pricing",
+        "Monthly Annual"
       ],
       "source_urls": [
         "https://invideo.io/",
@@ -102,8 +102,8 @@
         "Nobody wants to make the same change on forty clips by hand. Give invideo's editing agent one direction and it applies it to every shot on the timeline, from cutting the pauses to matching the look.",
         "Turn any script or idea into a shot-by-shot plan, then tweak as needed before generating.",
         "From solo creatives to creative enterprises",
-        "Annual plans only Free image",
-        "September 1000 images everyday till 30th Sep on annual plans. GPT Image 2.5, Nano Banana Pro and more"
+        "Pricing",
+        "Monthly Annual"
       ],
       "source_urls": [
         "https://invideo.io/",
@@ -120,7 +120,7 @@
         "$7",
         "$20",
         "$38",
-        "$41"
+        "$63"
       ],
       "plan_names": [
         "Free",
@@ -169,14 +169,13 @@
       "base_url": "https://runwayml.com/",
       "price_points": [
         "$8",
-        "$11",
-        "$15",
+        "$10",
+        "$33",
         "$12/month",
         "$0.00",
         "$5",
         "$500",
-        "$35",
-        "$36"
+        "$0"
       ],
       "plan_names": [
         "Free",
