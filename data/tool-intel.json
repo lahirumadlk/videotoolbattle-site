@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-28T11:40:20+00:00",
+  "generated_at_utc": "2026-09-29T11:21:27+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -16,7 +16,7 @@
         "$100/seat billed annually",
         "$579/seat",
         "$7",
-        "$12"
+        "$14"
       ],
       "plan_names": [
         "Free",
@@ -44,7 +44,7 @@
       },
       "languages_supported_numbers": [],
       "pricing_snippets": [
-        "Enterprise Pricing",
+        "Enterprise Pricing 33% off",
         "Nobody wants to make the same change on forty clips by hand. Give invideo's editing agent one direction and it applies it to every shot on the timeline, from cutting the pauses to matching the look.",
         "Turn any script or idea into a shot-by-shot plan, then tweak as needed before generating.",
         "From solo creatives to creative enterprises",
@@ -69,8 +69,9 @@
         "$150 billed annually",
         "$100/seat billed annually",
         "$579/seat",
-        "$7",
-        "$12"
+        "$11",
+        "$5",
+        "$30"
       ],
       "plan_names": [
         "Free",
@@ -98,7 +99,7 @@
       },
       "languages_supported_numbers": [],
       "pricing_snippets": [
-        "Enterprise Pricing",
+        "Enterprise Pricing 33% off",
         "Nobody wants to make the same change on forty clips by hand. Give invideo's editing agent one direction and it applies it to every shot on the timeline, from cutting the pauses to matching the look.",
         "Turn any script or idea into a shot-by-shot plan, then tweak as needed before generating.",
         "From solo creatives to creative enterprises",
@@ -120,7 +121,7 @@
         "$7",
         "$20",
         "$38",
-        "$63"
+        "$5"
       ],
       "plan_names": [
         "Free",
@@ -169,13 +170,14 @@
       "base_url": "https://runwayml.com/",
       "price_points": [
         "$8",
-        "$10",
-        "$33",
+        "$11",
+        "$15",
         "$12/month",
         "$0.00",
         "$5",
         "$500",
-        "$0"
+        "$35",
+        "$36"
       ],
       "plan_names": [
         "Free",
@@ -230,7 +232,7 @@
         "$30/month",
         "$90/month",
         "$300/month",
-        "$12"
+        "$30"
       ],
       "plan_names": [
         "Free",
@@ -259,11 +261,11 @@
       "languages_supported_numbers": [],
       "pricing_snippets": [
         "Product Pricing API Enterprise News Join us",
-        "Frame-by-frame, control, continuity, and cinematic direction from Luma Labs.",
-        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery.",
-        "Try Luma free",
-        "Maintain brand and asset consistency as Luma Agents carry context from planning through final assembly, ensuring reliable, production-ready delivery.",
-        "Plans & Pricing"
+        "Plan, generate, iterate, and refine, keeping full context across every stage of creative work.",
+        "Try for free Contact Sales",
+        "From assets to deliverables",
+        "Visualize packaging and labels in photorealistic 3D—from shelf views to close-ups.",
+        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery."
       ],
       "source_urls": [
         "https://lumalabs.ai/app",
@@ -662,7 +664,7 @@
         "Fliki's AI video generator builds the entire video from a single prompt - script, visuals, voiceover, music, and captions. Used by 14M+ creators for TikToks, Reels, and YouTube. AI video generator →",
         "Explain a product, idea or process as a narrated video in any of 23 art styles, from realistic to anime to stickman, or save your own style and reuse it. Animated explainer →",
         "Studio-quality AI voiceover in 2,000+ lifelike voices and 80+ languages - or clone your own voice from a short sample and use it across unlimited videos. AI voiceover →",
-        "We reduced training video production costs by 90% and increased output from 10 to 200+ videos per quarter. Best ROI from any tool we've bought."
+        "Cast up to five AI voices as characters and direct every line, from a whisper to a laugh, for dialogues and podcasts that sound performed, not read."
       ],
       "source_urls": [
         "https://fliki.ai/",
