@@ -10,8 +10,23 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import os
 from pathlib import Path
 from typing import Dict, List, Tuple
+
+# --- Datadog Setup ---
+try:
+    from datadog import initialize, statsd
+    options = {
+        'api_key': os.environ.get('DD_API_KEY', ''),
+        'app_key': os.environ.get('DD_APP_KEY', '')
+    }
+    initialize(**options)
+    DATADOG_ENABLED = bool(os.environ.get('DD_API_KEY'))
+except ImportError:
+    DATADOG_ENABLED = False
+    statsd = None
+# ---------------------
 
 
 DEFAULT_LINKS_FILE = Path("assets/affiliate-links.js")
@@ -327,8 +342,13 @@ def scrape_tool(
                 }
             )
             fetched_sources.append(str(payload["final_url"]))
+            if DATADOG_ENABLED:
+                statsd.increment('videotoolbattle.scraper.attempt', tags=[f'tool:{key}', 'status:ok'])
         except urllib.error.HTTPError as exc:
             result.update({"status": "http_error", "status_code": exc.code, "error": str(exc)})
+            if DATADOG_ENABLED:
+                statsd.increment('videotoolbattle.scraper.attempt', tags=[f'tool:{key}', f'status:http_{exc.code}'])
+                statsd.event('Scraper HTTP Error', f'Failed to fetch {url} for tool {key}. Error: {exc}', alert_type='error', tags=[f'tool:{key}'])
         except urllib.error.URLError as exc:
             reason = str(exc.reason)
             should_retry_insecure = insecure_fallback and (
@@ -367,12 +387,24 @@ def scrape_tool(
                     fetched_sources.append(str(payload["final_url"]))
                 except Exception as retry_exc:
                     result.update({"status": "url_error", "error": reason, "retry_error": str(retry_exc)})
+                    if DATADOG_ENABLED:
+                        statsd.increment('videotoolbattle.scraper.attempt', tags=[f'tool:{key}', 'status:url_error_retry_failed'])
+                        statsd.event('Scraper URL Error (Retry)', f'Failed to fetch {url} for tool {key}. Error: {retry_exc}', alert_type='error', tags=[f'tool:{key}'])
             else:
                 result.update({"status": "url_error", "error": reason})
+                if DATADOG_ENABLED:
+                    statsd.increment('videotoolbattle.scraper.attempt', tags=[f'tool:{key}', 'status:url_error'])
+                    statsd.event('Scraper URL Error', f'Failed to fetch {url} for tool {key}. Error: {reason}', alert_type='error', tags=[f'tool:{key}'])
         except TimeoutError as exc:
             result.update({"status": "timeout", "error": str(exc)})
+            if DATADOG_ENABLED:
+                statsd.increment('videotoolbattle.scraper.attempt', tags=[f'tool:{key}', 'status:timeout'])
+                statsd.event('Scraper Timeout', f'Timeout fetching {url} for tool {key}. Error: {exc}', alert_type='warning', tags=[f'tool:{key}'])
         except Exception as exc:
             result.update({"status": "error", "error": str(exc)})
+            if DATADOG_ENABLED:
+                statsd.increment('videotoolbattle.scraper.attempt', tags=[f'tool:{key}', 'status:error'])
+                statsd.event('Scraper General Error', f'Error fetching {url} for tool {key}. Error: {exc}', alert_type='error', tags=[f'tool:{key}'])
 
         attempts.append(result)
         if delay_seconds > 0:
