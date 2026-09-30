@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-29T22:52:14+00:00",
+  "generated_at_utc": "2026-09-30T11:09:28+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -121,8 +121,7 @@
         "$200",
         "$7",
         "$20",
-        "$59",
-        "$60"
+        "$29"
       ],
       "plan_names": [
         "Free",
@@ -171,8 +170,8 @@
       "base_url": "https://runwayml.com/",
       "price_points": [
         "$8",
-        "$11",
-        "$15",
+        "$10",
+        "$28",
         "$12/month",
         "$0.00",
         "$5",
@@ -206,11 +205,11 @@
       "languages_supported_numbers": [],
       "pricing_snippets": [
         "Pricing",
-        "Runway AI Summit: 9/30 in San Francisco. Register now for the Runway AI Summit on 9/30 in San Francisco to hear from leaders at DeepMind, NVIDIA, Physical Intelligence and more.",
         "Try Runway for free",
         "Used by 60m+ creatives around the world. Try free, cancel anytime.",
         "The AI media platform for developers to build with the best models from Runway and other labs.",
-        "The API platform with Runway's expertise built in. Access the best models and the creative tooling to easily get production-ready output from them, at scale."
+        "The API platform with Runway's expertise built in. Access the best models and the creative tooling to easily get production-ready output from them, at scale.",
+        "See the latest from Runway"
       ],
       "source_urls": [
         "https://runway.com/",
