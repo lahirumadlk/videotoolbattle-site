@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-30T11:09:28+00:00",
+  "generated_at_utc": "2026-10-01T11:36:18+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -15,9 +15,9 @@
         "$150 billed annually",
         "$100/seat billed annually",
         "$579/seat",
-        "$9",
-        "$14",
-        "$5"
+        "$11",
+        "$5",
+        "$30"
       ],
       "plan_names": [
         "Free",
@@ -45,7 +45,7 @@
       },
       "languages_supported_numbers": [],
       "pricing_snippets": [
-        "Enterprise Pricing 33% off",
+        "Enterprise Pricing",
         "Nobody wants to make the same change on forty clips by hand. Give invideo's editing agent one direction and it applies it to every shot on the timeline, from cutting the pauses to matching the look.",
         "Turn any script or idea into a shot-by-shot plan, then tweak as needed before generating.",
         "From solo creatives to creative enterprises",
@@ -70,9 +70,9 @@
         "$150 billed annually",
         "$100/seat billed annually",
         "$579/seat",
-        "$9",
-        "$14",
-        "$5"
+        "$11",
+        "$5",
+        "$30"
       ],
       "plan_names": [
         "Free",
@@ -100,7 +100,7 @@
       },
       "languages_supported_numbers": [],
       "pricing_snippets": [
-        "Enterprise Pricing 33% off",
+        "Enterprise Pricing",
         "Nobody wants to make the same change on forty clips by hand. Give invideo's editing agent one direction and it applies it to every shot on the timeline, from cutting the pauses to matching the look.",
         "Turn any script or idea into a shot-by-shot plan, then tweak as needed before generating.",
         "From solo creatives to creative enterprises",
@@ -120,7 +120,8 @@
       "price_points": [
         "$200",
         "$7",
-        "$20",
+        "$21",
+        "$22",
         "$29"
       ],
       "plan_names": [
@@ -170,8 +171,8 @@
       "base_url": "https://runwayml.com/",
       "price_points": [
         "$8",
-        "$10",
-        "$28",
+        "$11",
+        "$15",
         "$12/month",
         "$0.00",
         "$5",
@@ -420,22 +421,25 @@
       "base_url": "https://www.synthesia.io/",
       "price_points": [
         "$56",
-        "$18 /month",
-        "$0 /mo",
-        "$29 /mo",
-        "$89 /mo",
-        "$1000/year",
-        "$1,000/year"
+        "$0/month",
+        "$29/month",
+        "$29",
+        "$89/month",
+        "$89",
+        "$176",
+        "$347",
+        "$514",
+        "$676"
       ],
       "plan_names": [
         "Free",
         "Starter",
         "Basic",
         "Standard",
+        "Pro",
         "Business",
         "Enterprise",
-        "Team",
-        "Creator"
+        "Team"
       ],
       "commercial_flags": {
         "free_plan": true,
@@ -453,18 +457,18 @@
       },
       "languages_supported_numbers": [
         "140",
-        "160",
+        "130",
         "5",
-        "80",
-        "70"
+        "160",
+        "80"
       ],
       "pricing_snippets": [
         "GetStarterBtn.href = '#free-ai-video';",
         "GetStarterBtn.href = '/pricing';",
         "/* Snippet makes all link elements listed below to inherit color from their parent */",
-        "\"free ai video generator\",",
-        "\"Access royalty-free multimedia assets\",",
-        "\"price\": \"0\","
+        "/* Component PB: Quote-slider-simple ( change h2 size from large to medium ) */",
+        "// Get the slide nodes from Embla.",
+        "const dotNodes = Array.from(dotsContainer.children);"
       ],
       "source_urls": [
         "https://www.synthesia.io/",
