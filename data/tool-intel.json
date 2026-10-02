@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-01T11:36:18+00:00",
+  "generated_at_utc": "2026-10-02T11:05:36+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -10,11 +10,11 @@
       "price_points": [
         "$20/seat billed annually",
         "$60 billed annually",
-        "$50/seat billed annually",
-        "$122/seat",
+        "$36/seat billed annually",
+        "$288/seat",
         "$150 billed annually",
-        "$100/seat billed annually",
-        "$579/seat",
+        "$75/seat billed annually",
+        "$885/seat",
         "$11",
         "$5",
         "$30"
@@ -65,11 +65,11 @@
       "price_points": [
         "$20/seat billed annually",
         "$60 billed annually",
-        "$50/seat billed annually",
-        "$122/seat",
+        "$36/seat billed annually",
+        "$288/seat",
         "$150 billed annually",
-        "$100/seat billed annually",
-        "$579/seat",
+        "$75/seat billed annually",
+        "$885/seat",
         "$11",
         "$5",
         "$30"
@@ -122,7 +122,7 @@
         "$7",
         "$21",
         "$22",
-        "$29"
+        "$40"
       ],
       "plan_names": [
         "Free",
@@ -171,8 +171,8 @@
       "base_url": "https://runwayml.com/",
       "price_points": [
         "$8",
-        "$11",
-        "$15",
+        "$10",
+        "$33",
         "$12/month",
         "$0.00",
         "$5",
@@ -313,8 +313,8 @@
       "languages_supported_numbers": [],
       "pricing_snippets": [
         "Pricing",
-        "Login Try Pika Free",
-        "Try Pika Free See it in Action"
+        "Pika is built around self-contained tools that support everything from full final outputs, to more narrow creative tasks.",
+        "Generate anything from a short clip to a 30-second multi-shot masterpiece."
       ],
       "source_urls": [
         "https://pika.art/",
