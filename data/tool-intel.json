@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-03T10:23:48+00:00",
+  "generated_at_utc": "2026-10-04T11:06:19+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -15,8 +15,9 @@
         "$150 billed annually",
         "$75/seat billed annually",
         "$885/seat",
-        "$7",
-        "$14"
+        "$11",
+        "$5",
+        "$30"
       ],
       "plan_names": [
         "Free",
@@ -69,8 +70,9 @@
         "$150 billed annually",
         "$75/seat billed annually",
         "$885/seat",
-        "$7",
-        "$14"
+        "$11",
+        "$5",
+        "$30"
       ],
       "plan_names": [
         "Free",
@@ -119,8 +121,7 @@
         "$200",
         "$7",
         "$21",
-        "$22",
-        "$40"
+        "$22"
       ],
       "plan_names": [
         "Free",
@@ -172,11 +173,10 @@
         "$14",
         "$15",
         "$19",
-        "$21",
-        "$27",
+        "$20",
+        "$45",
         "$12/month",
-        "$0.00",
-        "$40"
+        "$0.00"
       ],
       "plan_names": [
         "Free",
