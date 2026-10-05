@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-04T11:06:19+00:00",
+  "generated_at_utc": "2026-10-05T12:15:01+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -15,9 +15,8 @@
         "$150 billed annually",
         "$75/seat billed annually",
         "$885/seat",
-        "$11",
-        "$5",
-        "$30"
+        "$7",
+        "$14"
       ],
       "plan_names": [
         "Free",
@@ -70,9 +69,8 @@
         "$150 billed annually",
         "$75/seat billed annually",
         "$885/seat",
-        "$11",
-        "$5",
-        "$30"
+        "$7",
+        "$14"
       ],
       "plan_names": [
         "Free",
@@ -121,7 +119,8 @@
         "$200",
         "$7",
         "$21",
-        "$22"
+        "$22",
+        "$5"
       ],
       "plan_names": [
         "Free",
@@ -173,10 +172,11 @@
         "$14",
         "$15",
         "$19",
-        "$20",
-        "$45",
+        "$21",
+        "$27",
         "$12/month",
-        "$0.00"
+        "$0.00",
+        "$40"
       ],
       "plan_names": [
         "Free",
@@ -661,7 +661,7 @@
         "90"
       ],
       "pricing_snippets": [
-        "Pricing 40 % off!",
+        "Pricing",
         "Start creating for free",
         "Fliki's AI video generator builds the entire video from a single prompt - script, visuals, voiceover, music, and captions. Used by 14M+ creators for TikToks, Reels, and YouTube. AI video generator →",
         "Explain a product, idea or process as a narrated video in any of 23 art styles, from realistic to anime to stickman, or save your own style and reuse it. Animated explainer →",
