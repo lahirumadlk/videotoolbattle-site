@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-05T12:15:01+00:00",
+  "generated_at_utc": "2026-10-06T12:00:45+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -16,7 +16,7 @@
         "$75/seat billed annually",
         "$885/seat",
         "$7",
-        "$14"
+        "$12"
       ],
       "plan_names": [
         "Free",
@@ -49,7 +49,7 @@
         "Turn any script or idea into a shot-by-shot plan, then tweak as needed before generating.",
         "From solo creatives to creative enterprises",
         "Pricing",
-        "Monthly Annual"
+        "Monthly Annual 50% off"
       ],
       "source_urls": [
         "https://invideo.io/",
@@ -70,7 +70,7 @@
         "$75/seat billed annually",
         "$885/seat",
         "$7",
-        "$14"
+        "$12"
       ],
       "plan_names": [
         "Free",
@@ -103,7 +103,7 @@
         "Turn any script or idea into a shot-by-shot plan, then tweak as needed before generating.",
         "From solo creatives to creative enterprises",
         "Pricing",
-        "Monthly Annual"
+        "Monthly Annual 50% off"
       ],
       "source_urls": [
         "https://invideo.io/",
@@ -120,7 +120,7 @@
         "$7",
         "$21",
         "$22",
-        "$5"
+        "$40"
       ],
       "plan_names": [
         "Free",
@@ -172,11 +172,10 @@
         "$14",
         "$15",
         "$19",
-        "$21",
-        "$27",
+        "$20",
+        "$45",
         "$12/month",
-        "$0.00",
-        "$40"
+        "$0.00"
       ],
       "plan_names": [
         "Free",
@@ -458,8 +457,7 @@
         "140",
         "130",
         "5",
-        "80",
-        "160"
+        "70"
       ],
       "pricing_snippets": [
         "GetStarterBtn.href = '#free-ai-video';",
