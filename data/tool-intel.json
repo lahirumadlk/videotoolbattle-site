@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-07T11:46:05+00:00",
+  "generated_at_utc": "2026-10-08T12:00:51+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -8,16 +8,16 @@
       "name": "InVideo AI",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$20/seat billed annually",
+        "$20 billed annually",
+        "$10/seat billed annually",
+        "$120/seat",
         "$60 billed annually",
-        "$36/seat billed annually",
-        "$288/seat",
+        "$30/seat billed annually",
+        "$360/seat",
         "$150 billed annually",
         "$75/seat billed annually",
         "$885/seat",
-        "$11",
-        "$5",
-        "$30"
+        "$7"
       ],
       "plan_names": [
         "Free",
@@ -63,16 +63,16 @@
       "name": "InVideo",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$20/seat billed annually",
+        "$20 billed annually",
+        "$10/seat billed annually",
+        "$120/seat",
         "$60 billed annually",
-        "$36/seat billed annually",
-        "$288/seat",
+        "$30/seat billed annually",
+        "$360/seat",
         "$150 billed annually",
         "$75/seat billed annually",
         "$885/seat",
-        "$11",
-        "$5",
-        "$30"
+        "$7"
       ],
       "plan_names": [
         "Free",
@@ -120,8 +120,8 @@
       "price_points": [
         "$200",
         "$7",
-        "$23",
-        "$24"
+        "$25",
+        "$26"
       ],
       "plan_names": [
         "Free",
@@ -173,8 +173,8 @@
         "$15",
         "$16",
         "$21",
-        "$40",
-        "$46",
+        "$39",
+        "$41",
         "$12/month",
         "$0.00",
         "$0"
@@ -206,11 +206,11 @@
       "languages_supported_numbers": [],
       "pricing_snippets": [
         "Pricing",
+        "Enterprises get 2 months of usage free. Sign by 10/31.",
         "Try Runway for free",
         "Used by 60m+ creatives around the world. Try free, cancel anytime.",
         "The AI media platform for developers to build with the best models from Runway and other labs.",
-        "The API platform with Runway's expertise built in. Access the best models and the creative tooling to easily get production-ready output from them, at scale.",
-        "See the latest from Runway"
+        "The API platform with Runway's expertise built in. Access the best models and the creative tooling to easily get production-ready output from them, at scale."
       ],
       "source_urls": [
         "https://runway.com/",
@@ -566,14 +566,15 @@
       "name": "Descript",
       "base_url": "https://www.descript.com/",
       "price_points": [
-        "$12",
-        "$18",
+        "$17",
         "$16",
         "$24",
         "$35",
         "$50",
         "$65",
-        "$0"
+        "$0",
+        "$12",
+        "$14"
       ],
       "plan_names": [
         "Free",
