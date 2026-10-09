@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-08T12:00:51+00:00",
+  "generated_at_utc": "2026-10-09T11:53:11+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -46,11 +46,11 @@
       "languages_supported_numbers": [],
       "pricing_snippets": [
         "Enterprise Pricing",
+        "Unlimited Nano Banana 2.1 for 30 days on annual plans",
+        "Save more with annual billing",
         "Nobody wants to make the same change on forty clips by hand. Give invideo's editing agent one direction and it applies it to every shot on the timeline, from cutting the pauses to matching the look.",
         "Turn any script or idea into a shot-by-shot plan, then tweak as needed before generating.",
-        "From solo creatives to creative enterprises",
-        "Pricing",
-        "Monthly Annual 50% off"
+        "From solo creatives to creative enterprises"
       ],
       "source_urls": [
         "https://invideo.io/",
@@ -101,11 +101,11 @@
       "languages_supported_numbers": [],
       "pricing_snippets": [
         "Enterprise Pricing",
+        "Unlimited Nano Banana 2.1 for 30 days on annual plans",
+        "Save more with annual billing",
         "Nobody wants to make the same change on forty clips by hand. Give invideo's editing agent one direction and it applies it to every shot on the timeline, from cutting the pauses to matching the look.",
         "Turn any script or idea into a shot-by-shot plan, then tweak as needed before generating.",
-        "From solo creatives to creative enterprises",
-        "Pricing",
-        "Monthly Annual 50% off"
+        "From solo creatives to creative enterprises"
       ],
       "source_urls": [
         "https://invideo.io/",
@@ -173,8 +173,8 @@
         "$15",
         "$16",
         "$21",
-        "$39",
-        "$41",
+        "$40",
+        "$46",
         "$12/month",
         "$0.00",
         "$0"
@@ -327,23 +327,27 @@
       "key": "capcut",
       "name": "CapCut",
       "base_url": "https://www.capcut.com/",
-      "price_points": [],
+      "price_points": [
+        "$0.00"
+      ],
       "plan_names": [
         "Free",
         "Basic",
         "Pro",
+        "Premium",
         "Business",
+        "Team",
         "Creator",
-        "Max"
+        "Plus"
       ],
       "commercial_flags": {
-        "free_plan": false,
+        "free_plan": true,
         "free_trial": false,
         "enterprise_or_contact_sales": false
       },
       "capabilities": {
         "avatars": true,
-        "text_to_video": false,
+        "text_to_video": true,
         "image_to_video": false,
         "voice_cloning": false,
         "subtitle_generation": true,
@@ -362,9 +366,10 @@
         "Edit photos online for free with smart cropping, filters, and advanced effects—no downloads needed, directly in your browser."
       ],
       "source_urls": [
-        "https://www.capcut.com/"
+        "https://www.capcut.com/",
+        "https://www.capcut.com/pricing"
       ],
-      "confidence": "low"
+      "confidence": "medium"
     },
     {
       "key": "veed",
@@ -566,15 +571,14 @@
       "name": "Descript",
       "base_url": "https://www.descript.com/",
       "price_points": [
-        "$17",
+        "$12",
+        "$18",
         "$16",
         "$24",
         "$35",
         "$50",
         "$65",
-        "$0",
-        "$12",
-        "$14"
+        "$0"
       ],
       "plan_names": [
         "Free",
