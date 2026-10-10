@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-09T11:53:11+00:00",
+  "generated_at_utc": "2026-10-10T11:10:12+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -358,12 +358,12 @@
         "20"
       ],
       "pricing_snippets": [
+        "Pricing",
         "Try online for free Download",
         "Create professional designs with AI online. Generate layouts for social media posts, covers, and marketing materials automatically—easy and free.",
         "A quick chat with CapCut's AI video editor and it'll build a video from scratch, style, avatar, everything.",
         "The reliable and essential AI editing features from CapCut for text, audio, and video.",
-        "Resize images online for free with AI. Adjust dimensions and aspect ratios quickly for social media, websites, ads, and digital content.",
-        "Edit photos online for free with smart cropping, filters, and advanced effects—no downloads needed, directly in your browser."
+        "Resize images online for free with AI. Adjust dimensions and aspect ratios quickly for social media, websites, ads, and digital content."
       ],
       "source_urls": [
         "https://www.capcut.com/",
@@ -499,9 +499,9 @@
         "Standard",
         "Pro",
         "Premium",
+        "Business",
         "Enterprise",
-        "Team",
-        "Creator"
+        "Team"
       ],
       "commercial_flags": {
         "free_plan": true,
@@ -520,7 +520,6 @@
       "languages_supported_numbers": [
         "80",
         "100",
-        "1",
         "120"
       ],
       "pricing_snippets": [
