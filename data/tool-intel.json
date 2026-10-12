@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-11T11:23:38+00:00",
+  "generated_at_utc": "2026-10-12T13:08:09+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -173,9 +173,11 @@
         "$15",
         "$16",
         "$22",
-        "$27",
-        "$30",
-        "$39"
+        "$28",
+        "$12/month",
+        "$0.00",
+        "$41",
+        "$0"
       ],
       "plan_names": [
         "Free",
@@ -350,7 +352,7 @@
         "voice_cloning": false,
         "subtitle_generation": true,
         "video_editing": true,
-        "api_or_sdk": true
+        "api_or_sdk": false
       },
       "languages_supported_numbers": [
         "20"
@@ -497,9 +499,9 @@
         "Standard",
         "Pro",
         "Premium",
+        "Business",
         "Enterprise",
-        "Team",
-        "Creator"
+        "Team"
       ],
       "commercial_flags": {
         "free_plan": true,
@@ -518,7 +520,6 @@
       "languages_supported_numbers": [
         "80",
         "100",
-        "1",
         "120"
       ],
       "pricing_snippets": [
@@ -630,9 +631,9 @@
       "price_points": [
         "$9",
         "$13",
-        "$18",
         "$100",
         "$0",
+        "$35",
         "$26"
       ],
       "plan_names": [
