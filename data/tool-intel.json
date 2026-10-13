@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-12T13:08:09+00:00",
+  "generated_at_utc": "2026-10-13T12:41:19+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -174,10 +174,10 @@
         "$16",
         "$22",
         "$28",
+        "$48",
         "$12/month",
         "$0.00",
-        "$41",
-        "$0"
+        "$39"
       ],
       "plan_names": [
         "Free",
@@ -232,7 +232,7 @@
         "$30/month",
         "$90/month",
         "$300/month",
-        "$30"
+        "$12"
       ],
       "plan_names": [
         "Free",
@@ -261,11 +261,11 @@
       "languages_supported_numbers": [],
       "pricing_snippets": [
         "Product Pricing API Enterprise News Join us",
-        "Plan, generate, iterate, and refine, keeping full context across every stage of creative work.",
-        "Try for free Contact Sales",
-        "From assets to deliverables",
-        "Visualize packaging and labels in photorealistic 3D—from shelf views to close-ups.",
-        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery."
+        "Try now for free",
+        "Luma supports enterprise teams with admin controls, pricing transparency, pre-set skills, and forward-deployed creatives.",
+        "Luma's frontier model Ray 3.2 gives you unmatched frame-by-frame control, continuity, and cinematic direction from Luma Labs.",
+        "Plans & Pricing",
+        "Save up to 20% with yearly"
       ],
       "source_urls": [
         "https://lumalabs.ai/app",
@@ -499,9 +499,9 @@
         "Standard",
         "Pro",
         "Premium",
-        "Business",
         "Enterprise",
-        "Team"
+        "Team",
+        "Creator"
       ],
       "commercial_flags": {
         "free_plan": true,
@@ -520,6 +520,7 @@
       "languages_supported_numbers": [
         "80",
         "100",
+        "1",
         "120"
       ],
       "pricing_snippets": [
@@ -631,9 +632,9 @@
       "price_points": [
         "$9",
         "$13",
+        "$18",
         "$100",
         "$0",
-        "$35",
         "$26"
       ],
       "plan_names": [
