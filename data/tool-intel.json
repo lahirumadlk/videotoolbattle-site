@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-13T12:41:19+00:00",
+  "generated_at_utc": "2026-10-14T10:09:39+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -174,10 +174,10 @@
         "$16",
         "$22",
         "$28",
-        "$48",
+        "$30",
         "$12/month",
         "$0.00",
-        "$39"
+        "$42"
       ],
       "plan_names": [
         "Free",
@@ -232,7 +232,7 @@
         "$30/month",
         "$90/month",
         "$300/month",
-        "$12"
+        "$30"
       ],
       "plan_names": [
         "Free",
@@ -261,11 +261,11 @@
       "languages_supported_numbers": [],
       "pricing_snippets": [
         "Product Pricing API Enterprise News Join us",
-        "Try now for free",
-        "Luma supports enterprise teams with admin controls, pricing transparency, pre-set skills, and forward-deployed creatives.",
-        "Luma's frontier model Ray 3.2 gives you unmatched frame-by-frame control, continuity, and cinematic direction from Luma Labs.",
-        "Plans & Pricing",
-        "Save up to 20% with yearly"
+        "Plan, generate, iterate, and refine, keeping full context across every stage of creative work.",
+        "Try for free Contact Sales",
+        "From assets to deliverables",
+        "Visualize packaging and labels in photorealistic 3D—from shelf views to close-ups.",
+        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery."
       ],
       "source_urls": [
         "https://lumalabs.ai/app",
@@ -278,13 +278,11 @@
       "name": "Pika",
       "base_url": "https://pika.art/",
       "price_points": [
+        "$7",
+        "$14",
         "$0",
         "$10",
-        "$1012",
-        "$35",
-        "$3012",
-        "$95",
-        "$9012"
+        "$1012"
       ],
       "plan_names": [
         "Free",
@@ -294,7 +292,7 @@
         "Enterprise",
         "Team",
         "Creator",
-        "Lite"
+        "Max"
       ],
       "commercial_flags": {
         "free_plan": false,
