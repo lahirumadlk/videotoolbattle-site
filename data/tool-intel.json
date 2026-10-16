@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-15T09:52:36+00:00",
+  "generated_at_utc": "2026-10-16T09:46:16+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -17,7 +17,7 @@
         "$150 billed annually",
         "$75/seat billed annually",
         "$885/seat",
-        "$7"
+        "$11"
       ],
       "plan_names": [
         "Free",
@@ -72,7 +72,7 @@
         "$150 billed annually",
         "$75/seat billed annually",
         "$885/seat",
-        "$7"
+        "$11"
       ],
       "plan_names": [
         "Free",
@@ -120,8 +120,8 @@
       "price_points": [
         "$200",
         "$7",
-        "$25",
-        "$26"
+        "$10",
+        "$13"
       ],
       "plan_names": [
         "Free",
@@ -279,10 +279,13 @@
       "base_url": "https://pika.art/",
       "price_points": [
         "$7",
-        "$14",
-        "$0",
+        "$15",
         "$10",
-        "$1012"
+        "$1012",
+        "$35",
+        "$3012",
+        "$95",
+        "$9012"
       ],
       "plan_names": [
         "Free",
@@ -386,7 +389,7 @@
       ],
       "commercial_flags": {
         "free_plan": true,
-        "free_trial": false,
+        "free_trial": true,
         "enterprise_or_contact_sales": true
       },
       "capabilities": {
@@ -497,9 +500,9 @@
         "Standard",
         "Pro",
         "Premium",
-        "Business",
         "Enterprise",
-        "Team"
+        "Team",
+        "Creator"
       ],
       "commercial_flags": {
         "free_plan": true,
@@ -518,6 +521,7 @@
       "languages_supported_numbers": [
         "80",
         "100",
+        "1",
         "120"
       ],
       "pricing_snippets": [
@@ -631,8 +635,7 @@
         "$13",
         "$18",
         "$100",
-        "$0",
-        "$26"
+        "$0"
       ],
       "plan_names": [
         "Free",
