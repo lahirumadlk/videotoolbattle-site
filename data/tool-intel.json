@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-19T10:43:50+00:00",
+  "generated_at_utc": "2026-10-20T10:01:04+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -45,7 +45,7 @@
       },
       "languages_supported_numbers": [],
       "pricing_snippets": [
-        "Enterprise Pricing",
+        "Enterprise Pricing MCP",
         "Unlimited Nano Banana 2.1 for 30 days on annual plans",
         "Save more with annual billing",
         "Nobody wants to make the same change on forty clips by hand. Give invideo's editing agent one direction and it applies it to every shot on the timeline, from cutting the pauses to matching the look.",
@@ -100,7 +100,7 @@
       },
       "languages_supported_numbers": [],
       "pricing_snippets": [
-        "Enterprise Pricing",
+        "Enterprise Pricing MCP",
         "Unlimited Nano Banana 2.1 for 30 days on annual plans",
         "Save more with annual billing",
         "Nobody wants to make the same change on forty clips by hand. Give invideo's editing agent one direction and it applies it to every shot on the timeline, from cutting the pauses to matching the look.",
@@ -232,7 +232,7 @@
         "$30/month",
         "$90/month",
         "$300/month",
-        "$30"
+        "$12"
       ],
       "plan_names": [
         "Free",
@@ -261,11 +261,11 @@
       "languages_supported_numbers": [],
       "pricing_snippets": [
         "Product Pricing API Enterprise News Join us",
-        "Plan, generate, iterate, and refine, keeping full context across every stage of creative work.",
-        "Try for free Contact Sales",
-        "From assets to deliverables",
-        "Visualize packaging and labels in photorealistic 3D—from shelf views to close-ups.",
-        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery."
+        "Try now for free",
+        "Luma supports enterprise teams with admin controls, pricing transparency, pre-set skills, and forward-deployed creatives.",
+        "Luma's frontier model Ray 3.2 gives you unmatched frame-by-frame control, continuity, and cinematic direction from Luma Labs.",
+        "Plans & Pricing",
+        "Save up to 20% with yearly"
       ],
       "source_urls": [
         "https://lumalabs.ai/app",
@@ -500,9 +500,9 @@
         "Standard",
         "Pro",
         "Premium",
+        "Business",
         "Enterprise",
-        "Team",
-        "Creator"
+        "Team"
       ],
       "commercial_flags": {
         "free_plan": true,
@@ -521,7 +521,6 @@
       "languages_supported_numbers": [
         "80",
         "100",
-        "1",
         "120"
       ],
       "pricing_snippets": [
@@ -635,8 +634,7 @@
         "$13",
         "$18",
         "$100",
-        "$0",
-        "$26"
+        "$0"
       ],
       "plan_names": [
         "Free",
