@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-20T10:01:04+00:00",
+  "generated_at_utc": "2026-10-21T10:05:58+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -120,8 +120,8 @@
       "price_points": [
         "$200",
         "$7",
-        "$25",
-        "$26"
+        "$27",
+        "$28"
       ],
       "plan_names": [
         "Free",
@@ -152,7 +152,7 @@
         "30"
       ],
       "pricing_snippets": [
-        "Platform Use cases Developers Resources Enterprise Research Pricing",
+        "Pricing",
         "Get started for free",
         "4.8 / 5 from 1,000+ reviews",
         "Character consistency is what separates a useful avatar from a gimmick. Avatar V delivers it across every angle, every expression, and every video you create.",
@@ -232,7 +232,7 @@
         "$30/month",
         "$90/month",
         "$300/month",
-        "$12"
+        "$30"
       ],
       "plan_names": [
         "Free",
@@ -261,11 +261,11 @@
       "languages_supported_numbers": [],
       "pricing_snippets": [
         "Product Pricing API Enterprise News Join us",
-        "Try now for free",
-        "Luma supports enterprise teams with admin controls, pricing transparency, pre-set skills, and forward-deployed creatives.",
-        "Luma's frontier model Ray 3.2 gives you unmatched frame-by-frame control, continuity, and cinematic direction from Luma Labs.",
-        "Plans & Pricing",
-        "Save up to 20% with yearly"
+        "Plan, generate, iterate, and refine, keeping full context across every stage of creative work.",
+        "Try for free Contact Sales",
+        "From assets to deliverables",
+        "Visualize packaging and labels in photorealistic 3D—from shelf views to close-ups.",
+        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery."
       ],
       "source_urls": [
         "https://lumalabs.ai/app",
@@ -279,7 +279,7 @@
       "base_url": "https://pika.art/",
       "price_points": [
         "$7",
-        "$14",
+        "$16",
         "$10",
         "$1012",
         "$35",
@@ -634,7 +634,8 @@
         "$13",
         "$18",
         "$100",
-        "$0"
+        "$0",
+        "$26"
       ],
       "plan_names": [
         "Free",
