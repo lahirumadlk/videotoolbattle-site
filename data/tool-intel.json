@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-21T10:05:58+00:00",
+  "generated_at_utc": "2026-10-22T10:08:41+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -120,8 +120,8 @@
       "price_points": [
         "$200",
         "$7",
-        "$27",
-        "$28"
+        "$21",
+        "$29"
       ],
       "plan_names": [
         "Free",
@@ -152,11 +152,11 @@
         "30"
       ],
       "pricing_snippets": [
+        "var E=[{\"flag\":\"www-pricing-cta-v1\",\"attr\":\"data-pricing-cta\",\"path\":\"^(/[a-z]{2}-[a-z]{2})?/pricing/?$\"}],q=new URLSearchParams(location.search).get('variant'),c={};",
         "Pricing",
         "Get started for free",
         "4.8 / 5 from 1,000+ reviews",
-        "Character consistency is what separates a useful avatar from a gimmick. Avatar V delivers it across every angle, every expression, and every video you create.",
-        "Avatar V learns how you talk, gesture, and move, then generates video that's convincingly you. The same micro-expressions, the same presence, all from a single prompt."
+        "Character consistency is what separates a useful avatar from a gimmick. Avatar V delivers it across every angle, every expression, and every video you create."
       ],
       "source_urls": [
         "https://www.heygen.com/",
@@ -667,7 +667,7 @@
         "90"
       ],
       "pricing_snippets": [
-        "Pricing",
+        "Pricing 40 % off!",
         "Start creating for free",
         "Fliki's AI video generator builds the entire video from a single prompt - script, visuals, voiceover, music, and captions. Used by 14M+ creators for TikToks, Reels, and YouTube. AI video generator →",
         "Explain a product, idea or process as a narrated video in any of 23 art styles, from realistic to anime to stickman, or save your own style and reuse it. Animated explainer →",
