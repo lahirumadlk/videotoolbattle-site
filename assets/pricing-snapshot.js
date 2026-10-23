@@ -11,7 +11,7 @@
   ];
   const BATTLE_LINKS = {
     'invideo-ai': 'battles/invideo-ai-vs-heygen.html',
-    'invideo': 'battles/invideo-vs-heygen.html',
+    'invideo': 'battles/invideo-ai-vs-heygen.html',
     'heygen': 'battles/heygen-vs-synthesia.html',
     'runway': 'battles/runway-vs-pika.html',
     'luma': 'battles/runway-vs-luma-dream-machine.html',
