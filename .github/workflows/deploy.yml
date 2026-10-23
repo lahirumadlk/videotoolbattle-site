@@ -30,6 +30,29 @@ jobs:
             python -m json.tool "$file" >/dev/null
           done
 
+      - name: Check pages match data/prices.json
+        run: python scripts/sync_prices.py --check
+
+      - name: Validate JSON-LD blocks
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, re, sys
+          from pathlib import Path
+
+          bad = []
+          for page in [Path("index.html"), *sorted(Path("battles").glob("*.html"))]:
+              blocks = re.findall(r'(?s)<script type="application/ld\+json">(.*?)</script>', page.read_text(encoding="utf-8"))
+              for block in blocks:
+                  try:
+                      json.loads(block)
+                  except json.JSONDecodeError as exc:
+                      bad.append(f"{page}: {exc}")
+          if bad:
+              sys.exit("Invalid JSON-LD:\n" + "\n".join(bad))
+          PY
+
       - name: Verify required site files
         shell: bash
         run: |
