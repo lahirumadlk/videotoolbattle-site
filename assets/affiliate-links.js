@@ -1,3 +1,14 @@
+/*
+ * AFFILIATE LINKS — paste your tracking link next to each tool after you're approved.
+ * Empty values fall back to the official site (no commission).
+ *
+ * Where to apply (confirm current terms on each page before promoting):
+ *   synthesia  -> https://www.synthesia.io/partners/affiliates   (Rewardful)
+ *   veed       -> https://www.veed.io/affiliate                  (Impact.com — this site is already Impact-verified)
+ *   fliki      -> https://fliki.ai/affiliate-program             (no ads / coupon sites)
+ *   descript   -> https://www.descript.com/affiliate             (PartnerStack; no Google Ads)
+ *   runway, capcut, colossyan, pika, luma, kaiber -> check each site's footer for "Affiliates"/"Partners"
+ */
 const AFFILIATE_LINKS = {
   "invideo-ai": "https://invideo.sjv.io/ZV6MKg",
   "invideo": "https://invideo.sjv.io/ZV6MKg",
