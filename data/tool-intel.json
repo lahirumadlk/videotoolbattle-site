@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-22T10:08:41+00:00",
+  "generated_at_utc": "2026-10-23T10:01:14+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -16,18 +16,17 @@
         "$360/seat",
         "$150 billed annually",
         "$75/seat billed annually",
-        "$885/seat",
-        "$7"
+        "$885/seat"
       ],
       "plan_names": [
         "Free",
         "Starter",
-        "Basic",
-        "Standard",
         "Pro",
         "Premium",
         "Business",
-        "Enterprise"
+        "Enterprise",
+        "Team",
+        "Lite"
       ],
       "commercial_flags": {
         "free_plan": false,
@@ -39,7 +38,7 @@
         "text_to_video": true,
         "image_to_video": true,
         "voice_cloning": true,
-        "subtitle_generation": true,
+        "subtitle_generation": false,
         "video_editing": true,
         "api_or_sdk": true
       },
@@ -71,18 +70,17 @@
         "$360/seat",
         "$150 billed annually",
         "$75/seat billed annually",
-        "$885/seat",
-        "$7"
+        "$885/seat"
       ],
       "plan_names": [
         "Free",
         "Starter",
-        "Basic",
-        "Standard",
         "Pro",
         "Premium",
         "Business",
-        "Enterprise"
+        "Enterprise",
+        "Team",
+        "Lite"
       ],
       "commercial_flags": {
         "free_plan": false,
@@ -94,7 +92,7 @@
         "text_to_video": true,
         "image_to_video": true,
         "voice_cloning": true,
-        "subtitle_generation": true,
+        "subtitle_generation": false,
         "video_editing": true,
         "api_or_sdk": true
       },
@@ -119,9 +117,12 @@
       "base_url": "https://www.heygen.com/",
       "price_points": [
         "$200",
-        "$7",
-        "$21",
-        "$29"
+        "$0/mo",
+        "$29 / mo",
+        "$49 / mo",
+        "$149 / mo",
+        "$20/seat",
+        "$29/month"
       ],
       "plan_names": [
         "Free",
@@ -152,11 +153,11 @@
         "30"
       ],
       "pricing_snippets": [
-        "var E=[{\"flag\":\"www-pricing-cta-v1\",\"attr\":\"data-pricing-cta\",\"path\":\"^(/[a-z]{2}-[a-z]{2})?/pricing/?$\"}],q=new URLSearchParams(location.search).get('variant'),c={};",
         "Pricing",
         "Get started for free",
         "4.8 / 5 from 1,000+ reviews",
-        "Character consistency is what separates a useful avatar from a gimmick. Avatar V delivers it across every angle, every expression, and every video you create."
+        "Character consistency is what separates a useful avatar from a gimmick. Avatar V delivers it across every angle, every expression, and every video you create.",
+        "Avatar V learns how you talk, gesture, and move, then generates video that's convincingly you. The same micro-expressions, the same presence, all from a single prompt."
       ],
       "source_urls": [
         "https://www.heygen.com/",
@@ -167,27 +168,26 @@
     {
       "key": "runway",
       "name": "Runway",
-      "base_url": "https://runwayml.com/",
+      "base_url": "https://runway.com/",
       "price_points": [
-        "$5",
-        "$15",
-        "$16",
-        "$22",
-        "$28",
-        "$30",
         "$12/month",
-        "$0.00",
-        "$42"
+        "$0",
+        "$36/year",
+        "$15",
+        "$12",
+        "$84/year",
+        "$35",
+        "$28",
+        "$228/year",
+        "$95"
       ],
       "plan_names": [
         "Free",
-        "Starter",
         "Standard",
         "Pro",
-        "Premium",
-        "Business",
         "Enterprise",
-        "Team"
+        "Team",
+        "Max"
       ],
       "commercial_flags": {
         "free_plan": true,
@@ -195,12 +195,12 @@
         "enterprise_or_contact_sales": true
       },
       "capabilities": {
-        "avatars": true,
-        "text_to_video": true,
-        "image_to_video": true,
+        "avatars": false,
+        "text_to_video": false,
+        "image_to_video": false,
         "voice_cloning": true,
-        "subtitle_generation": true,
-        "video_editing": true,
+        "subtitle_generation": false,
+        "video_editing": false,
         "api_or_sdk": true
       },
       "languages_supported_numbers": [],
@@ -228,21 +228,17 @@
         "$90 /month",
         "$900 billed yearly",
         "$300 /month",
-        "$3,000 billed yearly",
-        "$30/month",
-        "$90/month",
-        "$300/month",
-        "$30"
+        "$3,000 billed yearly"
       ],
       "plan_names": [
         "Free",
-        "Standard",
         "Pro",
         "Business",
         "Enterprise",
         "Team",
-        "Creator",
-        "Lite"
+        "Lite",
+        "Plus",
+        "Max"
       ],
       "commercial_flags": {
         "free_plan": false,
@@ -254,18 +250,18 @@
         "text_to_video": false,
         "image_to_video": false,
         "voice_cloning": false,
-        "subtitle_generation": true,
+        "subtitle_generation": false,
         "video_editing": true,
         "api_or_sdk": true
       },
       "languages_supported_numbers": [],
       "pricing_snippets": [
         "Product Pricing API Enterprise News Join us",
-        "Plan, generate, iterate, and refine, keeping full context across every stage of creative work.",
-        "Try for free Contact Sales",
-        "From assets to deliverables",
-        "Visualize packaging and labels in photorealistic 3D—from shelf views to close-ups.",
-        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery."
+        "Try now for free",
+        "Luma supports enterprise teams with admin controls, pricing transparency, pre-set skills, and forward-deployed creatives.",
+        "Luma's frontier model Ray 3.2 gives you unmatched frame-by-frame control, continuity, and cinematic direction from Luma Labs.",
+        "Plans & Pricing",
+        "Save up to 20% with yearly"
       ],
       "source_urls": [
         "https://lumalabs.ai/app",
@@ -278,24 +274,21 @@
       "name": "Pika",
       "base_url": "https://pika.art/",
       "price_points": [
-        "$7",
-        "$16",
         "$10",
         "$1012",
         "$35",
         "$3012",
         "$95",
-        "$9012"
+        "$9012",
+        "$440/mo",
+        "$35 /mo"
       ],
       "plan_names": [
         "Free",
         "Starter",
-        "Standard",
-        "Pro",
         "Enterprise",
         "Team",
-        "Creator",
-        "Max"
+        "Creator"
       ],
       "commercial_flags": {
         "free_plan": false,
@@ -303,11 +296,11 @@
         "enterprise_or_contact_sales": true
       },
       "capabilities": {
-        "avatars": true,
-        "text_to_video": true,
+        "avatars": false,
+        "text_to_video": false,
         "image_to_video": false,
         "voice_cloning": false,
-        "subtitle_generation": true,
+        "subtitle_generation": false,
         "video_editing": true,
         "api_or_sdk": true
       },
@@ -337,7 +330,6 @@
         "Pro",
         "Premium",
         "Business",
-        "Team",
         "Creator",
         "Plus"
       ],
@@ -379,9 +371,6 @@
       "price_points": [],
       "plan_names": [
         "Free",
-        "Starter",
-        "Basic",
-        "Pro",
         "Premium",
         "Business",
         "Enterprise",
@@ -401,11 +390,7 @@
         "video_editing": true,
         "api_or_sdk": true
       },
-      "languages_supported_numbers": [
-        "25",
-        "50",
-        "150"
-      ],
+      "languages_supported_numbers": [],
       "pricing_snippets": [
         "Generate videos, voices, avatars and images from a simple prompt. No filming, no studio - just type and create.",
         "Remove Background Noise from Audio",
@@ -441,11 +426,11 @@
         "Free",
         "Starter",
         "Basic",
-        "Standard",
         "Pro",
         "Business",
         "Enterprise",
-        "Team"
+        "Team",
+        "Plus"
       ],
       "commercial_flags": {
         "free_plan": true,
@@ -468,12 +453,12 @@
         "70"
       ],
       "pricing_snippets": [
-        "GetStarterBtn.href = '#free-ai-video';",
-        "GetStarterBtn.href = '/pricing';",
-        "/* Snippet makes all link elements listed below to inherit color from their parent */",
-        "/* Component PB: Quote-slider-simple ( change h2 size from large to medium ) */",
-        "// Get the slide nodes from Embla.",
-        "const dotNodes = Array.from(dotsContainer.children);"
+        "Try for free",
+        "Lifelike avatars from a script",
+        "API Pricing Interactive Avatars API Documentation Dubbing API Documentation AI Video Assistant API Documentation MCP Documentation",
+        "Pricing",
+        "Get started for free",
+        "Create an avatar of yourself from a single photo, for more personal videos."
       ],
       "source_urls": [
         "https://www.synthesia.io/",
@@ -486,23 +471,22 @@
       "name": "Colossyan",
       "base_url": "https://www.colossyan.com/",
       "price_points": [
-        "$59/month",
         "$27/mo",
         "$59 /mo",
         "$30 /mo",
         "$27/month",
+        "$59/month",
         "$1000/year",
         "$1,500/year"
       ],
       "plan_names": [
         "Free",
         "Starter",
-        "Standard",
-        "Pro",
-        "Premium",
         "Business",
         "Enterprise",
-        "Team"
+        "Team",
+        "Creator",
+        "Plus"
       ],
       "commercial_flags": {
         "free_plan": true,
@@ -515,12 +499,12 @@
         "image_to_video": false,
         "voice_cloning": true,
         "subtitle_generation": true,
-        "video_editing": true,
+        "video_editing": false,
         "api_or_sdk": true
       },
       "languages_supported_numbers": [
-        "80",
         "100",
+        "80",
         "120"
       ],
       "pricing_snippets": [
@@ -571,8 +555,6 @@
       "name": "Descript",
       "base_url": "https://www.descript.com/",
       "price_points": [
-        "$12",
-        "$18",
         "$16",
         "$24",
         "$35",
@@ -605,7 +587,6 @@
         "api_or_sdk": true
       },
       "languages_supported_numbers": [
-        "20",
         "30",
         "25",
         "61",
@@ -629,14 +610,7 @@
       "key": "fliki",
       "name": "Fliki",
       "base_url": "https://fliki.ai/",
-      "price_points": [
-        "$9",
-        "$13",
-        "$18",
-        "$100",
-        "$0",
-        "$26"
-      ],
+      "price_points": [],
       "plan_names": [
         "Free",
         "Standard",
@@ -655,7 +629,7 @@
       "capabilities": {
         "avatars": true,
         "text_to_video": true,
-        "image_to_video": true,
+        "image_to_video": false,
         "voice_cloning": true,
         "subtitle_generation": true,
         "video_editing": true,
@@ -667,7 +641,7 @@
         "90"
       ],
       "pricing_snippets": [
-        "Pricing 40 % off!",
+        "Features Use cases Explore Pricing 40 % off!",
         "Start creating for free",
         "Fliki's AI video generator builds the entire video from a single prompt - script, visuals, voiceover, music, and captions. Used by 14M+ creators for TikToks, Reels, and YouTube. AI video generator →",
         "Explain a product, idea or process as a narrated video in any of 23 art styles, from realistic to anime to stickman, or save your own style and reuse it. Animated explainer →",
@@ -678,7 +652,7 @@
         "https://fliki.ai/",
         "https://fliki.ai/pricing"
       ],
-      "confidence": "high"
+      "confidence": "medium"
     }
   ]
 }
