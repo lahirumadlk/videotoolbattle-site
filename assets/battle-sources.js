@@ -16,6 +16,12 @@
     });
   });
 
+  function formatDay(value) {
+    const d = new Date(value);
+    if (Number.isNaN(d.getTime())) return value;
+    return new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(d);
+  }
+
   async function loadSources() {
     const { data } = await fetchFirstJson(DATA_PATHS);
     if (!data || !Array.isArray(data.tools)) return;
@@ -82,7 +88,7 @@
     section.className = 'battle-sources';
 
     const title = document.createElement('h2');
-    title.textContent = 'Pricing Sources';
+    title.textContent = 'Pricing sources';
     section.appendChild(title);
 
     const lead = document.createElement('p');
@@ -131,8 +137,8 @@
     const stamp = document.createElement('p');
     stamp.className = 'battle-sources-stamp';
     stamp.textContent = generatedAt
-      ? `Last checked (UTC): ${formatUtc(generatedAt)}`
-      : 'Last checked (UTC): not available';
+      ? `Source links last checked ${formatDay(generatedAt)}.`
+      : 'Source links not checked yet.';
     section.appendChild(stamp);
 
     const relatedSection = host.querySelector('.related-section');
