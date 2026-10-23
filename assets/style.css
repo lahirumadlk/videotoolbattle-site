@@ -114,8 +114,8 @@ p { max-width: 68ch; }
   /* two stacked track stripes: the mark */
   content: ''; width: 22px; height: 18px; flex: none;
   background:
-    linear-gradient(var(--track-a), var(--track-a)) 0 0 / 100% 7px no-repeat,
-    linear-gradient(var(--track-b), var(--track-b)) 6px 11px / 16px 7px no-repeat;
+    linear-gradient(var(--track-a), var(--track-a)) 0 0 / 15px 7px no-repeat,
+    linear-gradient(var(--track-b), var(--track-b)) 7px 11px / 15px 7px no-repeat;
 }
 .nav-links { display: flex; gap: 26px; margin-left: auto; }
 .nav-links a { text-decoration: none; color: var(--ink-2); font-weight: 500; padding: 6px 0; }
