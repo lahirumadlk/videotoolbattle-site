@@ -1,0 +1,129 @@
+{
+  "_readme": "Hand-verified entry-plan prices; the single source of truth for prices on battle pages. Only change a price after checking the tool's official pricing page, then set checked to that day and run: python3 scripts/sync_prices.py. monthly_price is the price when billed monthly; yearly_monthly_price is the per-month price when billed yearly. status needs_browser_check means the pricing page only renders in a browser and the value has not been re-checked since March 2026.",
+  "currency": "USD",
+  "tools": {
+    "runway": {
+      "tool": "Runway",
+      "plan": "Standard",
+      "monthly_price": 15,
+      "yearly_monthly_price": 12,
+      "billing": "monthly",
+      "source": "https://runway.com/pricing",
+      "checked": "2026-10-23",
+      "status": "verified"
+    },
+    "pika": {
+      "tool": "Pika",
+      "plan": "Starter",
+      "monthly_price": 10,
+      "yearly_monthly_price": 8,
+      "billing": "monthly",
+      "source": "https://pika.art/pricing",
+      "checked": "2026-10-23",
+      "status": "verified"
+    },
+    "luma-dream-machine": {
+      "tool": "Luma Dream Machine",
+      "plan": "Plus",
+      "monthly_price": 30,
+      "yearly_monthly_price": 25,
+      "billing": "monthly",
+      "source": "https://lumalabs.ai/pricing",
+      "checked": "2026-10-23",
+      "status": "verified"
+    },
+    "heygen": {
+      "tool": "HeyGen",
+      "plan": "Creator",
+      "monthly_price": 29,
+      "yearly_monthly_price": 24,
+      "billing": "monthly",
+      "source": "https://www.heygen.com/pricing",
+      "checked": "2026-10-23",
+      "status": "verified"
+    },
+    "synthesia": {
+      "tool": "Synthesia",
+      "plan": "Starter",
+      "monthly_price": 29,
+      "yearly_monthly_price": 18,
+      "billing": "monthly",
+      "source": "https://www.synthesia.io/pricing",
+      "checked": "2026-10-23",
+      "status": "verified"
+    },
+    "colossyan": {
+      "tool": "Colossyan",
+      "plan": "Professional",
+      "monthly_price": null,
+      "yearly_monthly_price": 59,
+      "billing": "yearly",
+      "note": "Starter plan is free",
+      "source": "https://www.colossyan.com/pricing/",
+      "checked": "2026-10-23",
+      "status": "verified"
+    },
+    "descript": {
+      "tool": "Descript",
+      "plan": "Hobbyist",
+      "monthly_price": 24,
+      "yearly_monthly_price": 16,
+      "billing": "monthly",
+      "unit": "person",
+      "source": "https://www.descript.com/pricing",
+      "checked": "2026-10-23",
+      "status": "verified"
+    },
+    "invideo-ai": {
+      "tool": "InVideo AI",
+      "plan": "Plus",
+      "monthly_price": 28,
+      "yearly_monthly_price": null,
+      "billing": null,
+      "source": "https://invideo.io/pricing/",
+      "checked": null,
+      "status": "needs_browser_check"
+    },
+    "fliki": {
+      "tool": "Fliki",
+      "plan": "Standard",
+      "monthly_price": 28,
+      "yearly_monthly_price": null,
+      "billing": null,
+      "source": "https://fliki.ai/pricing",
+      "checked": null,
+      "status": "needs_browser_check"
+    },
+    "capcut": {
+      "tool": "CapCut",
+      "plan": "Pro",
+      "monthly_price": 19.99,
+      "yearly_monthly_price": null,
+      "billing": null,
+      "note": "individual; region/platform dependent",
+      "source": "https://www.capcut.com/pricing",
+      "checked": null,
+      "status": "needs_browser_check"
+    },
+    "veed": {
+      "tool": "VEED",
+      "plan": "Lite",
+      "monthly_price": 24,
+      "yearly_monthly_price": null,
+      "billing": "monthly",
+      "source": "https://www.veed.io/pricing",
+      "checked": null,
+      "status": "needs_browser_check"
+    },
+    "kaiber": {
+      "tool": "Kaiber",
+      "plan": "Creator",
+      "monthly_price": 29,
+      "yearly_monthly_price": null,
+      "billing": null,
+      "source": "https://kaiber.ai/pricing",
+      "checked": null,
+      "status": "needs_browser_check"
+    }
+  }
+}
