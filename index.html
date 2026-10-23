@@ -18,7 +18,7 @@
     <link rel="canonical" href="https://videotoolbattle.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -120,16 +120,15 @@
     <header class="site-header">
         <div class="header-inner">
             <a href="/" class="logo" aria-label="Video Tool Battle Home">
-                <span class="logo-icon">⚔️</span>
                 Video Tool Battle
             </a>
             <nav class="nav-links" aria-label="Main navigation">
-                <a href="#battles" class="active">Battles</a>
-                <a href="#trust">How We Compare</a>
-                <a href="#newsletter">Stay Updated</a>
+                <a href="#battles">Comparisons</a>
+                <a href="#trust">How we compare</a>
+                <a href="#newsletter">Newsletter</a>
             </nav>
             <div class="header-actions">
-                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">Dark</button>
                 <button class="hamburger" id="hamburger" aria-label="Open menu">
                     <span></span><span></span><span></span>
                 </button>
@@ -139,38 +138,45 @@
 
     <!-- Mobile Menu -->
     <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
-        <a href="#battles">Battles</a>
-        <a href="#trust">How We Compare</a>
-        <a href="#newsletter">Stay Updated</a>
+        <a href="#battles">Comparisons</a>
+        <a href="#trust">How we compare</a>
+        <a href="#newsletter">Newsletter</a>
     </nav>
 
     <!-- ===== HERO ===== -->
     <section class="hero">
-        <div class="hero-content">
-            <div class="hero-badge">🔥 Updated March 2026</div>
-            <h1>Find Your Perfect <span class="gradient-text">AI Video Tool</span> in Minutes</h1>
-            <p class="hero-subtitle">Side-by-side comparisons built for creators, marketers, and teams. Real data, clear verdicts, zero fluff.</p>
-
-            <div class="hero-search">
-                <span class="search-icon">🔍</span>
-                <input type="text" id="hero-search" placeholder="Search tools... (e.g. Runway, HeyGen, Pika)" autocomplete="off" aria-label="Search comparisons">
-                <button class="search-btn" type="button" aria-label="Search">🔍</button>
+        <div class="hero-content page-wrap">
+            <div class="hero-copy">
+                <h1>Which AI video tool is worth paying for?</h1>
+                <p class="hero-subtitle">Head-to-head comparisons of Runway, HeyGen, Synthesia, Pika and more, judged on price, speed and output quality for the job you need done.</p>
+                <div class="hero-search">
+                    <label class="sr-only" for="hero-search">Search comparisons</label>
+                    <input type="text" id="hero-search" placeholder="Search a tool, e.g. Runway" autocomplete="off">
+                    <button class="search-btn" type="button">Search</button>
+                </div>
+                <p class="hero-badge">Updated March 2026</p>
             </div>
 
-            <div class="trust-strip">
-                <div class="trust-item">
-                    <span class="num">10+</span>
-                    <span class="label">Tools Compared</span>
+            <a class="hero-tracks" href="battles/runway-vs-pika.html" aria-label="Runway vs Pika comparison">
+                <p class="hero-tracks-title"><span class="tool-name-a">Runway</span> <span class="vs-text">vs</span> <span class="tool-name-b">Pika</span></p>
+                <div class="track-row">
+                    <span class="track-label">Price</span>
+                    <span class="track"><span class="clip a" style="width:65%">Runway 65</span></span>
+                    <span class="track"><span class="clip b" style="width:85%">Pika 85</span></span>
                 </div>
-                <div class="trust-item">
-                    <span class="num">10</span>
-                    <span class="label">Head-to-Head Battles</span>
+                <div class="track-row">
+                    <span class="track-label">Speed</span>
+                    <span class="track"><span class="clip a" style="width:72%">Runway 72</span></span>
+                    <span class="track"><span class="clip b" style="width:90%">Pika 90</span></span>
                 </div>
-                <div class="trust-item">
-                    <span class="num">4</span>
-                    <span class="label">Key Metrics Scored</span>
+                <div class="track-row">
+                    <span class="track-label">Quality</span>
+                    <span class="track"><span class="clip a" style="width:90%">Runway 90</span></span>
+                    <span class="track"><span class="clip b" style="width:72%">Pika 72</span></span>
                 </div>
-            </div>
+                <p class="hero-tracks-verdict">Runway for cinematic shots you'll iterate on. Pika for fast, cheap social clips.</p>
+                <span class="hero-tracks-link">Read the comparison</span>
+            </a>
         </div>
     </section>
 
@@ -190,22 +196,22 @@
     <section id="battles" class="battles-section">
         <div class="page-wrap">
             <div class="section-header">
-                <h2>Head-to-Head Battles</h2>
+                <h2>All comparisons</h2>
                 <span class="count" id="battle-count">10 comparisons</span>
             </div>
 
             <div class="battle-grid">
 
                 <!-- CARD 1: InVideo AI vs HeyGen -->
-                <article class="battle-card featured reveal" data-categories="text-to-video avatars" data-search="invideo ai heygen faceless youtube avatar presenter promo">
-                    <span class="featured-badge">⭐ Featured</span>
+                <article class="battle-card featured" data-categories="text-to-video avatars" data-search="invideo ai heygen faceless youtube avatar presenter promo">
+                    <span class="featured-badge">Most read</span>
                     <div class="card-matchup">
                         <div class="tool-icon">INV</div>
                         <span class="vs-badge">VS</span>
                         <div class="tool-icon">HG</div>
                     </div>
                     <div>
-                        <h3 style="margin-bottom: 8px;">InVideo AI vs HeyGen</h3>
+                        <h3>InVideo AI vs HeyGen</h3>
                         <div class="card-tags">
                             <span class="tag avatar">Avatars</span>
                             <span class="tag">Text-to-Video</span>
@@ -236,21 +242,21 @@
                     </div>
                     <p class="card-verdict">Pick InVideo AI for faceless YouTube &amp; promo videos. Pick HeyGen for realistic on-screen presenters.</p>
                     <div class="card-actions">
-                        <a class="btn btn-primary btn-sm" href="battles/invideo-ai-vs-heygen.html">Read Battle →</a>
+                        <a class="btn btn-primary btn-sm" href="battles/invideo-ai-vs-heygen.html">Read comparison</a>
                         <a class="btn btn-ghost btn-sm" href="#" data-affiliate="invideo-ai">Try InVideo AI</a>
                         <a class="btn btn-ghost btn-sm" href="#" data-affiliate="heygen">Try HeyGen</a>
                     </div>
                 </article>
 
                 <!-- CARD 2: Runway vs Luma -->
-                <article class="battle-card reveal" data-categories="ai-generation" data-search="runway luma dream machine cinematic creative suite generation">
+                <article class="battle-card" data-categories="ai-generation" data-search="runway luma dream machine cinematic creative suite generation">
                     <div class="card-matchup">
                         <div class="tool-icon">RW</div>
                         <span class="vs-badge">VS</span>
                         <div class="tool-icon">LM</div>
                     </div>
                     <div>
-                        <h3 style="margin-bottom: 8px;">Runway vs Luma Dream Machine</h3>
+                        <h3>Runway vs Luma Dream Machine</h3>
                         <div class="card-tags">
                             <span class="tag gen">AI Generation</span>
                             <span class="tag">Cinematic</span>
@@ -281,21 +287,21 @@
                     </div>
                     <p class="card-verdict">Choose Runway for a full creative suite and heavy iteration. Choose Luma for high-quality generations on a simpler credit path.</p>
                     <div class="card-actions">
-                        <a class="btn btn-primary btn-sm" href="battles/runway-vs-luma-dream-machine.html">Read Battle →</a>
+                        <a class="btn btn-primary btn-sm" href="battles/runway-vs-luma-dream-machine.html">Read comparison</a>
                         <a class="btn btn-ghost btn-sm" href="#" data-affiliate="runway">Try Runway</a>
                         <a class="btn btn-ghost btn-sm" href="#" data-affiliate="luma">Try Luma</a>
                     </div>
                 </article>
 
                 <!-- CARD 3: Pika vs Luma -->
-                <article class="battle-card reveal" data-categories="ai-generation" data-search="pika luma dream machine effects stylized cinematic realism">
+                <article class="battle-card" data-categories="ai-generation" data-search="pika luma dream machine effects stylized cinematic realism">
                     <div class="card-matchup">
                         <div class="tool-icon">PK</div>
                         <span class="vs-badge">VS</span>
                         <div class="tool-icon">LM</div>
                     </div>
                     <div>
-                        <h3 style="margin-bottom: 8px;">Pika vs Luma Dream Machine</h3>
+                        <h3>Pika vs Luma Dream Machine</h3>
                         <div class="card-tags">
                             <span class="tag gen">AI Generation</span>
                             <span class="tag">Effects</span>
@@ -326,21 +332,21 @@
                     </div>
                     <p class="card-verdict">Pick Pika for fast, playful effects. Pick Luma for cinematic realism and higher-end shots.</p>
                     <div class="card-actions">
-                        <a class="btn btn-primary btn-sm" href="battles/pika-vs-luma-dream-machine.html">Read Battle →</a>
+                        <a class="btn btn-primary btn-sm" href="battles/pika-vs-luma-dream-machine.html">Read comparison</a>
                         <a class="btn btn-ghost btn-sm" href="#" data-affiliate="pika">Try Pika</a>
                         <a class="btn btn-ghost btn-sm" href="#" data-affiliate="luma">Try Luma</a>
                     </div>
                 </article>
 
                 <!-- CARD 4: Runway vs Pika -->
-                <article class="battle-card reveal" data-categories="ai-generation" data-search="runway pika short-form cinematic viral effects">
+                <article class="battle-card" data-categories="ai-generation" data-search="runway pika short-form cinematic viral effects">
                     <div class="card-matchup">
                         <div class="tool-icon">RW</div>
                         <span class="vs-badge">VS</span>
                         <div class="tool-icon">PK</div>
                     </div>
                     <div>
-                        <h3 style="margin-bottom: 8px;">Runway vs Pika</h3>
+                        <h3>Runway vs Pika</h3>
                         <div class="card-tags">
                             <span class="tag gen">AI Generation</span>
                             <span class="tag">Short-form</span>
@@ -371,21 +377,21 @@
                     </div>
                     <p class="card-verdict">Choose Runway for cinematic results and iterative workflows. Choose Pika for quick, viral-ready effects.</p>
                     <div class="card-actions">
-                        <a class="btn btn-primary btn-sm" href="battles/runway-vs-pika.html">Read Battle →</a>
+                        <a class="btn btn-primary btn-sm" href="battles/runway-vs-pika.html">Read comparison</a>
                         <a class="btn btn-ghost btn-sm" href="#" data-affiliate="runway">Try Runway</a>
                         <a class="btn btn-ghost btn-sm" href="#" data-affiliate="pika">Try Pika</a>
                     </div>
                 </article>
 
                 <!-- CARD 5: HeyGen vs Synthesia -->
-                <article class="battle-card reveal" data-categories="avatars" data-search="heygen synthesia avatars enterprise training marketing">
+                <article class="battle-card" data-categories="avatars" data-search="heygen synthesia avatars enterprise training marketing">
                     <div class="card-matchup">
                         <div class="tool-icon">HG</div>
                         <span class="vs-badge">VS</span>
                         <div class="tool-icon">SY</div>
                     </div>
                     <div>
-                        <h3 style="margin-bottom: 8px;">HeyGen vs Synthesia</h3>
+                        <h3>HeyGen vs Synthesia</h3>
                         <div class="card-tags">
                             <span class="tag avatar">AI Avatars</span>
                             <span class="tag enterprise">Enterprise</span>
@@ -416,21 +422,21 @@
                     </div>
                     <p class="card-verdict">Pick HeyGen for modern avatar content for marketing. Pick Synthesia for enterprise-friendly training workflows.</p>
                     <div class="card-actions">
-                        <a class="btn btn-primary btn-sm" href="battles/heygen-vs-synthesia.html">Read Battle →</a>
+                        <a class="btn btn-primary btn-sm" href="battles/heygen-vs-synthesia.html">Read comparison</a>
                         <a class="btn btn-ghost btn-sm" href="#" data-affiliate="heygen">Try HeyGen</a>
                         <a class="btn btn-ghost btn-sm" href="#" data-affiliate="synthesia">Try Synthesia</a>
                     </div>
                 </article>
 
                 <!-- CARD 6: Synthesia vs Colossyan -->
-                <article class="battle-card reveal" data-categories="avatars" data-search="synthesia colossyan training enterprise avatar presenter">
+                <article class="battle-card" data-categories="avatars" data-search="synthesia colossyan training enterprise avatar presenter">
                     <div class="card-matchup">
                         <div class="tool-icon">SY</div>
                         <span class="vs-badge">VS</span>
                         <div class="tool-icon">CL</div>
                     </div>
                     <div>
-                        <h3 style="margin-bottom: 8px;">Synthesia vs Colossyan</h3>
+                        <h3>Synthesia vs Colossyan</h3>
                         <div class="card-tags">
                             <span class="tag avatar">AI Avatars</span>
                             <span class="tag enterprise">Enterprise</span>
@@ -461,21 +467,21 @@
                     </div>
                     <p class="card-verdict">Choose Synthesia for a premium avatar catalog. Choose Colossyan for a lower-cost, fast-update training workflow.</p>
                     <div class="card-actions">
-                        <a class="btn btn-primary btn-sm" href="battles/synthesia-vs-colossyan.html">Read Battle →</a>
+                        <a class="btn btn-primary btn-sm" href="battles/synthesia-vs-colossyan.html">Read comparison</a>
                         <a class="btn btn-ghost btn-sm" href="#" data-affiliate="synthesia">Try Synthesia</a>
                         <a class="btn btn-ghost btn-sm" href="#" data-affiliate="colossyan">Try Colossyan</a>
                     </div>
                 </article>
 
                 <!-- CARD 7: InVideo AI vs Fliki -->
-                <article class="battle-card reveal" data-categories="text-to-video" data-search="invideo ai fliki text-to-video narration script blog">
+                <article class="battle-card" data-categories="text-to-video" data-search="invideo ai fliki text-to-video narration script blog">
                     <div class="card-matchup">
                         <div class="tool-icon">INV</div>
                         <span class="vs-badge">VS</span>
                         <div class="tool-icon">FL</div>
                     </div>
                     <div>
-                        <h3 style="margin-bottom: 8px;">InVideo AI vs Fliki</h3>
+                        <h3>InVideo AI vs Fliki</h3>
                         <div class="card-tags">
                             <span class="tag">Text-to-Video</span>
                             <span class="tag edit">Narration</span>
@@ -506,21 +512,21 @@
                     </div>
                     <p class="card-verdict">Pick InVideo AI for stronger end-to-end assembly. Pick Fliki for fast script-to-video with narration.</p>
                     <div class="card-actions">
-                        <a class="btn btn-primary btn-sm" href="battles/invideo-ai-vs-fliki.html">Read Battle →</a>
+                        <a class="btn btn-primary btn-sm" href="battles/invideo-ai-vs-fliki.html">Read comparison</a>
                         <a class="btn btn-ghost btn-sm" href="#" data-affiliate="invideo-ai">Try InVideo AI</a>
                         <a class="btn btn-ghost btn-sm" href="#" data-affiliate="fliki">Try Fliki</a>
                     </div>
                 </article>
 
                 <!-- CARD 8: CapCut vs VEED -->
-                <article class="battle-card reveal" data-categories="editing creator-tools" data-search="capcut veed editing captions creator tiktok reels shorts">
+                <article class="battle-card" data-categories="editing creator-tools" data-search="capcut veed editing captions creator tiktok reels shorts">
                     <div class="card-matchup">
                         <div class="tool-icon">CC</div>
                         <span class="vs-badge">VS</span>
                         <div class="tool-icon">VD</div>
                     </div>
                     <div>
-                        <h3 style="margin-bottom: 8px;">CapCut vs VEED</h3>
+                        <h3>CapCut vs VEED</h3>
                         <div class="card-tags">
                             <span class="tag edit">Editing</span>
                             <span class="tag">Creator Tools</span>
@@ -551,21 +557,21 @@
                     </div>
                     <p class="card-verdict">Choose CapCut for fast creator-style edits. Choose VEED for a web-first studio with captions and collaboration.</p>
                     <div class="card-actions">
-                        <a class="btn btn-primary btn-sm" href="battles/capcut-vs-veed.html">Read Battle →</a>
+                        <a class="btn btn-primary btn-sm" href="battles/capcut-vs-veed.html">Read comparison</a>
                         <a class="btn btn-ghost btn-sm" href="#" data-affiliate="capcut">Try CapCut</a>
                         <a class="btn btn-ghost btn-sm" href="#" data-affiliate="veed">Try VEED</a>
                     </div>
                 </article>
 
                 <!-- CARD 9: Kaiber vs Luma -->
-                <article class="battle-card reveal" data-categories="ai-generation creator-tools" data-search="kaiber luma dream machine stylized music videos art direction cinematic">
+                <article class="battle-card" data-categories="ai-generation creator-tools" data-search="kaiber luma dream machine stylized music videos art direction cinematic">
                     <div class="card-matchup">
                         <div class="tool-icon">KB</div>
                         <span class="vs-badge">VS</span>
                         <div class="tool-icon">LM</div>
                     </div>
                     <div>
-                        <h3 style="margin-bottom: 8px;">Kaiber vs Luma Dream Machine</h3>
+                        <h3>Kaiber vs Luma Dream Machine</h3>
                         <div class="card-tags">
                             <span class="tag gen">AI Generation</span>
                             <span class="tag">Music Videos</span>
@@ -596,21 +602,21 @@
                     </div>
                     <p class="card-verdict">Pick Luma for cinematic realism at a lower price. Pick Kaiber for stylized, art-direction-heavy creation.</p>
                     <div class="card-actions">
-                        <a class="btn btn-primary btn-sm" href="battles/kaiber-vs-luma-dream-machine.html">Read Battle →</a>
+                        <a class="btn btn-primary btn-sm" href="battles/kaiber-vs-luma-dream-machine.html">Read comparison</a>
                         <a class="btn btn-ghost btn-sm" href="#" data-affiliate="kaiber">Try Kaiber</a>
                         <a class="btn btn-ghost btn-sm" href="#" data-affiliate="luma">Try Luma</a>
                     </div>
                 </article>
 
                 <!-- CARD 10: Descript vs VEED -->
-                <article class="battle-card reveal" data-categories="editing creator-tools" data-search="descript veed transcript editing captions social podcasters youtube">
+                <article class="battle-card" data-categories="editing creator-tools" data-search="descript veed transcript editing captions social podcasters youtube">
                     <div class="card-matchup">
                         <div class="tool-icon">DS</div>
                         <span class="vs-badge">VS</span>
                         <div class="tool-icon">VD</div>
                     </div>
                     <div>
-                        <h3 style="margin-bottom: 8px;">Descript vs VEED</h3>
+                        <h3>Descript vs VEED</h3>
                         <div class="card-tags">
                             <span class="tag edit">Editing</span>
                             <span class="tag">Captions</span>
@@ -641,7 +647,7 @@
                     </div>
                     <p class="card-verdict">Choose Descript for transcript-first editing. Choose VEED for browser-based social production.</p>
                     <div class="card-actions">
-                        <a class="btn btn-primary btn-sm" href="battles/descript-vs-veed.html">Read Battle →</a>
+                        <a class="btn btn-primary btn-sm" href="battles/descript-vs-veed.html">Read comparison</a>
                         <a class="btn btn-ghost btn-sm" href="#" data-affiliate="descript">Try Descript</a>
                         <a class="btn btn-ghost btn-sm" href="#" data-affiliate="veed">Try VEED</a>
                     </div>
@@ -651,9 +657,8 @@
 
             <!-- No results state -->
             <div id="no-results" class="no-results">
-                <div class="emoji">🔍</div>
-                <h3>No battles found</h3>
-                <p>Try a different search term or category.</p>
+                <h3>No comparisons match that search</h3>
+                <p>Try a tool name like Runway or Synthesia, or pick "All".</p>
             </div>
 
         </div>
@@ -662,29 +667,25 @@
     <!-- ===== TRUST / HOW WE COMPARE ===== -->
     <section id="trust" class="trust-section">
         <div class="page-wrap">
-            <div class="section-header" style="margin-bottom: 40px;">
-                <h2>Why Creators Trust Us</h2>
+            <div class="section-header">
+                <h2>How we compare</h2>
             </div>
             <div class="trust-grid">
-                <div class="trust-card reveal">
-                    <div class="trust-card-icon">📊</div>
-                    <h3>Data-Driven Verdicts</h3>
-                    <p>Price, speed, output quality, and workflow fit are weighted heavier than feature checklists. No fluff, just facts.</p>
+                <div class="trust-card">
+                    <h3>Price first</h3>
+                    <p>We read each tool's own pricing page and compare the entry plan you'd realistically buy, not the free tier or the enterprise quote.</p>
                 </div>
-                <div class="trust-card reveal">
-                    <div class="trust-card-icon">🎯</div>
-                    <h3>Use-Case Focused</h3>
-                    <p>We don't just list features — we test for real creator workflows: speed, iteration, clarity, and final output quality.</p>
+                <div class="trust-card">
+                    <h3>Picked by job</h3>
+                    <p>A faceless YouTube channel, a training video and a music clip need different tools. Every verdict says which job each tool suits.</p>
                 </div>
-                <div class="trust-card reveal">
-                    <div class="trust-card-icon">⚡</div>
-                    <h3>Quick Verdicts</h3>
-                    <p>Each comparison ends with a clear winner per use case. Skim the verdict and move on — we respect your time.</p>
+                <div class="trust-card">
+                    <h3>Short verdicts</h3>
+                    <p>Each comparison opens with the answer. Read the verdict and go, or scroll for the detail behind it.</p>
                 </div>
-                <div class="trust-card reveal">
-                    <div class="trust-card-icon">🔄</div>
-                    <h3>Always Fresh</h3>
-                    <p>AI video tools evolve fast. We re-evaluate battles regularly to keep our recommendations current and reliable.</p>
+                <div class="trust-card">
+                    <h3>Dated</h3>
+                    <p>These tools change plans often. Every page shows when we last reviewed it, so you know how fresh the numbers are.</p>
                 </div>
             </div>
         </div>
@@ -693,27 +694,27 @@
     <!-- ===== FAQ — AI SEARCH OPTIMIZED ===== -->
     <section id="faq" class="faq-section">
         <div class="page-wrap">
-            <div class="section-header" style="margin-bottom: 40px;">
-                <h2>Frequently Asked Questions</h2>
+            <div class="section-header">
+                <h2>Common questions</h2>
             </div>
             <div class="faq-grid">
-                <details class="faq-item reveal">
+                <details class="faq-item">
                     <summary>What is the best AI video generator in 2026?</summary>
                     <p>It depends on your use case. <strong>Runway</strong> is best for cinematic AI-generated video. <strong>HeyGen</strong> and <strong>Synthesia</strong> lead for AI avatar content. <strong>InVideo AI</strong> excels at faceless YouTube videos. <strong>Pika</strong> is ideal for quick, viral-ready effects. We compare all major tools across price, speed, quality, and workflows.</p>
                 </details>
-                <details class="faq-item reveal">
+                <details class="faq-item">
                     <summary>How do I choose between AI video tools?</summary>
                     <p>Start with your use case: Do you need AI-generated scenes (<strong>Runway, Pika, Luma</strong>), AI avatar presenters (<strong>HeyGen, Synthesia</strong>), text-to-video automation (<strong>InVideo AI, Fliki</strong>), or video editing (<strong>CapCut, VEED, Descript</strong>)? Then compare price, output quality, and speed. Our head-to-head battles make this easy.</p>
                 </details>
-                <details class="faq-item reveal">
+                <details class="faq-item">
                     <summary>Is Runway better than Pika for AI video?</summary>
                     <p><strong>Runway</strong> is better for cinematic, high-quality AI video with iterative workflows. <strong>Pika</strong> is better for fast, playful effects and viral short-form content. Runway costs more but offers a fuller creative suite. Pika is faster and more affordable for quick generations.</p>
                 </details>
-                <details class="faq-item reveal">
+                <details class="faq-item">
                     <summary>What is the best AI avatar video tool?</summary>
                     <p><strong>HeyGen</strong> is the best for modern, realistic avatar content for marketing and social media. <strong>Synthesia</strong> is the top choice for enterprise training workflows with a premium avatar catalog. <strong>Colossyan</strong> offers a lower-cost alternative for fast training content updates.</p>
                 </details>
-                <details class="faq-item reveal">
+                <details class="faq-item">
                     <summary>What is Video Tool Battle?</summary>
                     <p>Video Tool Battle is a comparison site that provides data-driven, side-by-side comparisons of AI video tools. We score tools on price, speed, quality, and real-world workflows to help creators, marketers, and teams find the right tool without the fluff.</p>
                 </details>
@@ -724,9 +725,9 @@
     <!-- ===== NEWSLETTER ===== -->
     <section id="newsletter" class="newsletter-section">
         <div class="page-wrap">
-            <div class="newsletter-box reveal">
-                <h2>Stay Ahead of the AI Video Curve</h2>
-                <p>Get new battles, tool updates, and creator tips delivered straight to your inbox. No spam, ever.</p>
+            <div class="newsletter-box">
+                <h2>Get new comparisons by email</h2>
+                <p>One short email when we publish a comparison or a tool changes its prices.</p>
                 <form class="newsletter-form" id="newsletter-form" method="post" target="_blank">
                     <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
                     <button type="submit">Subscribe</button>
@@ -741,10 +742,9 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <div class="logo">
-                        <span class="logo-icon">⚔️</span>
                         Video Tool Battle
                     </div>
-                    <p>The internet's most straight-to-the-point AI video comparisons. Built for creators who want answers, not fluff.</p>
+                    <p>Plain-spoken comparisons of AI video tools for creators, marketers and teams.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Categories</h4>
@@ -754,7 +754,7 @@
                     <a href="#battles">Text-to-Video</a>
                 </div>
                 <div class="footer-col">
-                    <h4>Popular Battles</h4>
+                    <h4>Popular comparisons</h4>
                     <a href="battles/runway-vs-luma-dream-machine.html">Runway vs Luma</a>
                     <a href="battles/heygen-vs-synthesia.html">HeyGen vs Synthesia</a>
                     <a href="battles/invideo-ai-vs-heygen.html">InVideo vs HeyGen</a>
@@ -762,13 +762,13 @@
                 </div>
                 <div class="footer-col">
                     <h4>About</h4>
-                    <a href="#trust">How We Compare</a>
+                    <a href="#trust">How we compare</a>
                     <a href="#newsletter">Newsletter</a>
                 </div>
             </div>
             <div class="footer-bottom">
                 <span>&copy; 2026 Video Tool Battle. All rights reserved.</span>
-                <span>Built for creators who want answers, not fluff.</span>
+                
                 <span><a href="privacy.html">Privacy</a> · <a href="#" data-cookie-settings>Cookie settings</a></span>
             </div>
         </div>

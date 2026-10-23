@@ -29,7 +29,7 @@
 
     function updateToggleIcon(btn) {
       const isDark = html.getAttribute('data-theme') === 'dark';
-      btn.textContent = isDark ? '☀️' : '🌙';
+      btn.textContent = isDark ? 'Light' : 'Dark';
       btn.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
     }
 
@@ -180,11 +180,20 @@
       if (h3) {
         const text = h3.textContent;
         const vsMatch = text.match(/^(.+?)\s+vs\s+(.+)$/i);
-        if (vsMatch) {
+        if (vsMatch && !h3.querySelector('.tool-name-a')) {
           h3.innerHTML = `<span class="tool-name-a">${vsMatch[1].trim()}</span><span class="vs-text"> vs </span><span class="tool-name-b">${vsMatch[2].trim()}</span>`;
         }
       }
     });
+
+    /* ---- Colour tool names in battle page titles ---- */
+    const battleTitle = document.querySelector('.battle-header h1');
+    if (battleTitle && !battleTitle.querySelector('.tool-name-a')) {
+      const m = battleTitle.textContent.match(/^(.+?)\s+vs\s+(.+)$/i);
+      if (m) {
+        battleTitle.innerHTML = `<span class="tool-name-a">${m[1].trim()}</span><span class="vs-text"> vs </span><span class="tool-name-b">${m[2].trim()}</span>`;
+      }
+    }
 
     /* ---- Inject percentage labels + Animate score bars ---- */
     const scoreBars = document.querySelectorAll('.score-bar-fill');
@@ -206,7 +215,8 @@
       }
     });
 
-    if (scoreBars.length > 0 && 'IntersectionObserver' in window) {
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (scoreBars.length > 0 && 'IntersectionObserver' in window && !reduceMotion) {
       const barObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
@@ -220,6 +230,8 @@
         bar.style.width = '0';
         barObserver.observe(bar);
       });
+    } else {
+      scoreBars.forEach(bar => { bar.style.width = bar.getAttribute('data-width') || '0'; });
     }
 
     /* ---- Smooth anchor scrolling ---- */
