@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-25T09:47:25+00:00",
+  "generated_at_utc": "2026-10-26T11:03:10+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -413,14 +413,12 @@
       "price_points": [
         "$56",
         "$0/month",
-        "$29/month",
+        "$9",
+        "$19",
+        "$19/month",
         "$29",
-        "$89/month",
-        "$89",
-        "$176",
-        "$347",
-        "$514",
-        "$676"
+        "$49",
+        "$89"
       ],
       "plan_names": [
         "Free",
@@ -482,6 +480,7 @@
       "plan_names": [
         "Free",
         "Starter",
+        "Business",
         "Enterprise",
         "Team",
         "Creator",
@@ -503,7 +502,6 @@
       },
       "languages_supported_numbers": [
         "100",
-        "1",
         "80",
         "120"
       ],
