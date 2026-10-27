@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-26T11:03:10+00:00",
+  "generated_at_utc": "2026-10-27T10:30:41+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -257,11 +257,11 @@
       "languages_supported_numbers": [],
       "pricing_snippets": [
         "Product Pricing API Enterprise News Join us",
-        "Plan, generate, iterate, and refine, keeping full context across every stage of creative work.",
-        "Try for free Contact Sales",
-        "From assets to deliverables",
-        "Visualize packaging and labels in photorealistic 3D—from shelf views to close-ups.",
-        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery."
+        "Try now for free",
+        "Luma supports enterprise teams with admin controls, pricing transparency, pre-set skills, and forward-deployed creatives.",
+        "Luma's frontier model Ray 3.2 gives you unmatched frame-by-frame control, continuity, and cinematic direction from Luma Labs.",
+        "Plans & Pricing",
+        "Save up to 20% with yearly"
       ],
       "source_urls": [
         "https://lumalabs.ai/app",
@@ -340,7 +340,7 @@
       },
       "capabilities": {
         "avatars": true,
-        "text_to_video": true,
+        "text_to_video": false,
         "image_to_video": false,
         "voice_cloning": false,
         "subtitle_generation": true,
@@ -480,7 +480,6 @@
       "plan_names": [
         "Free",
         "Starter",
-        "Business",
         "Enterprise",
         "Team",
         "Creator",
@@ -502,6 +501,7 @@
       },
       "languages_supported_numbers": [
         "100",
+        "1",
         "80",
         "120"
       ],
