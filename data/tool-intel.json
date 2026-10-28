@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-27T10:30:41+00:00",
+  "generated_at_utc": "2026-10-28T11:18:31+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -257,11 +257,11 @@
       "languages_supported_numbers": [],
       "pricing_snippets": [
         "Product Pricing API Enterprise News Join us",
-        "Try now for free",
-        "Luma supports enterprise teams with admin controls, pricing transparency, pre-set skills, and forward-deployed creatives.",
-        "Luma's frontier model Ray 3.2 gives you unmatched frame-by-frame control, continuity, and cinematic direction from Luma Labs.",
-        "Plans & Pricing",
-        "Save up to 20% with yearly"
+        "Plan, generate, iterate, and refine, keeping full context across every stage of creative work.",
+        "Try for free Contact Sales",
+        "From assets to deliverables",
+        "Visualize packaging and labels in photorealistic 3D—from shelf views to close-ups.",
+        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery."
       ],
       "source_urls": [
         "https://lumalabs.ai/app",
@@ -445,9 +445,8 @@
         "api_or_sdk": true
       },
       "languages_supported_numbers": [
-        "140",
-        "130",
         "5",
+        "140",
         "70"
       ],
       "pricing_snippets": [
@@ -455,8 +454,8 @@
         "Lifelike avatars from a script",
         "API Pricing Interactive Avatars API Documentation Dubbing API Documentation AI Video Assistant API Documentation MCP Documentation",
         "Pricing",
-        "Get started for free",
-        "Create an avatar of yourself from a single photo, for more personal videos."
+        "Create on-brand videos with AI avatars, voiceovers and motion graphics. Write a prompt and add context. Get a finished video. Try for free.",
+        "Get custom pricing, a personalized demo, and see how teams like yours train, market, and sell with Synthesia."
       ],
       "source_urls": [
         "https://www.synthesia.io/",
