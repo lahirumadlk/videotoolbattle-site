@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-28T11:18:31+00:00",
+  "generated_at_utc": "2026-10-29T11:29:46+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -416,9 +416,9 @@
         "$9",
         "$19",
         "$19/month",
-        "$29",
         "$49",
-        "$89"
+        "$89",
+        "$89/month"
       ],
       "plan_names": [
         "Free",
@@ -450,12 +450,12 @@
         "70"
       ],
       "pricing_snippets": [
-        "Try for free",
         "Lifelike avatars from a script",
         "API Pricing Interactive Avatars API Documentation Dubbing API Documentation AI Video Assistant API Documentation MCP Documentation",
         "Pricing",
         "Create on-brand videos with AI avatars, voiceovers and motion graphics. Write a prompt and add context. Get a finished video. Try for free.",
-        "Get custom pricing, a personalized demo, and see how teams like yours train, market, and sell with Synthesia."
+        "Get custom pricing, a personalized demo, and see how teams like yours train, market, and sell with Synthesia.",
+        "Everything you need to go from idea to finished video, fast. Save up to 90% of time and cost on video production."
       ],
       "source_urls": [
         "https://www.synthesia.io/",
