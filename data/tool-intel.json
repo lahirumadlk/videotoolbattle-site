@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-01T11:49:14+00:00",
+  "generated_at_utc": "2026-11-02T13:27:40+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -8,18 +8,17 @@
       "name": "InVideo AI",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$9 billed annually",
-        "$54/seat",
-        "$30 billed annually",
-        "$15/seat billed annually",
-        "$180/seat",
-        "$80 billed annually",
-        "$40/seat billed annually",
-        "$472/seat"
+        "$20 billed annually",
+        "$10/seat billed annually",
+        "$120/seat",
+        "$60 billed annually",
+        "$30/seat billed annually",
+        "$360/seat",
+        "$250/seat billed annually"
       ],
       "plan_names": [
         "Free",
-        "Basic",
+        "Starter",
         "Pro",
         "Premium",
         "Business",
@@ -61,18 +60,17 @@
       "name": "InVideo",
       "base_url": "https://invideo.io/",
       "price_points": [
-        "$9 billed annually",
-        "$54/seat",
-        "$30 billed annually",
-        "$15/seat billed annually",
-        "$180/seat",
-        "$80 billed annually",
-        "$40/seat billed annually",
-        "$472/seat"
+        "$20 billed annually",
+        "$10/seat billed annually",
+        "$120/seat",
+        "$60 billed annually",
+        "$30/seat billed annually",
+        "$360/seat",
+        "$250/seat billed annually"
       ],
       "plan_names": [
         "Free",
-        "Basic",
+        "Starter",
         "Pro",
         "Premium",
         "Business",
@@ -249,17 +247,17 @@
         "image_to_video": false,
         "voice_cloning": false,
         "subtitle_generation": false,
-        "video_editing": false,
+        "video_editing": true,
         "api_or_sdk": true
       },
       "languages_supported_numbers": [],
       "pricing_snippets": [
         "Product Pricing API Enterprise News Join us",
-        "Try now for free",
-        "Luma supports enterprise teams with admin controls, pricing transparency, pre-set skills, and forward-deployed creatives.",
-        "Luma's frontier model Ray 3.2 gives you unmatched frame-by-frame control, continuity, and cinematic direction from Luma Labs.",
-        "Plans & Pricing",
-        "Save up to 20% with yearly"
+        "Plan, generate, iterate, and refine, keeping full context across every stage of creative work.",
+        "Try for free Contact Sales",
+        "From assets to deliverables",
+        "Visualize packaging and labels in photorealistic 3D—from shelf views to close-ups.",
+        "Luma unifies specialized multimodal models into one continuous workflow, advancing creative work from concept to final delivery."
       ],
       "source_urls": [
         "https://lumalabs.ai/app",
@@ -477,6 +475,7 @@
       "plan_names": [
         "Free",
         "Starter",
+        "Business",
         "Enterprise",
         "Team",
         "Creator",
@@ -498,7 +497,6 @@
       },
       "languages_supported_numbers": [
         "100",
-        "1",
         "80",
         "120"
       ],
