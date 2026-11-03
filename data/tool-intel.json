@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-02T13:27:40+00:00",
+  "generated_at_utc": "2026-11-03T12:45:38+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -270,24 +270,27 @@
       "name": "Pika",
       "base_url": "https://pika.art/",
       "price_points": [
-        "$10",
-        "$1012",
-        "$35",
-        "$3012",
-        "$95",
-        "$9012",
+        "$10 /mo",
+        "$35 /mo",
+        "$95 /mo",
         "$440/mo",
-        "$35 /mo"
+        "$0",
+        "$10",
+        "$35",
+        "$95"
       ],
       "plan_names": [
         "Free",
         "Starter",
+        "Basic",
+        "Standard",
+        "Pro",
         "Enterprise",
         "Team",
         "Creator"
       ],
       "commercial_flags": {
-        "free_plan": false,
+        "free_plan": true,
         "free_trial": false,
         "enterprise_or_contact_sales": true
       },
@@ -441,8 +444,8 @@
         "api_or_sdk": true
       },
       "languages_supported_numbers": [
-        "5",
         "140",
+        "5",
         "70"
       ],
       "pricing_snippets": [
@@ -450,8 +453,8 @@
         "API Pricing Interactive Avatars API Documentation Dubbing API Documentation AI Video Assistant API Documentation MCP Documentation",
         "Pricing",
         "Create on-brand videos with AI avatars, voiceovers and motion graphics. Write a prompt and add context. Get a finished video. Try for free.",
-        "Get custom pricing, a personalized demo, and see how teams like yours train, market, and sell with Synthesia.",
-        "Everything you need to go from idea to finished video, fast. Save up to 90% of time and cost on video production."
+        "Everything you need to go from idea to finished video, fast. Save up to 90% of time and cost on video production.",
+        "Get started for free"
       ],
       "source_urls": [
         "https://www.synthesia.io/",
@@ -634,7 +637,7 @@
         "90"
       ],
       "pricing_snippets": [
-        "Features Use cases Explore Pricing 40 % off!",
+        "Features Use cases Explore Pricing",
         "Start creating for free",
         "Fliki's AI video generator builds the entire video from a single prompt - script, visuals, voiceover, music, and captions. Used by 14M+ creators for TikToks, Reels, and YouTube. AI video generator →",
         "Explain a product, idea or process as a narrated video in any of 23 art styles, from realistic to anime to stickman, or save your own style and reuse it. Animated explainer →",
