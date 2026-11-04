@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-03T12:45:38+00:00",
+  "generated_at_utc": "2026-11-04T12:58:01+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -328,7 +328,6 @@
         "Basic",
         "Pro",
         "Premium",
-        "Business",
         "Creator",
         "Plus"
       ],
@@ -338,24 +337,25 @@
         "enterprise_or_contact_sales": false
       },
       "capabilities": {
-        "avatars": true,
+        "avatars": false,
         "text_to_video": false,
         "image_to_video": false,
         "voice_cloning": false,
-        "subtitle_generation": true,
+        "subtitle_generation": false,
         "video_editing": true,
         "api_or_sdk": false
       },
       "languages_supported_numbers": [
+        "40",
         "20"
       ],
       "pricing_snippets": [
+        "Generate something new Create images and videos from a simple prompt.",
         "Pricing",
         "Try online for free Download",
-        "Create professional designs with AI online. Generate layouts for social media posts, covers, and marketing materials automatically—easy and free.",
-        "A quick chat with CapCut's AI video editor and it'll build a video from scratch, style, avatar, everything.",
-        "The reliable and essential AI editing features from CapCut for text, audio, and video.",
-        "Resize images online for free with AI. Adjust dimensions and aspect ratios quickly for social media, websites, ads, and digital content."
+        "Go from words or images to a video in seconds.",
+        "Create striking images from a simple prompt.",
+        "From AI-generated designs to timeless classics, find the perfect one-click start for any video on CapCut."
       ],
       "source_urls": [
         "https://www.capcut.com/",
@@ -478,7 +478,6 @@
       "plan_names": [
         "Free",
         "Starter",
-        "Business",
         "Enterprise",
         "Team",
         "Creator",
@@ -500,6 +499,7 @@
       },
       "languages_supported_numbers": [
         "100",
+        "1",
         "80",
         "120"
       ],
