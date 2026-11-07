@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-06T12:55:08+00:00",
+  "generated_at_utc": "2026-11-07T11:42:32+00:00",
   "tool_count": 13,
   "tools_with_pricing_signal": 12,
   "tools": [
@@ -247,7 +247,7 @@
         "image_to_video": false,
         "voice_cloning": false,
         "subtitle_generation": false,
-        "video_editing": true,
+        "video_editing": false,
         "api_or_sdk": true
       },
       "languages_supported_numbers": [],
